@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Markets Briefing — AWM Recruiting Prep</title>
+<style>
+  :root{
+    --bg:#0b1220;
+    --bg-card:#121b2e;
+    --bg-card-alt:#0f1729;
+    --border:#22304a;
+    --text:#e8edf7;
+    --text-dim:#93a1bd;
+    --text-faint:#5f6d8a;
+    --gold:#d4af6a;
+    --gold-dim:#8f7a4d;
+    --green:#3ecf8e;
+    --green-bg:rgba(62,207,142,0.12);
+    --red:#ef5d67;
+    --red-bg:rgba(239,93,103,0.12);
+    --amber:#e8b04b;
+    --amber-bg:rgba(232,176,75,0.12);
+    --blue:#5b9bf0;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;
+    padding-bottom:60px;
+  }
+  a{color:var(--blue);}
+  header{
+    position:sticky;top:0;z-index:50;
+    background:linear-gradient(180deg,#0b1220 85%,rgba(11,18,32,0));
+    padding:16px 16px 8px;
+    border-bottom:1px solid var(--border);
+    background-color:#0b1220;
+  }
+  .eyebrow{
+    font-size:11px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--gold);font-weight:600;margin-bottom:2px;
+  }
+  h1{
+    font-size:22px;margin:0 0 2px;font-weight:700;letter-spacing:-0.3px;
+  }
+  .subdate{font-size:12.5px;color:var(--text-dim);margin-bottom:12px;}
+  nav{
+    display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;
+    scrollbar-width:none;
+  }
+  nav::-webkit-scrollbar{display:none;}
+  nav a{
+    flex:0 0 auto;font-size:12px;color:var(--text-dim);text-decoration:none;
+    background:var(--bg-card);border:1px solid var(--border);
+    padding:6px 11px;border-radius:20px;white-space:nowrap;font-weight:500;
+  }
+  main{padding:14px 16px 0;max-width:720px;margin:0 auto;}
+  section{margin-bottom:30px;scroll-margin-top:150px;}
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;}
+  .sec-head h2{font-size:17px;margin:0;font-weight:700;}
+  .sec-head .count{font-size:11px;color:var(--text-faint);}
+  .sec-intro{font-size:12.5px;color:var(--text-dim);margin:-4px 0 12px;}
+
+  /* Ticker strip */
+  .ticker-strip{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px;
+  }
+  .ticker-strip.wide{grid-template-columns:repeat(4,1fr);}
+  .tick{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:10px;
+    padding:9px 8px;text-align:center;
+  }
+  .tick .lbl{font-size:10px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.5px;}
+  .tick .val{font-size:15px;font-weight:700;margin-top:2px;}
+  .tick .chg{font-size:11px;font-weight:600;margin-top:1px;}
+  .up{color:var(--green);} .down{color:var(--red);} .flat{color:var(--text-dim);}
+
+  /* Cards */
+  .card{
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:14px;padding:14px 15px;margin-bottom:11px;
+  }
+  .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:6px;}
+  .card-title{font-size:14.5px;font-weight:700;color:var(--text);}
+  .tag{
+    font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;
+    padding:3px 8px;border-radius:20px;white-space:nowrap;flex:0 0 auto;
+  }
+  .tag.macro{background:var(--amber-bg);color:var(--amber);}
+  .card p{font-size:13px;color:var(--text-dim);margin:0 0 6px;}
+  .card .why{
+    font-size:12px;color:var(--text-faint);border-top:1px solid var(--border);
+    padding-top:7px;margin-top:8px;
+  }
+  .card .why b{color:var(--gold-dim);}
+  .src{font-size:10.5px;color:var(--text-faint);margin-top:6px;}
+  .src a{color:var(--text-faint);text-decoration:underline;}
+
+  /* Stock pick cards */
+  .pick{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:14px;
+    padding:14px 15px;margin-bottom:11px;
+  }
+  .pick-head{display:flex;align-items:center;justify-content:space-between;}
+  .pick-name{font-size:15px;font-weight:700;}
+  .pick-tkr{font-size:12px;color:var(--gold);font-weight:700;margin-left:6px;}
+  .pick-sector{font-size:10.5px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;}
+  .pick-metrics{display:flex;gap:14px;margin:10px 0 8px;}
+  .pm{}
+  .pm .n{font-size:16px;font-weight:700;color:var(--green);}
+  .pm .l{font-size:9.5px;color:var(--text-faint);text-transform:uppercase;}
+  .pick p{font-size:13px;color:var(--text-dim);margin:6px 0 0;}
+
+  /* Earnings table */
+  .erow{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    background:var(--bg-card);border:1px solid var(--border);border-radius:12px;
+    padding:11px 13px;margin-bottom:8px;
+  }
+  .erow .co{font-size:13.5px;font-weight:700;}
+  .erow .meta{font-size:11.5px;color:var(--text-dim);margin-top:2px;}
+  .badge{
+    font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;
+    padding:5px 10px;border-radius:20px;flex:0 0 auto;
+  }
+  .badge.beat{background:var(--green-bg);color:var(--green);}
+  .badge.miss{background:var(--red-bg);color:var(--red);}
+  .badge.mixed{background:var(--amber-bg);color:var(--amber);}
+  .badge.pending{background:rgba(91,155,240,0.12);color:var(--blue);}
+
+  /* IPO cards */
+  .ipo-card{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:14px;
+    padding:14px 15px;margin-bottom:11px;
+  }
+  .ipo-top{display:flex;justify-content:space-between;align-items:flex-start;}
+  .ipo-name{font-size:15px;font-weight:700;}
+  .ipo-date{font-size:11px;color:var(--text-faint);margin-top:2px;}
+  .ipo-move{font-size:13px;font-weight:700;margin-top:8px;}
+  .ipo-drivers{margin:8px 0 0;padding-left:18px;font-size:12.5px;color:var(--text-dim);}
+  .ipo-drivers li{margin-bottom:3px;}
+
+  /* Glossary */
+  details{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:12px;
+    padding:11px 14px;margin-bottom:8px;
+  }
+  summary{font-size:13.5px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;}
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";font-size:18px;color:var(--gold);font-weight:400;}
+  details[open] summary::after{content:"–";}
+  details p, details ul{font-size:12.5px;color:var(--text-dim);margin:8px 0 0;padding-left:0;}
+  details ul{padding-left:18px;}
+  details li{margin-bottom:5px;}
+
+  .talk-card{
+    background:linear-gradient(135deg,rgba(212,175,106,0.08),rgba(212,175,106,0.02));
+    border:1px solid var(--gold-dim);border-radius:14px;padding:14px 15px;margin-bottom:11px;
+  }
+  .talk-card .q{font-size:12.5px;color:var(--gold);font-weight:700;margin-bottom:5px;}
+  .talk-card p{font-size:13px;color:var(--text-dim);margin:0;}
+
+  footer{
+    max-width:720px;margin:20px auto 0;padding:16px;border-top:1px solid var(--border);
+  }
+  footer h3{font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:1px;margin:0 0 10px;}
+  footer ul{margin:0;padding-left:16px;font-size:11.5px;color:var(--text-faint);}
+  footer li{margin-bottom:5px;}
+  footer .disclaimer{font-size:11px;color:var(--text-faint);margin-top:14px;line-height:1.6;}
+  footer .refresh{
+    font-size:11.5px;color:var(--gold-dim);margin-top:12px;padding:10px 12px;
+    background:var(--bg-card-alt);border-radius:10px;border:1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Daily Briefing</div>
+  <h1>Markets &amp; Recruiting Prep</h1>
+  <div class="subdate">Snapshot: Wednesday, July 15, 2026 · U.S. markets</div>
+  <nav>
+    <a href="#snapshot">Snapshot</a>
+    <a href="#macro">5 Macro Trends</a>
+    <a href="#picks">5 Stock Picks</a>
+    <a href="#earnings">Earnings</a>
+    <a href="#ipo">Recent IPOs</a>
+    <a href="#pro">Sound Like a Pro</a>
+    <a href="#sources">Sources</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="snapshot">
+    <div class="sec-head"><h2>Market Snapshot</h2><span class="count">Jul 14, 2026 close</span></div>
+    <div class="ticker-strip">
+      <div class="tick"><div class="lbl">S&amp;P 500</div><div class="val">7,543.59</div><div class="chg up">+0.38%</div></div>
+      <div class="tick"><div class="lbl">Dow</div><div class="val">52,508.27</div><div class="chg up">+0.02%</div></div>
+      <div class="tick"><div class="lbl">Nasdaq</div><div class="val">26,107.01</div><div class="chg up">+0.90%</div></div>
+    </div>
+    <div class="ticker-strip wide">
+      <div class="tick"><div class="lbl">10Y Yield</div><div class="val">4.57%</div></div>
+      <div class="tick"><div class="lbl">2s10s</div><div class="val">0.36%</div></div>
+      <div class="tick"><div class="lbl">HY OAS</div><div class="val">269bp</div></div>
+      <div class="tick"><div class="lbl">DXY</div><div class="val">100.89</div></div>
+    </div>
+    <p class="sec-intro" style="margin-top:10px;">Fed funds target: 3.50%–3.75%. Stocks rebounded Jul 14 as June CPI came in cooler than expected (3.5% YoY vs. 3.8% est., down from May's 4.2%), sharply cutting July hike odds; record bank earnings and an ASML guidance raise added fuel. Know these six numbers cold — they come up in every AWM markets-update interview question.</p>
+
+    <div class="card" style="margin-top:2px;">
+      <div class="card-top"><div class="card-title">Today's headlines</div><span class="tag macro" style="background:rgba(91,155,240,0.12);color:var(--blue);">Live</span></div>
+      <ul style="margin:0;padding-left:18px;font-size:12.5px;color:var(--text-dim);">
+        <li style="margin-bottom:5px;">Cooler June CPI (3.5% YoY, core 2.6%) sends July rate-hike odds from 42% to 17%; Fed Chair Warsh testifies before Congress for a 2nd day, cautions "one data point" isn't victory over inflation.</li>
+        <li style="margin-bottom:5px;">The five largest U.S. banks posted a record $49B combined Q2 profit (+39% YoY) on a trading, dealmaking, and IPO rebound — Goldman Sachs' best quarter ever.</li>
+        <li style="margin-bottom:5px;">PayPal (PYPL) surged ~15% premarket on reports Stripe and Advent International offered $60.50/share (~$53B, a 28% premium) to jointly acquire the company.</li>
+        <li>ASML raised full-year 2026 revenue guidance to €43–45B (from €36–40B) after Q2 results beat on "extremely strong" AI chip demand — a fresh data point for the AI capex trend below.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="macro">
+    <div class="sec-head"><h2>5 Macro Trends</h2><span class="count">this week</span></div>
+
+    <div class="card">
+      <div class="card-top"><div class="card-title">1. Cooler CPI cuts hike odds — but Warsh isn't declaring victory</div><span class="tag macro">Rates</span></div>
+      <p>Fed funds steady at 3.50%–3.75%. June CPI surprised to the downside — 3.5% YoY headline (vs. 3.8% expected) and 2.6% core, down sharply from May's 4.2% three-year high — pulling the probability of a July 28–29 hike from 42% to roughly 17%. New Chair Kevin Warsh, testifying before Congress for a second day, dropped traditional forward guidance in favor of pure data-dependence and warned one soft print doesn't mean inflation is beaten.</p>
+      <div class="why"><b>Why it matters:</b> rate path is the single biggest input to duration/asset-allocation calls, bank NIM forecasts, and DCF discount rates — the most common technical thread pulled in AWM interviews.</div>
+      <div class="src">Sources: <a href="https://www.bloomberg.com/news/articles/2026-07-13/oil-holds-gains-as-iran-stokes-inflation-worries-markets-wrap" target="_blank">Bloomberg</a>, <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Schwab</a>, <a href="https://www.forbes.com/sites/investor-hub/article/fed-meeting-tracker-interest-rate-strategy/" target="_blank">Forbes</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top"><div class="card-title">2. The Great Rotation — value catching up to growth</div><span class="tag macro">Rotation</span></div>
+      <p>The mega-cap tech/growth names that led 2025 into early 2026 are cooling as higher-for-longer rates compress the present value of far-out cash flows. Financials, healthcare, and energy — laggards during the AI rally — are outperforming as investors reposition for a higher-rate regime.</p>
+      <div class="why"><b>Why it matters:</b> sector rotation calls are core to equity research and portfolio construction pitches; be ready to name which sectors you'd overweight and why.</div>
+      <div class="src">Source: <a href="https://www.gomarkets.com/en/articles/us-market-drivers-july-2026" target="_blank">GoMarkets — US market drivers, July 2026</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top"><div class="card-title">3. AI capex supercycle tops $1T — increasingly debt-funded</div><span class="tag macro">AI / Capex</span></div>
+      <p>The five largest hyperscalers are on pace to spend over $1 trillion combined on AI infrastructure from 2025–2026, with spend now outpacing free cash flow — pushing firms toward bond issuance. The buildout is shifting from digital (chips/software) to physical (data centers, power). Fresh confirmation Jul 15: ASML (the sole maker of EUV lithography tools) beat Q2 estimates on "extremely strong" AI chip order intake and raised full-year 2026 revenue guidance to €43–45B from €36–40B, plus a 30% capacity expansion plan. Goldman Sachs estimates AI infrastructure investment will drive roughly half of S&amp;P 500 earnings growth in 2026.</p>
+      <div class="why"><b>Why it matters:</b> the "monetization vs. pure capex" debate is the defining equity narrative of 2026 — have a view on whether AI spend is creating durable earnings or overbuilding risk.</div>
+      <div class="src">Sources: <a href="https://www.oxfordeconomics.com/webinar/tradeprism-outlook-the-year-ahead/" target="_blank">Oxford Economics</a>, <a href="https://www.goldmansachs.com/insights/articles/s-and-p-500-forecast-to-climb-as-earnings-growth-powers-stocks-higher" target="_blank">Goldman Sachs</a>, <a href="https://www.rappler.com/technology/asml-raises-2026-forecast-expands-capacity-ai-chip-demand/" target="_blank">Rappler — ASML</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top"><div class="card-title">4. Tariff cliff — Section 122 global tariff expires July 24</div><span class="tag macro">Trade Policy</span></div>
+      <p>The White House's 10% global tariff (invoked under Section 122 of the Trade Act of 1974) took effect February 24, 2026 for 150 days and is set to expire July 24, 2026 unless Congress extends it. Separately, USTR Section 301 investigations are expected to yield new, more targeted tariffs in Q2/Q3 2026. Europe's manufacturing sector is lagging on earlier tariff drag while the U.S. rebounds on AI spend and fiscal expansion.</p>
+      <div class="why"><b>Why it matters:</b> tariff policy directly shapes multinational earnings guidance and currency/hedging conversations — a live risk factor to flag in any 2H26 outlook discussion.</div>
+      <div class="src">Sources: <a href="https://www.avalara.com/blog/en/north-america/2026/01/tariffs-2026-how-new-trade-rules-impact-business.html" target="_blank">Avalara</a>, <a href="https://www.oxfordeconomics.com/webinar/tradeprism-outlook-the-year-ahead/" target="_blank">Oxford Economics</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top"><div class="card-title">5. Valuation extremes &amp; wide analyst dispersion signal late-cycle caution</div><span class="tag macro">Valuation</span></div>
+      <p>Year-end S&amp;P 500 targets are unusually spread out: Bank of America at 7,100 (implying a pullback), Goldman Sachs at 8,000, and Ed Yardeni at 8,250. BofA warns "speculation is hitting extreme levels" as high-multiple names have gapped up sharply — historically a precursor to a valuation "snapback." Meanwhile high-yield credit spreads remain tight (269bp), signaling continued risk-on complacency even as U.S.–Iran tensions spike oil prices.</p>
+      <div class="why"><b>Why it matters:</b> dispersion in sell-side targets is a great prompt to discuss your own framework for equity risk premium and where you'd position defensively.</div>
+      <div class="src">Sources: <a href="https://fortune.com/2026/07/05/stock-market-outlook-sp500-target-7100-ai-boom-speculation-extreme-levels/" target="_blank">Fortune</a>, <a href="https://www.goldmansachs.com/insights/articles/s-and-p-500-forecast-to-climb-as-earnings-growth-powers-stocks-higher" target="_blank">Goldman Sachs</a></div>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="sec-head"><h2>5 Stock Picks</h2><span class="count">sell-side consensus</span></div>
+    <p class="sec-intro">Names Wall Street analysts are highlighting for 2H 2026 — useful as talking points, not as personal investment advice.</p>
+
+    <div class="pick">
+      <div class="pick-head"><div><span class="pick-name">Oracle</span><span class="pick-tkr">ORCL</span></div></div>
+      <div class="pick-sector">Enterprise Software / AI Cloud</div>
+      <div class="pick-metrics">
+        <div class="pm"><div class="n">~80%</div><div class="l">Avg. upside</div></div>
+        <div class="pm"><div class="n">~67%</div><div class="l">Buy ratings</div></div>
+      </div>
+      <p>Piper Sandler's top pick for 2H26 — one of the few "acceleration" stories in software and a direct AI infrastructure beneficiary, with rising confidence Oracle can protect cloud margins against increasing component costs.</p>
+    </div>
+
+    <div class="pick">
+      <div class="pick-head"><div><span class="pick-name">Nvidia</span><span class="pick-tkr">NVDA</span></div></div>
+      <div class="pick-sector">Semiconductors / AI Compute</div>
+      <div class="pick-metrics">
+        <div class="pm"><div class="n">~60%</div><div class="l">Avg. upside</div></div>
+        <div class="pm"><div class="n">83%</div><div class="l">Buy ratings</div></div>
+      </div>
+      <p>Stock is up just ~3% YTD, but 83% of covering analysts still rate it a buy — the market's read on whether the AI compute cycle has legs runs through this name.</p>
+    </div>
+
+    <div class="pick">
+      <div class="pick-head"><div><span class="pick-name">Micron Technology</span><span class="pick-tkr">MU</span></div></div>
+      <div class="pick-sector">Memory Semiconductors</div>
+      <div class="pick-metrics">
+        <div class="pm"><div class="n">~57%</div><div class="l">Avg. upside</div></div>
+        <div class="pm"><div class="n">77%</div><div class="l">Buy ratings</div></div>
+      </div>
+      <p>Already up 200%+ in 2026 on HBM/AI memory demand, yet analysts still see further room — a good example of a momentum name where valuation discipline matters.</p>
+    </div>
+
+    <div class="pick">
+      <div class="pick-head"><div><span class="pick-name">Amazon</span><span class="pick-tkr">AMZN</span></div></div>
+      <div class="pick-sector">Cloud / E-commerce / Advertising</div>
+      <div class="pick-metrics">
+        <div class="pm"><div class="n">Buy</div><div class="l">TD Cowen</div></div>
+      </div>
+      <p>TD Cowen's John Blackledge cites re-accelerating AWS growth alongside steady e-commerce and advertising momentum — a diversified, three-pronged thesis rather than a single-product bet.</p>
+    </div>
+
+    <div class="pick">
+      <div class="pick-head"><div><span class="pick-name">CoStar Group</span><span class="pick-tkr">CSGP</span></div></div>
+      <div class="pick-sector">Real Estate Data &amp; Analytics</div>
+      <div class="pick-metrics">
+        <div class="pm"><div class="n">~62%</div><div class="l">Avg. upside</div></div>
+        <div class="pm"><div class="n">66%</div><div class="l">Buy ratings</div></div>
+      </div>
+      <p>A non-tech diversifier in the list — commercial real estate data/analytics compounder, useful if you want a pick outside the AI trade in an interview.</p>
+    </div>
+
+    <div class="card" style="border-color:var(--red);">
+      <div class="card-top"><div class="card-title">Divergence watch: Intuit (INTU)</div><span class="tag macro" style="background:var(--red-bg);color:var(--red);">Contrarian call</span></div>
+      <p>Intuit still shows ~76% average analyst upside and 70% buy ratings — but Goldman Sachs downgraded it to Sell from Neutral, citing deteriorating fundamentals. A textbook case of sell-side disagreement worth citing when asked "tell me about a stock where analysts disagree."</p>
+    </div>
+    <div class="src" style="margin:-4px 0 4px 2px;">Sources: <a href="https://www.cnbc.com/2026/07/07/here-are-wall-street-analysts-top-sp-500-stocks-for-the-second-half-of-2026.html" target="_blank">CNBC — Top S&amp;P 500 stocks for 2H26</a>, <a href="https://www.cnbc.com/2026/07/12/top-analysts-are-confident-about-these-3-stocks-for-the-long-haul.html" target="_blank">CNBC — Top analysts, long haul</a></div>
+  </section>
+
+  <section id="earnings">
+    <div class="sec-head"><h2>Recent Earnings</h2><span class="count">beat / miss tracker</span></div>
+    <p class="sec-intro">Big Bank Tuesday (Jul 14) delivered a record industry quarter, right as June CPI cooled — watch net interest margin and trading-revenue commentary, not just the EPS beats.</p>
+
+    <div class="erow">
+      <div><div class="co">Goldman Sachs (GS)</div><div class="meta">EPS $20.98 (nearly 2x YoY) · Rev $20.34B (+39% YoY) — best quarter in firm history</div></div>
+      <span class="badge beat">Beat</span>
+    </div>
+    <div class="erow">
+      <div><div class="co">JPMorgan Chase (JPM)</div><div class="meta">EPS $6.14 vs. $5.85 est · Rev $58.02B vs. $50.19B est</div></div>
+      <span class="badge beat">Beat</span>
+    </div>
+    <div class="erow">
+      <div><div class="co">Bank of America (BAC)</div><div class="meta">Beat consensus ($1.12 EPS est., +27% YoY); part of industry-record profit haul</div></div>
+      <span class="badge beat">Beat</span>
+    </div>
+    <div class="erow">
+      <div><div class="co">Citigroup (C)</div><div class="meta">Beat consensus (+38.8% EPS growth est. YoY); part of industry-record profit haul</div></div>
+      <span class="badge beat">Beat</span>
+    </div>
+    <div class="erow">
+      <div><div class="co">Wells Fargo (WFC)</div><div class="meta">Results "well ahead of estimates" — +12.3% EPS growth expected</div></div>
+      <span class="badge beat">Beat</span>
+    </div>
+    <div class="erow">
+      <div><div class="co">All 5 major banks (combined)</div><div class="meta">$49B combined Q2 profit, +39% YoY — trading, dealmaking &amp; IPO rebound drove the record</div></div>
+      <span class="badge beat">Beat</span>
+    </div>
+    <div class="erow">
+      <div><div class="co">ASML Holding</div><div class="meta">Rev €9.33B vs. €8.80B est · Net income €2.92B vs. €2.62B est · raised FY26 guidance</div></div>
+      <span class="badge beat">Beat</span>
+    </div>
+    <div class="erow">
+      <div><div class="co">PepsiCo (PEP)</div><div class="meta">Revenue beat; EPS $2.20 vs. $2.21 est — shares fell premarket on soft U.S. demand</div></div>
+      <span class="badge mixed">Mixed</span>
+    </div>
+    <div class="erow">
+      <div><div class="co">Netflix (NFLX)</div><div class="meta">Reports Jul 16 · Consensus rev $12.58B (+13.8% YoY), EPS $0.79</div></div>
+      <span class="badge pending">Upcoming</span>
+    </div>
+
+    <div class="src" style="margin-top:2px;">Sources: <a href="https://qz.com/jpmorgan-goldman-bank-of-america-citigroup-wells-fargo-record-profits-071426" target="_blank">Quartz — Banks' record Q2</a>, <a href="https://www.sec.gov/Archives/edgar/data/886982/000088698226000096/a1q26gsearningsresults.htm" target="_blank">Goldman Sachs 8-K</a>, <a href="https://www.rappler.com/technology/asml-raises-2026-forecast-expands-capacity-ai-chip-demand/" target="_blank">Rappler — ASML</a>, <a href="https://qz.com/pepsico-q2-2026-earnings-revenue-beat-eps-miss-us-demand-070926" target="_blank">Quartz — PepsiCo</a></div>
+  </section>
+
+  <section id="ipo">
+    <div class="sec-head"><h2>Recent IPOs</h2><span class="count">post-debut price action</span></div>
+    <p class="sec-intro">198 IPOs have priced YTD 2026, up 8.2% versus the same point in 2025 — the IPO window is reopening broadly, a useful backdrop fact for any ECM-adjacent conversation.</p>
+
+    <div class="ipo-card">
+      <div class="ipo-top">
+        <div><div class="ipo-name">SpaceX (SPCX)</div><div class="ipo-date">Priced $135/share · debuted June 12, 2026 · ~$2T valuation, largest IPO ever</div></div>
+      </div>
+      <div class="ipo-move down">Now trading near/below its $135 IPO price, having given back most of its post-debut pop.</div>
+      <ul class="ipo-drivers">
+        <li><b>Debt issuance:</b> company confirmed its first-ever bond offering, raising investor concern about interest expense and funding needs.</li>
+        <li><b>Lock-up overhang:</b> a 20% insider unlock is tied to its August earnings report, plus a 10% unlock if shares trade 30% above the IPO price — creating a persistent supply overhang.</li>
+        <li><b>Sector beta:</b> broader tech/Nasdaq selloff amid U.S.–Iran tensions and an oil price spike dragged the stock down alongside peers.</li>
+      </ul>
+    </div>
+
+    <div class="ipo-card">
+      <div class="ipo-top">
+        <div><div class="ipo-name">Circle Internet Group (CRCL)</div><div class="ipo-date">Priced $31/share · IPO'd June 2025 · issuer of USDC stablecoin</div></div>
+      </div>
+      <div class="ipo-move down">Opened at $69, spiked as high as $250+ (~750% above IPO price) at its peak, but has since fallen sharply — down roughly 30%+ from highs.</div>
+      <ul class="ipo-drivers">
+        <li><b>Eroding regulatory moat:</b> the GENIUS Act initially validated Circle as "the" regulated stablecoin winner; once codified, banks and fintechs could credibly launch competing compliant stablecoins.</li>
+        <li><b>New competition:</b> JPMorgan, Mastercard/BVNK, Tether USAT, and SoFi (national-bank stablecoin, launched May 27) all entered the same regulatory lane within months.</li>
+        <li><b>Rate sensitivity:</b> roughly 90% of Circle's revenue comes from interest income on reserves, so the stock is highly exposed to the Fed's rate path.</li>
+      </ul>
+    </div>
+
+    <div class="ipo-card">
+      <div class="ipo-top">
+        <div><div class="ipo-name">CoreWeave (CRWV)</div><div class="ipo-date">Priced $40/share · 2025 IPO · AI/GPU cloud infrastructure</div></div>
+      </div>
+      <div class="ipo-move up">Debut was seen as disappointing, but the stock has since surged over 300% from its IPO price at peak, before pulling back from highs.</div>
+      <ul class="ipo-drivers">
+        <li><b>Direct AI capex beneficiary:</b> GPU cloud demand from hyperscalers and AI labs has driven a durable re-rating — ties directly into Macro Trend #3 above.</li>
+        <li><b>Volatility as feature, not bug:</b> a useful example of how "disappointing IPO" headlines can be a poor predictor of 12-month performance.</li>
+      </ul>
+    </div>
+
+    <div class="src">Sources: <a href="https://www.cnbc.com/2026/07/13/spacex-spcx-stock-ipo-price.html" target="_blank">CNBC — SpaceX</a>, <a href="https://www.forbes.com/sites/tylerroush/2026/06/23/spacex-shares-fall-below-150-debut-price-for-first-time/" target="_blank">Forbes — SpaceX</a>, <a href="https://www.investing.com/analysis/crypto-trades-stocks-banks-issue-stablecoins-why-crcl-fell-30-200681189" target="_blank">Investing.com — Circle</a>, <a href="https://stockanalysis.com/ipos/2026/" target="_blank">StockAnalysis.com — 2026 IPOs</a></div>
+  </section>
+
+  <section id="pro">
+    <div class="sec-head"><h2>Sound Like a Pro</h2><span class="count">recruiting prep</span></div>
+
+    <div class="talk-card">
+      <div class="q">If asked "what's happening in markets right now?"</div>
+      <p>Lead with today's disinflation surprise: June CPI cooled to 3.5% YoY (core 2.6%), well below estimates, cutting July hike odds from 42% to ~17% — though Chair Warsh is cautioning it's one data point, not a victory lap. Layer in the record $49B bank earnings quarter and ASML's AI-driven guidance raise as evidence the "higher-for-longer-but-still-growing" backdrop is intact, then pivot to the July 24 tariff deadline as the next swing factor for 2H26.</p>
+    </div>
+
+    <details>
+      <summary>Six numbers to know cold</summary>
+      <ul>
+        <li><b>Fed funds rate</b> — current policy stance and where the market thinks it's headed.</li>
+        <li><b>10-year Treasury yield</b> — the "risk-free rate" anchor for every DCF.</li>
+        <li><b>2s10s spread</b> — yield curve shape; inversion has historically preceded recessions.</li>
+        <li><b>VIX</b> — the market's fear gauge / implied volatility.</li>
+        <li><b>High-yield OAS (credit spread)</b> — how much extra yield junk bonds demand over Treasuries; a real-time read on risk appetite.</li>
+        <li><b>DXY (Dollar Index)</b> — dollar strength, which drives multinational earnings translation and EM flows.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Concepts worth having a POV on</summary>
+      <ul>
+        <li><b>Soft landing vs. stagflation</b> — can the Fed cool inflation without a recession, given inflation is still running above target?</li>
+        <li><b>Duration risk</b> — why long-duration growth/tech stocks are more rate-sensitive than value/cyclicals.</li>
+        <li><b>Sector rotation</b> — the shift from growth (tech) into value (financials, healthcare, energy) as rates stay elevated.</li>
+        <li><b>AI monetization vs. overbuild</b> — is $1T+ in hyperscaler capex generating durable earnings, or creating stranded-asset risk?</li>
+        <li><b>Lock-up expiry</b> — why newly public stocks (e.g., SpaceX) face predictable selling pressure around insider unlock dates.</li>
+        <li><b>Multiple compression/expansion</b> — how discount-rate changes move valuations independent of earnings.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Daily habit stack (10–15 min/day)</summary>
+      <ul>
+        <li>Skim <b>WSJ Markets</b> or <b>FT</b> headlines + <b>CNBC's "Stock market today"</b> live blog for the prior close.</li>
+        <li>Check the 6 numbers above (10Y, 2s10s, VIX, HY OAS, DXY, Fed funds) — most are on a single FRED or CNBC page.</li>
+        <li>Note one Fed speaker headline and one earnings beat/miss — both are easy interview small talk.</li>
+        <li>Know the top 3 holdings and AUM scale of the shop you're interviewing with (BlackRock, Vanguard, Fidelity, Morgan Stanley IM, JPM AM, Goldman AM) — sizing context matters in AWM specifically.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Questions to ask your interviewer</summary>
+      <ul>
+        <li>"How is the desk/team thinking about positioning for a Fed that's dropped forward guidance in favor of pure data dependence?"</li>
+        <li>"With AI capex now roughly half of projected S&amp;P earnings growth, how does the team underwrite monetization risk versus pure infrastructure spend?"</li>
+        <li>"How does the tariff expiration on July 24 factor into how you're advising clients on international/multinational exposure right now?"</li>
+      </ul>
+    </details>
+  </section>
+
+  <footer id="sources">
+    <h3>All Sources</h3>
+    <ul>
+      <li><a href="https://www.forbes.com/sites/investor-hub/article/fed-meeting-tracker-interest-rate-strategy/" target="_blank">Forbes — Fed Meeting Tracker 2026</a></li>
+      <li><a href="https://intellectia.ai/blog/fed-interest-rate-outlook-july-2026-hawkish-turn" target="_blank">Intellectia.ai — Fed Interest Rate Outlook July 2026</a></li>
+      <li><a href="https://www.gomarkets.com/en/articles/us-market-drivers-july-2026" target="_blank">GoMarkets — US Market Drivers, July 2026</a></li>
+      <li><a href="https://fortune.com/2026/07/05/stock-market-outlook-sp500-target-7100-ai-boom-speculation-extreme-levels/" target="_blank">Fortune — S&amp;P 500 Outlook</a></li>
+      <li><a href="https://www.goldmansachs.com/insights/articles/s-and-p-500-forecast-to-climb-as-earnings-growth-powers-stocks-higher" target="_blank">Goldman Sachs Insights — S&amp;P 500 Forecast</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/07/here-are-wall-street-analysts-top-sp-500-stocks-for-the-second-half-of-2026.html" target="_blank">CNBC — Top S&amp;P 500 Stocks for 2H 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/12/top-analysts-are-confident-about-these-3-stocks-for-the-long-haul.html" target="_blank">CNBC — Top Analysts, Long Haul Picks</a></li>
+      <li><a href="https://tickeron.com/trading-investing-101/q2-2026-earnings-preview-july-1317-2026--fast-jpm-bac-gs-wfc-c-asml-jnj-ms-blk-pnc-tsm-unh-ge-nflx-stx/" target="_blank">Tickeron — Q2 2026 Bank &amp; Tech Earnings Preview</a></li>
+      <li><a href="https://qz.com/pepsico-q2-2026-earnings-revenue-beat-eps-miss-us-demand-070926" target="_blank">Quartz — PepsiCo Q2 2026 Earnings</a></li>
+      <li><a href="https://wccftech.com/samsung-posts-a-shocking-miss-on-revenue-for-q2-2026-at-a-time-when-investors-were-positioned-for-a-pristine-print/" target="_blank">WccfTech — Samsung Q2 2026 Results</a></li>
+      <li><a href="https://ng.investing.com/news/company-news/fb-financial-q2-2026-slides-strong-growth-offsets-modest-earnings-miss-93CH-2599213" target="_blank">Investing.com — FB Financial Q2 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/13/spacex-spcx-stock-ipo-price.html" target="_blank">CNBC — SpaceX Stock/IPO Price</a></li>
+      <li><a href="https://www.forbes.com/sites/tylerroush/2026/06/23/spacex-shares-fall-below-150-debut-price-for-first-time/" target="_blank">Forbes — SpaceX Shares Fall Below Debut Price</a></li>
+      <li><a href="https://www.investing.com/analysis/crypto-trades-stocks-banks-issue-stablecoins-why-crcl-fell-30-200681189" target="_blank">Investing.com — Why CRCL Fell 30%</a></li>
+      <li><a href="https://stockanalysis.com/ipos/2026/" target="_blank">StockAnalysis.com — All 2026 IPOs</a></li>
+      <li><a href="https://www.avalara.com/blog/en/north-america/2026/01/tariffs-2026-how-new-trade-rules-impact-business.html" target="_blank">Avalara — Tariffs 2026</a></li>
+      <li><a href="https://www.oxfordeconomics.com/webinar/tradeprism-outlook-the-year-ahead/" target="_blank">Oxford Economics — AI vs. Tariffs 2026</a></li>
+      <li><a href="https://fred.stlouisfed.org/series/DGS10" target="_blank">FRED (St. Louis Fed) — 10-Year Treasury Yield</a></li>
+      <li><a href="https://convextrade.com/metrics/bamlh0a0hym2" target="_blank">Convex / ICE BofA — High Yield OAS</a></li>
+      <li><a href="https://qz.com/jpmorgan-goldman-bank-of-america-citigroup-wells-fargo-record-profits-071426" target="_blank">Quartz — Banks Post Record Q2 2026 Profits</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/886982/000088698226000096/a1q26gsearningsresults.htm" target="_blank">Goldman Sachs — Official Q2 2026 8-K Filing</a></li>
+      <li><a href="https://www.rappler.com/technology/asml-raises-2026-forecast-expands-capacity-ai-chip-demand/" target="_blank">Rappler — ASML Raises 2026 Forecast</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html" target="_blank">CNBC — Stripe/Advent $53B PayPal Bid</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-13/oil-holds-gains-as-iran-stokes-inflation-worries-markets-wrap" target="_blank">Bloomberg — Markets Wrap, Soft CPI Curbs Hike Bets</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-15-2026" target="_blank">TheStreet — Stock Market Today, July 15 2026</a></li>
+    </ul>
+    <div class="refresh">📱 This is a static snapshot generated July 15, 2026. Markets move daily — reopen a chat with Claude and ask to "refresh my market dashboard" any morning for an updated version with the same layout. (A scheduled daily refresh is also set for 7:00 AM.)</div>
+    <div class="disclaimer">For educational and interview-preparation purposes only. Not investment advice or a recommendation to buy or sell any security. Figures are drawn from third-party news and data sources believed reliable but not independently verified for accuracy; always confirm current data before citing it in an interview.</div>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.85em%22 font-size=%2290%22>🏋️</text></svg>">
+<title>Forge — Workout & Meal Dashboard</title>
+<style>
+  :root{
+    --bg:#0f1115;
+    --bg-alt:#161923;
+    --card:#1a1e29;
+    --card-hover:#20242f;
+    --border:#2a2f3d;
+    --text:#e8eaf0;
+    --text-dim:#8b93a7;
+    --accent:#22c55e;
+    --accent-dim:#16532f;
+    --accent2:#f97316;
+    --accent2-dim:#5a3417;
+    --accent3:#3b82f6;
+    --accent3-dim:#1c3a63;
+    --danger:#ef4444;
+    --radius:12px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);padding-bottom:env(safe-area-inset-bottom);}
+  #app{max-width:1100px;margin:0 auto;padding:20px 16px 60px;padding-left:max(16px, env(safe-area-inset-left));padding-right:max(16px, env(safe-area-inset-right));}
+
+  .skip-link{position:absolute;left:8px;top:-48px;background:var(--accent);color:#08130b;padding:10px 14px;border-radius:8px;font-weight:700;font-size:13px;z-index:100;transition:top .15s;}
+  .skip-link:focus{top:8px;}
+
+  a,button,input,select{font-family:inherit;}
+  button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px;padding-top:max(0px, env(safe-area-inset-top));}
+  header h1{font-size:22px;margin:0;display:flex;align-items:center;gap:8px;}
+  header h1 span.logo{font-size:24px;}
+  header .date{color:var(--text-dim);font-size:14px;}
+
+  nav{position:sticky;top:0;z-index:20;display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px;background:var(--bg-alt);padding:6px;border-radius:var(--radius);border:1px solid var(--border);box-shadow:0 4px 12px rgba(0,0,0,0);}
+  nav button{flex:1;min-width:90px;min-height:44px;background:transparent;border:none;color:var(--text-dim);padding:10px 12px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:.15s;}
+  nav button:hover{color:var(--text);background:var(--card-hover);}
+  nav button.active{background:var(--accent);color:#08130b;}
+  @media (max-width:480px){
+    nav{gap:4px;}
+    nav button{min-width:31%;font-size:12.5px;padding:10px 6px;}
+  }
+
+  .tab{display:none;animation:fade .2s ease;}
+  .tab.active{display:block;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+
+  .grid{display:grid;gap:14px;}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr);}
+  .grid.cols-2{grid-template-columns:repeat(2,1fr);}
+  @media (max-width:700px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr;}}
+
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;}
+  .card h3{margin:0 0 10px;font-size:14px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.04em;font-weight:600;}
+  .card h2{margin:0 0 12px;font-size:17px;}
+
+  .stat-value{font-size:28px;font-weight:700;}
+  .stat-sub{font-size:12px;color:var(--text-dim);margin-top:2px;}
+
+  .bar-bg{width:100%;height:8px;background:var(--bg-alt);border-radius:5px;overflow:hidden;margin-top:10px;}
+  .bar-fill{height:100%;border-radius:5px;transition:width .3s ease;}
+
+  form.inline{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;}
+  .field{display:flex;flex-direction:column;gap:4px;}
+  .field label{font-size:11px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.03em;}
+  input,select{background:var(--bg-alt);border:1px solid var(--border);color:var(--text);padding:11px 10px;border-radius:8px;font-size:16px;font-family:inherit;min-height:44px;width:100%;}
+  input:focus,select:focus{outline:none;border-color:var(--accent);}
+  form.inline input[type=number]{width:90px;}
+  form.inline input[type=date]{width:160px;}
+  form.inline input.name-field{width:180px;}
+  @media (max-width:480px){
+    form.inline input[type=number]{flex:1;min-width:70px;width:auto;}
+    form.inline input[type=date],form.inline input.name-field{width:100%;}
+    form.inline .field:has(input[type=date]),form.inline .field:has(input.name-field){flex:1 1 100%;}
+  }
+
+  button.btn{background:var(--accent);color:#08130b;border:none;padding:12px 18px;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;transition:.15s;min-height:44px;}
+  button.btn:hover{filter:brightness(1.08);}
+  button.btn.secondary{background:var(--card-hover);color:var(--text);border:1px solid var(--border);}
+  button.btn.small{padding:9px 12px;font-size:12.5px;min-height:40px;}
+  button.btn-icon{background:transparent;border:none;color:var(--text-dim);cursor:pointer;font-size:16px;padding:4px 8px;border-radius:6px;min-width:40px;min-height:40px;display:inline-flex;align-items:center;justify-content:center;}
+  button.btn-icon:hover{color:var(--danger);background:rgba(239,68,68,.1);}
+
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px;}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:520px;}
+  th{text-align:left;color:var(--text-dim);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.03em;padding:8px 8px;border-bottom:1px solid var(--border);white-space:nowrap;}
+  td{padding:11px 8px;border-bottom:1px solid var(--border);white-space:nowrap;}
+  tr:last-child td{border-bottom:none;}
+  .muted{color:var(--text-dim);}
+  .empty{color:var(--text-dim);font-size:13px;padding:16px 0;text-align:center;}
+
+  .tag{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600;}
+  .tag.chest{background:var(--accent2-dim);color:var(--accent2);}
+  .tag.back{background:var(--accent3-dim);color:var(--accent3);}
+  .tag.legs{background:var(--accent-dim);color:var(--accent);}
+  .tag.shoulders{background:#5a1750;color:#e879f9;}
+  .tag.arms{background:#5a4317;color:#facc15;}
+  .tag.core{background:#174f5a;color:#22d3ee;}
+  .tag.cardio{background:#5a1717;color:#f87171;}
+
+  .chart{display:flex;align-items:flex-end;gap:6px;height:120px;margin-top:10px;}
+  .chart .col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:6px;}
+  .chart .col .bar{width:100%;border-radius:4px 4px 0 0;min-height:2px;transition:height .3s ease;}
+  .chart .col .lbl{font-size:10px;color:var(--text-dim);}
+
+  .suggestion{display:flex;gap:12px;padding:14px;border-radius:10px;background:var(--bg-alt);border:1px solid var(--border);margin-bottom:10px;}
+  .suggestion .icon{font-size:20px;}
+  .suggestion .body b{display:block;margin-bottom:3px;font-size:13px;}
+  .suggestion .body span{font-size:12.5px;color:var(--text-dim);line-height:1.5;}
+  .suggestion.warn{border-color:#5a3417;}
+  .suggestion.good{border-color:var(--accent-dim);}
+
+  .tip-list{margin:0;padding-left:0;list-style:none;}
+  .tip-list li{padding:10px 0;border-bottom:1px solid var(--border);font-size:13.5px;line-height:1.6;display:flex;gap:10px;}
+  .tip-list li:last-child{border-bottom:none;}
+  .tip-list li .num{color:var(--accent);font-weight:700;flex-shrink:0;}
+
+  .quickadd{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+  .quickadd button{background:var(--bg-alt);border:1px solid var(--border);color:var(--text);padding:9px 14px;min-height:40px;border-radius:20px;font-size:13px;cursor:pointer;}
+  .quickadd button:hover{border-color:var(--accent);color:var(--accent);}
+
+  .footer-actions{display:flex;gap:8px;margin-top:20px;justify-content:flex-end;flex-wrap:wrap;}
+  .toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--accent);color:var(--text);padding:10px 18px;border-radius:8px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:50;max-width:calc(100vw - 32px);text-align:center;}
+  .toast.show{opacity:1;transform:translate(-50%,-6px);}
+
+  .goal-pills{display:flex;gap:8px;flex-wrap:wrap;}
+  .goal-pills button{flex:1;min-width:110px;min-height:44px;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-alt);color:var(--text-dim);cursor:pointer;font-size:13px;font-weight:600;}
+  .goal-pills button.active{background:var(--accent-dim);border-color:var(--accent);color:var(--accent);}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+<div id="app">
+
+  <header>
+    <h1><span class="logo">🏋️</span> Forge</h1>
+    <div class="date" id="todayLabel"></div>
+  </header>
+
+  <nav role="tablist" aria-label="Dashboard sections">
+    <button role="tab" aria-selected="true" aria-controls="tab-dashboard" id="navtab-dashboard" data-tab="dashboard" class="active">Dashboard</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-workout" id="navtab-workout" data-tab="workout" tabindex="-1">Log Workout</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-meal" id="navtab-meal" data-tab="meal" tabindex="-1">Log Meal</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-history" id="navtab-history" data-tab="history" tabindex="-1">History</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-suggestions" id="navtab-suggestions" data-tab="suggestions" tabindex="-1">Suggestions</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-settings" id="navtab-settings" data-tab="settings" tabindex="-1">Settings</button>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- DASHBOARD -->
+  <section class="tab active" id="tab-dashboard" role="tabpanel" aria-labelledby="navtab-dashboard">
+    <div class="grid cols-3" id="statCards"></div>
+
+    <div class="grid cols-2" style="margin-top:14px;">
+      <div class="card">
+        <h3>Calories — last 7 days</h3>
+        <div class="chart" id="chartCalories"></div>
+      </div>
+      <div class="card">
+        <h3>Protein (g) — last 7 days</h3>
+        <div class="chart" id="chartProtein"></div>
+      </div>
+    </div>
+
+    <div class="grid cols-2" style="margin-top:14px;">
+      <div class="card">
+        <h3>Workout volume (lb·reps) — last 7 days</h3>
+        <div class="chart" id="chartVolume"></div>
+      </div>
+      <div class="card">
+        <h3>Today's meals</h3>
+        <div id="todayMealsList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKOUT -->
+  <section class="tab" id="tab-workout" role="tabpanel" aria-labelledby="navtab-workout">
+    <div class="card">
+      <h2>Log an exercise</h2>
+      <form class="inline" id="workoutForm">
+        <div class="field"><label for="wDate">Date</label><input type="date" id="wDate" required></div>
+        <div class="field"><label for="wExercise">Exercise</label><input class="name-field" list="exerciseList" id="wExercise" placeholder="e.g. Bench Press" required></div>
+        <datalist id="exerciseList"></datalist>
+        <div class="field"><label for="wMuscle">Muscle group</label>
+          <select id="wMuscle">
+            <option value="chest">Chest</option>
+            <option value="back">Back</option>
+            <option value="legs">Legs</option>
+            <option value="shoulders">Shoulders</option>
+            <option value="arms">Arms</option>
+            <option value="core">Core</option>
+            <option value="cardio">Cardio</option>
+          </select>
+        </div>
+        <div class="field"><label for="wSets">Sets</label><input type="number" id="wSets" min="1" value="3" required></div>
+        <div class="field"><label for="wReps">Reps</label><input type="number" id="wReps" min="1" value="10" required></div>
+        <div class="field"><label for="wWeight">Weight (lb)</label><input type="number" id="wWeight" min="0" step="0.5" value="0"></div>
+        <button class="btn" type="submit">Add</button>
+      </form>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h2>Today's workout</h2>
+      <div id="workoutTableWrap"></div>
+    </div>
+  </section>
+
+  <!-- MEAL -->
+  <section class="tab" id="tab-meal" role="tabpanel" aria-labelledby="navtab-meal">
+    <div class="card">
+      <h2>Log a meal</h2>
+      <div class="quickadd" id="quickAddFoods"></div>
+      <form class="inline" id="mealForm">
+        <div class="field"><label for="mDate">Date</label><input type="date" id="mDate" required></div>
+        <div class="field"><label for="mName">Food / meal</label><input class="name-field" id="mName" placeholder="e.g. Chicken & rice" required></div>
+        <div class="field"><label for="mCal">Calories</label><input type="number" id="mCal" min="0" required></div>
+        <div class="field"><label for="mProtein">Protein (g)</label><input type="number" id="mProtein" min="0" value="0"></div>
+        <div class="field"><label for="mCarbs">Carbs (g)</label><input type="number" id="mCarbs" min="0" value="0"></div>
+        <div class="field"><label for="mFat">Fat (g)</label><input type="number" id="mFat" min="0" value="0"></div>
+        <button class="btn" type="submit">Add</button>
+      </form>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h2>Today's meals</h2>
+      <div id="mealTableWrap"></div>
+    </div>
+  </section>
+
+  <!-- HISTORY -->
+  <section class="tab" id="tab-history" role="tabpanel" aria-labelledby="navtab-history">
+    <div class="card">
+      <h2>Full history</h2>
+      <form class="inline" style="margin-bottom:14px;">
+        <div class="field"><label for="historyDate">Filter by date</label><input type="date" id="historyDate"></div>
+        <button class="btn secondary small" type="button" id="clearHistoryFilter">Clear filter</button>
+      </form>
+      <h3>Workouts</h3>
+      <div id="historyWorkoutWrap"></div>
+      <h3 style="margin-top:18px;">Meals</h3>
+      <div id="historyMealWrap"></div>
+    </div>
+    <div class="footer-actions">
+      <button class="btn secondary small" id="exportBtn">Export data (JSON)</button>
+      <button class="btn secondary small" id="importBtn">Import data</button>
+      <input type="file" id="importFile" accept="application/json" style="display:none;">
+    </div>
+  </section>
+
+  <!-- SUGGESTIONS -->
+  <section class="tab" id="tab-suggestions" role="tabpanel" aria-labelledby="navtab-suggestions">
+    <div class="card">
+      <h2>Personalized insights</h2>
+      <div id="dynamicSuggestions"></div>
+    </div>
+
+    <div class="grid cols-2" style="margin-top:14px;">
+      <div class="card">
+        <h2>💪 Building muscle</h2>
+        <ol class="tip-list" id="muscleTips"></ol>
+      </div>
+      <div class="card">
+        <h2>🥗 Eating healthier</h2>
+        <ol class="tip-list" id="eatingTips"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section class="tab" id="tab-settings" role="tabpanel" aria-labelledby="navtab-settings">
+    <div class="card">
+      <h2>Your profile & targets</h2>
+      <div class="grid cols-3">
+        <div class="field"><label for="sBodyweight">Bodyweight (lb)</label><input type="number" id="sBodyweight" min="50" step="0.5"></div>
+        <div class="field"><label for="sCalTarget">Daily calorie target</label><input type="number" id="sCalTarget" min="0" step="10"></div>
+        <div class="field"><label for="sProteinTarget">Daily protein target (g)</label><input type="number" id="sProteinTarget" min="0" step="1"></div>
+      </div>
+      <div style="margin-top:14px;">
+        <label id="goalLabel" style="font-size:11px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.03em;">Goal</label>
+        <div class="goal-pills" style="margin-top:6px;" id="goalPills" role="group" aria-labelledby="goalLabel">
+          <button type="button" data-goal="bulk" aria-pressed="false">Bulk (gain muscle)</button>
+          <button type="button" data-goal="maintain" aria-pressed="false">Maintain</button>
+          <button type="button" data-goal="cut" aria-pressed="false">Cut (lose fat)</button>
+        </div>
+      </div>
+      <p class="stat-sub" style="margin-top:12px;">Targets auto-suggest from bodyweight + goal, but you can overwrite either number any time.</p>
+      <div class="footer-actions" style="justify-content:flex-start;">
+        <button class="btn" id="saveSettingsBtn">Save settings</button>
+        <button class="btn secondary" id="autoCalcBtn">Auto-calculate targets</button>
+      </div>
+    </div>
+  </section>
+
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  const STORAGE_KEY = 'forgeDashboardData_v1';
+  const todayStr = () => new Date().toISOString().slice(0,10);
+
+  const defaultData = {
+    settings: { bodyweight: 175, calorieTarget: 2800, proteinTarget: 175, goal: 'bulk' },
+    workouts: [],
+    meals: []
+  };
+
+  function loadData(){
+    try{
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if(!raw) return JSON.parse(JSON.stringify(defaultData));
+      const parsed = JSON.parse(raw);
+      return Object.assign(JSON.parse(JSON.stringify(defaultData)), parsed);
+    }catch(e){ return JSON.parse(JSON.stringify(defaultData)); }
+  }
+  function saveData(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }
+
+  let data = loadData();
+
+  const COMMON_EXERCISES = ['Bench Press','Squat','Deadlift','Overhead Press','Barbell Row','Pull-up','Push-up','Lat Pulldown','Leg Press','Bicep Curl','Tricep Pushdown','Lunges','Plank','Running','Cycling','Dumbbell Shoulder Press','Incline Bench Press','Romanian Deadlift','Leg Curl','Leg Extension','Face Pull','Hip Thrust'];
+
+  const QUICK_FOODS = [
+    {name:'Chicken breast (6oz)', cal:280, protein:53, carbs:0, fat:6},
+    {name:'Greek yogurt (1 cup)', cal:150, protein:22, carbs:9, fat:4},
+    {name:'2 Eggs', cal:140, protein:12, carbs:1, fat:10},
+    {name:'Rice (1 cup cooked)', cal:205, protein:4, carbs:45, fat:0.5},
+    {name:'Protein shake', cal:150, protein:30, carbs:5, fat:2},
+    {name:'Salmon (6oz)', cal:350, protein:39, carbs:0, fat:21},
+    {name:'Oats (1 cup)', cal:300, protein:10, carbs:54, fat:5},
+    {name:'Banana', cal:105, protein:1, carbs:27, fat:0},
+    {name:'Almonds (1oz)', cal:165, protein:6, carbs:6, fat:14},
+    {name:'Broccoli (1 cup)', cal:55, protein:4, carbs:11, fat:0.5},
+  ];
+
+  function toast(msg){
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'), 1800);
+  }
+
+  // ---------- Tabs ----------
+  document.querySelectorAll('nav button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('nav button').forEach(b=>{
+        b.classList.remove('active');
+        b.setAttribute('aria-selected','false');
+        b.tabIndex = -1;
+      });
+      document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      btn.tabIndex = 0;
+      document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+      if(btn.dataset.tab==='dashboard') renderDashboard();
+      if(btn.dataset.tab==='history') renderHistory();
+      if(btn.dataset.tab==='suggestions') renderSuggestions();
+      if(btn.dataset.tab==='settings') renderSettings();
+    });
+  });
+
+  // ---------- Helpers ----------
+  function dayTotals(dateStr){
+    const meals = data.meals.filter(m=>m.date===dateStr);
+    const cal = meals.reduce((s,m)=>s+Number(m.cal||0),0);
+    const protein = meals.reduce((s,m)=>s+Number(m.protein||0),0);
+    const carbs = meals.reduce((s,m)=>s+Number(m.carbs||0),0);
+    const fat = meals.reduce((s,m)=>s+Number(m.fat||0),0);
+    const workouts = data.workouts.filter(w=>w.date===dateStr);
+    const volume = workouts.reduce((s,w)=>s+(Number(w.sets)*Number(w.reps)*Number(w.weight||0)),0);
+    return {cal, protein, carbs, fat, workoutCount: workouts.length, volume};
+  }
+  function last7Dates(){
+    const arr=[];
+    for(let i=6;i>=0;i--){
+      const d=new Date();
+      d.setDate(d.getDate()-i);
+      arr.push(d.toISOString().slice(0,10));
+    }
+    return arr;
+  }
+  function fmtDayLabel(dateStr){
+    const d = new Date(dateStr+'T00:00:00');
+    return d.toLocaleDateString(undefined,{weekday:'short'});
+  }
+
+  // ---------- Dashboard ----------
+  function renderDashboard(){
+    const t = dayTotals(todayStr());
+    const s = data.settings;
+    const calPct = Math.min(100, Math.round((t.cal/(s.calorieTarget||1))*100));
+    const protPct = Math.min(100, Math.round((t.protein/(s.proteinTarget||1))*100));
+
+    const weekWorkoutDates = new Set(data.workouts.filter(w=>last7Dates().includes(w.date)).map(w=>w.date));
+
+    document.getElementById('statCards').innerHTML = `
+      <div class="card">
+        <h3>Calories today</h3>
+        <div class="stat-value">${t.cal} <span style="font-size:14px;color:var(--text-dim);">/ ${s.calorieTarget}</span></div>
+        <div class="stat-sub">${calPct}% of daily target</div>
+        <div class="bar-bg"><div class="bar-fill" style="width:${calPct}%;background:var(--accent2);"></div></div>
+      </div>
+      <div class="card">
+        <h3>Protein today</h3>
+        <div class="stat-value">${t.protein}g <span style="font-size:14px;color:var(--text-dim);">/ ${s.proteinTarget}g</span></div>
+        <div class="stat-sub">${protPct}% of daily target</div>
+        <div class="bar-bg"><div class="bar-fill" style="width:${protPct}%;background:var(--accent);"></div></div>
+      </div>
+      <div class="card">
+        <h3>Workouts this week</h3>
+        <div class="stat-value">${weekWorkoutDates.size} <span style="font-size:14px;color:var(--text-dim);">days</span></div>
+        <div class="stat-sub">${t.workoutCount} exercise${t.workoutCount===1?'':'s'} logged today</div>
+      </div>
+    `;
+
+    const dates = last7Dates();
+    renderChart('chartCalories', dates.map(d=>({label:fmtDayLabel(d), value: dayTotals(d).cal})), s.calorieTarget, 'var(--accent2)');
+    renderChart('chartProtein', dates.map(d=>({label:fmtDayLabel(d), value: dayTotals(d).protein})), s.proteinTarget, 'var(--accent)');
+    const volumes = dates.map(d=>({label:fmtDayLabel(d), value: dayTotals(d).volume}));
+    const maxVol = Math.max(1, ...volumes.map(v=>v.value));
+    renderChart('chartVolume', volumes, maxVol, 'var(--accent3)');
+
+    const todaysMeals = data.meals.filter(m=>m.date===todayStr());
+    const wrap = document.getElementById('todayMealsList');
+    if(todaysMeals.length===0){
+      wrap.innerHTML = '<div class="empty">No meals logged today yet.</div>';
+    } else {
+      wrap.innerHTML = todaysMeals.map(m=>`
+        <div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:13px;">
+          <span>${escapeHtml(m.name)}</span>
+          <span class="muted">${m.cal} kcal · ${m.protein}g P</span>
+        </div>
+      `).join('');
+    }
+  }
+
+  function renderChart(containerId, points, maxVal, color){
+    const el = document.getElementById(containerId);
+    const max = Math.max(1, maxVal, ...points.map(p=>p.value));
+    el.innerHTML = points.map(p=>{
+      const h = Math.max(2, Math.round((p.value/max)*100));
+      return `<div class="col">
+        <div style="font-size:10px;color:var(--text-dim);">${p.value>0?p.value:''}</div>
+        <div class="bar" style="height:${h}%;background:${color};"></div>
+        <div class="lbl">${p.label}</div>
+      </div>`;
+    }).join('');
+  }
+
+  function escapeHtml(str){
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  // ---------- Workout tab ----------
+  document.getElementById('exerciseList').innerHTML = COMMON_EXERCISES.map(e=>`<option value="${e}">`).join('');
+  document.getElementById('wDate').value = todayStr();
+  document.getElementById('mDate').value = todayStr();
+
+  document.getElementById('workoutForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const w = {
+      id: Date.now(),
+      date: document.getElementById('wDate').value || todayStr(),
+      exercise: document.getElementById('wExercise').value.trim(),
+      muscle: document.getElementById('wMuscle').value,
+      sets: Number(document.getElementById('wSets').value),
+      reps: Number(document.getElementById('wReps').value),
+      weight: Number(document.getElementById('wWeight').value||0),
+    };
+    if(!w.exercise) return;
+    data.workouts.push(w);
+    saveData();
+    document.getElementById('wExercise').value='';
+    renderWorkoutTable();
+    toast('Workout logged 💪');
+  });
+
+  function renderWorkoutTable(){
+    const today = document.getElementById('wDate').value || todayStr();
+    const rows = data.workouts.filter(w=>w.date===today).sort((a,b)=>b.id-a.id);
+    const wrap = document.getElementById('workoutTableWrap');
+    if(rows.length===0){ wrap.innerHTML = '<div class="empty">No exercises logged for this date yet.</div>'; return; }
+    wrap.innerHTML = `<div class="table-scroll"><table>
+      <thead><tr><th>Exercise</th><th>Group</th><th>Sets</th><th>Reps</th><th>Weight</th><th></th></tr></thead>
+      <tbody>
+        ${rows.map(w=>`
+          <tr>
+            <td>${escapeHtml(w.exercise)}</td>
+            <td><span class="tag ${w.muscle}">${w.muscle}</span></td>
+            <td>${w.sets}</td>
+            <td>${w.reps}</td>
+            <td>${w.weight} lb</td>
+            <td><button class="btn-icon" data-del-workout="${w.id}" aria-label="Delete ${escapeHtml(w.exercise)}">✕</button></td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table></div>`;
+    wrap.querySelectorAll('[data-del-workout]').forEach(b=>{
+      b.addEventListener('click', ()=>{
+        data.workouts = data.workouts.filter(w=>w.id !== Number(b.dataset.delWorkout));
+        saveData(); renderWorkoutTable();
+      });
+    });
+  }
+  document.getElementById('wDate').addEventListener('change', renderWorkoutTable);
+
+  // ---------- Meal tab ----------
+  const quickAddWrap = document.getElementById('quickAddFoods');
+  quickAddWrap.innerHTML = QUICK_FOODS.map((f,i)=>`<button type="button" data-food="${i}">+ ${f.name}</button>`).join('');
+  quickAddWrap.querySelectorAll('button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const f = QUICK_FOODS[Number(b.dataset.food)];
+      document.getElementById('mName').value = f.name;
+      document.getElementById('mCal').value = f.cal;
+      document.getElementById('mProtein').value = f.protein;
+      document.getElementById('mCarbs').value = f.carbs;
+      document.getElementById('mFat').value = f.fat;
+    });
+  });
+
+  document.getElementById('mealForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const m = {
+      id: Date.now(),
+      date: document.getElementById('mDate').value || todayStr(),
+      name: document.getElementById('mName').value.trim(),
+      cal: Number(document.getElementById('mCal').value||0),
+      protein: Number(document.getElementById('mProtein').value||0),
+      carbs: Number(document.getElementById('mCarbs').value||0),
+      fat: Number(document.getElementById('mFat').value||0),
+    };
+    if(!m.name) return;
+    data.meals.push(m);
+    saveData();
+    ['mName','mCal','mProtein','mCarbs','mFat'].forEach(id=>document.getElementById(id).value='');
+    renderMealTable();
+    toast('Meal logged 🍽️');
+  });
+
+  function renderMealTable(){
+    const today = document.getElementById('mDate').value || todayStr();
+    const rows = data.meals.filter(m=>m.date===today).sort((a,b)=>b.id-a.id);
+    const wrap = document.getElementById('mealTableWrap');
+    if(rows.length===0){ wrap.innerHTML = '<div class="empty">No meals logged for this date yet.</div>'; return; }
+    wrap.innerHTML = `<div class="table-scroll"><table>
+      <thead><tr><th>Food</th><th>Cal</th><th>Protein</th><th>Carbs</th><th>Fat</th><th></th></tr></thead>
+      <tbody>
+        ${rows.map(m=>`
+          <tr>
+            <td>${escapeHtml(m.name)}</td>
+            <td>${m.cal}</td>
+            <td>${m.protein}g</td>
+            <td>${m.carbs}g</td>
+            <td>${m.fat}g</td>
+            <td><button class="btn-icon" data-del-meal="${m.id}" aria-label="Delete ${escapeHtml(m.name)}">✕</button></td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table></div>`;
+    wrap.querySelectorAll('[data-del-meal]').forEach(b=>{
+      b.addEventListener('click', ()=>{
+        data.meals = data.meals.filter(m=>m.id !== Number(b.dataset.delMeal));
+        saveData(); renderMealTable();
+      });
+    });
+  }
+  document.getElementById('mDate').addEventListener('change', renderMealTable);
+
+  // ---------- History ----------
+  function renderHistory(){
+    const filterDate = document.getElementById('historyDate').value;
+    const workouts = [...data.workouts].filter(w=>!filterDate || w.date===filterDate).sort((a,b)=>b.date.localeCompare(a.date) || b.id-a.id);
+    const meals = [...data.meals].filter(m=>!filterDate || m.date===filterDate).sort((a,b)=>b.date.localeCompare(a.date) || b.id-a.id);
+
+    const wWrap = document.getElementById('historyWorkoutWrap');
+    wWrap.innerHTML = workouts.length===0 ? '<div class="empty">No workout history yet.</div>' : `<div class="table-scroll"><table>
+      <thead><tr><th>Date</th><th>Exercise</th><th>Group</th><th>Sets×Reps</th><th>Weight</th></tr></thead>
+      <tbody>${workouts.map(w=>`<tr><td class="muted">${w.date}</td><td>${escapeHtml(w.exercise)}</td><td><span class="tag ${w.muscle}">${w.muscle}</span></td><td>${w.sets}×${w.reps}</td><td>${w.weight} lb</td></tr>`).join('')}</tbody>
+    </table></div>`;
+
+    const mWrap = document.getElementById('historyMealWrap');
+    mWrap.innerHTML = meals.length===0 ? '<div class="empty">No meal history yet.</div>' : `<div class="table-scroll"><table>
+      <thead><tr><th>Date</th><th>Food</th><th>Cal</th><th>Protein</th></tr></thead>
+      <tbody>${meals.map(m=>`<tr><td class="muted">${m.date}</td><td>${escapeHtml(m.name)}</td><td>${m.cal}</td><td>${m.protein}g</td></tr>`).join('')}</tbody>
+    </table></div>`;
+  }
+  document.getElementById('historyDate').addEventListener('change', renderHistory);
+  document.getElementById('clearHistoryFilter').addEventListener('click', ()=>{
+    document.getElementById('historyDate').value='';
+    renderHistory();
+  });
+
+  document.getElementById('exportBtn').addEventListener('click', ()=>{
+    const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = `forge-data-${todayStr()}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+  document.getElementById('importBtn').addEventListener('click', ()=>document.getElementById('importFile').click());
+  document.getElementById('importFile').addEventListener('change', e=>{
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = ()=>{
+      try{
+        const parsed = JSON.parse(reader.result);
+        data = Object.assign(JSON.parse(JSON.stringify(defaultData)), parsed);
+        saveData();
+        renderAll();
+        toast('Data imported ✅');
+      }catch(err){ toast('Import failed — invalid file'); }
+    };
+    reader.readAsText(file);
+  });
+
+  // ---------- Suggestions ----------
+  const MUSCLE_TIPS = [
+    'Eat in a slight calorie surplus (~10-20% above maintenance) — muscle growth needs raw material and energy, not just protein.',
+    'Aim for roughly 0.7-1g of protein per pound of bodyweight per day, spread across 3-5 meals for steady amino acid availability.',
+    'Prioritize progressive overload: add a little more weight, reps, or a set every week or two on your main lifts.',
+    'Train each muscle group at least twice a week — higher frequency beats a single weekly "bro split" for most natural lifters.',
+    'Compound lifts (squat, bench, deadlift, row, overhead press) should form the base of your program before accessory work.',
+    'Sleep 7-9 hours — most muscle repair and growth hormone release happens overnight, not in the gym.',
+    'Don\'t chase soreness; chase consistent progression. Soreness is not a reliable indicator of muscle growth.',
+    'Rest 48 hours before hitting the same muscle group again with heavy volume.',
+    'Track your lifts (this dashboard!) so you can objectively see whether you are progressing week over week.',
+    'Creatine monohydrate (3-5g/day) is one of the few supplements with strong evidence for strength and muscle gain.',
+  ];
+  const EATING_TIPS = [
+    'Build meals around a protein source first, then add fibrous carbs/veggies, then a fat source — it naturally balances macros.',
+    'Favor whole, minimally processed foods 80-90% of the time; the remaining 10-20% can flex for social meals or treats.',
+    'Hit your fiber target (25-35g/day) with vegetables, fruit, legumes, and whole grains to support digestion and satiety.',
+    'Hydrate — aim for roughly half your bodyweight (lb) in ounces of water daily, more on training days.',
+    'Plan/prep meals 2-3 days ahead so decision fatigue does not default you to fast food on busy days.',
+    'Don\'t fear carbs around workouts — they fuel performance and help shuttle nutrients into muscle.',
+    'Read labels for added sugar, not just calories — many "healthy" packaged snacks are sugar-dense.',
+    'Include healthy fats (olive oil, nuts, avocado, fatty fish) — they support hormone production, including testosterone.',
+    'If cutting, drop calories slowly (~10% below maintenance) to preserve muscle while losing fat.',
+    'Consistency over perfection: a sustainable 80%-good diet beats a "perfect" plan you abandon after two weeks.',
+  ];
+
+  function renderTipList(id, tips){
+    document.getElementById(id).innerHTML = tips.map((t,i)=>`<li><span class="num">${i+1}.</span><span>${t}</span></li>`).join('');
+  }
+
+  function renderSuggestions(){
+    renderTipList('muscleTips', MUSCLE_TIPS);
+    renderTipList('eatingTips', EATING_TIPS);
+
+    const s = data.settings;
+    const dates = last7Dates();
+    const totals = dates.map(dayTotals);
+    const avgCal = totals.reduce((a,t)=>a+t.cal,0)/7;
+    const avgProtein = totals.reduce((a,t)=>a+t.protein,0)/7;
+    const workoutDays = new Set(data.workouts.filter(w=>dates.includes(w.date)).map(w=>w.date)).size;
+    const loggedDays = totals.filter(t=>t.cal>0).length;
+
+    const daysSinceLastWorkout = (()=>{
+      if(data.workouts.length===0) return null;
+      const last = [...data.workouts].sort((a,b)=>b.date.localeCompare(a.date))[0].date;
+      const diff = Math.round((new Date(todayStr()) - new Date(last)) / 86400000);
+      return diff;
+    })();
+
+    const insights = [];
+
+    if(loggedDays===0){
+      insights.push({icon:'📝', kind:'warn', title:'Start logging to unlock insights', body:'Log a few meals and workouts and this page will start giving you tailored feedback based on your real numbers.'});
+    } else {
+      if(avgProtein < s.proteinTarget*0.8){
+        insights.push({icon:'🥩', kind:'warn', title:'Protein is running low', body:`You're averaging ${Math.round(avgProtein)}g/day vs a ${s.proteinTarget}g target over the last 7 days. Add a shake or another protein-dense meal to close the gap — it's the single biggest lever for muscle gain.`});
+      } else {
+        insights.push({icon:'✅', kind:'good', title:'Protein intake is on track', body:`Averaging ${Math.round(avgProtein)}g/day against your ${s.proteinTarget}g target. Keep it up.`});
+      }
+
+      if(s.goal==='bulk' && avgCal < s.calorieTarget*0.9 && avgCal>0){
+        insights.push({icon:'🍽️', kind:'warn', title:'Under-eating for your bulk goal', body:`Averaging ~${Math.round(avgCal)} kcal/day vs your ${s.calorieTarget} target. Without a calorie surplus, muscle gain will stall regardless of training.`});
+      }
+      if(s.goal==='cut' && avgCal > s.calorieTarget*1.1 && avgCal>0){
+        insights.push({icon:'⚠️', kind:'warn', title:'Averaging above your cut target', body:`~${Math.round(avgCal)} kcal/day vs a ${s.calorieTarget} target. Trim portion sizes or swap in lower-calorie-density foods to get back on track.`});
+      }
+
+      if(workoutDays===0){
+        insights.push({icon:'🛋️', kind:'warn', title:'No workouts logged this week', body:'Even 2-3 full-body sessions a week is enough to drive real muscle growth — try to get one in soon.'});
+      } else if(workoutDays<3){
+        insights.push({icon:'📈', kind:'warn', title:`Only ${workoutDays} training day(s) this week`, body:'Most natural lifters progress fastest training each muscle group twice a week — consider adding a session.'});
+      } else {
+        insights.push({icon:'🔥', kind:'good', title:`${workoutDays} training days this week`, body:'Solid frequency for muscle growth. Make sure you\'re progressively adding weight or reps on your main lifts.'});
+      }
+
+      if(daysSinceLastWorkout!==null && daysSinceLastWorkout>=4){
+        insights.push({icon:'⏰', kind:'warn', title:`It's been ${daysSinceLastWorkout} days since your last logged workout`, body:'Consistency compounds — a short session today keeps momentum better than waiting for the "perfect" one.'});
+      }
+    }
+
+    const wrap = document.getElementById('dynamicSuggestions');
+    wrap.innerHTML = insights.map(i=>`
+      <div class="suggestion ${i.kind}">
+        <div class="icon">${i.icon}</div>
+        <div class="body"><b>${i.title}</b><span>${i.body}</span></div>
+      </div>
+    `).join('');
+  }
+
+  // ---------- Settings ----------
+  function renderSettings(){
+    document.getElementById('sBodyweight').value = data.settings.bodyweight;
+    document.getElementById('sCalTarget').value = data.settings.calorieTarget;
+    document.getElementById('sProteinTarget').value = data.settings.proteinTarget;
+    document.querySelectorAll('#goalPills button').forEach(b=>{
+      const isActive = b.dataset.goal===data.settings.goal;
+      b.classList.toggle('active', isActive);
+      b.setAttribute('aria-pressed', String(isActive));
+    });
+  }
+  document.querySelectorAll('#goalPills button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      data.settings.goal = b.dataset.goal;
+      document.querySelectorAll('#goalPills button').forEach(x=>{
+        x.classList.remove('active');
+        x.setAttribute('aria-pressed','false');
+      });
+      b.classList.add('active');
+      b.setAttribute('aria-pressed','true');
+    });
+  });
+  document.getElementById('autoCalcBtn').addEventListener('click', ()=>{
+    const bw = Number(document.getElementById('sBodyweight').value)||175;
+    const goal = data.settings.goal;
+    const maintenance = bw*15;
+    let cal;
+    if(goal==='bulk') cal = Math.round(maintenance*1.15/10)*10;
+    else if(goal==='cut') cal = Math.round(maintenance*0.85/10)*10;
+    else cal = Math.round(maintenance/10)*10;
+    const protein = Math.round(bw*1.0);
+    document.getElementById('sCalTarget').value = cal;
+    document.getElementById('sProteinTarget').value = protein;
+    toast('Targets recalculated');
+  });
+  document.getElementById('saveSettingsBtn').addEventListener('click', ()=>{
+    data.settings.bodyweight = Number(document.getElementById('sBodyweight').value)||data.settings.bodyweight;
+    data.settings.calorieTarget = Number(document.getElementById('sCalTarget').value)||data.settings.calorieTarget;
+    data.settings.proteinTarget = Number(document.getElementById('sProteinTarget').value)||data.settings.proteinTarget;
+    saveData();
+    toast('Settings saved ✅');
+    renderDashboard();
+  });
+
+  // ---------- Init ----------
+  function renderAll(){
+    document.getElementById('todayLabel').textContent = new Date().toLocaleDateString(undefined,{weekday:'long', month:'long', day:'numeric', year:'numeric'});
+    renderDashboard();
+    renderWorkoutTable();
+    renderMealTable();
+    renderHistory();
+    renderSuggestions();
+    renderSettings();
+  }
+  renderAll();
+})();
+</script>
+</body>
+</html>

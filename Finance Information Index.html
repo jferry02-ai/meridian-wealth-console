@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian Portfolio Studio</title>
+<style>
+  :root{
+    --navy:#0B2545;
+    --navy-light:#13315C;
+    --navy-lighter:#1E4272;
+    --gold:#C9A227;
+    --gold-light:#E4C55C;
+    --bg:#F4F6F9;
+    --card:#FFFFFF;
+    --text:#1B2430;
+    --muted:#5B6B79;
+    --green:#1F9D55;
+    --red:#D64545;
+    --border:#E2E8EE;
+    --radius:12px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    display:flex;
+    min-height:100vh;
+  }
+  a{color:inherit;}
+
+  /* ---------- Sidebar ---------- */
+  .sidebar{
+    width:230px;
+    flex-shrink:0;
+    background:linear-gradient(180deg,var(--navy) 0%, var(--navy-light) 100%);
+    color:#fff;
+    position:sticky;
+    top:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    padding:24px 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:0 22px 22px 22px;
+    border-bottom:1px solid rgba(255,255,255,0.12);
+    margin-bottom:18px;
+  }
+  .brand-mark{
+    width:34px;height:34px;border-radius:8px;
+    background:linear-gradient(135deg,var(--gold),var(--gold-light));
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;color:var(--navy);font-size:16px;
+  }
+  .brand-name{font-size:16px;font-weight:700;letter-spacing:0.2px;}
+  .brand-sub{font-size:10.5px;color:rgba(255,255,255,0.55);letter-spacing:1px;text-transform:uppercase;margin-top:1px;}
+
+  .navlist{list-style:none;margin:0;padding:0;flex:1;}
+  .navlist li a{
+    display:flex;align-items:center;gap:10px;
+    padding:12px 22px;
+    font-size:13.5px;font-weight:600;
+    color:rgba(255,255,255,0.75);
+    text-decoration:none;
+    border-left:3px solid transparent;
+    cursor:pointer;
+  }
+  .navlist li a:hover{color:#fff;background:rgba(255,255,255,0.05);}
+  .navlist li a.active{color:#fff;border-left-color:var(--gold);background:rgba(255,255,255,0.07);}
+  .navlist .dot{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:0.6;}
+
+  .sidebar-foot{
+    padding:16px 22px 0 22px;
+    border-top:1px solid rgba(255,255,255,0.12);
+    font-size:11px;
+    color:rgba(255,255,255,0.45);
+    line-height:1.5;
+  }
+
+  /* ---------- Mobile topbar / hamburger (hidden on desktop) ---------- */
+  .mobile-topbar{display:none;}
+  .hamburger{
+    width:38px;height:38px;border-radius:8px;flex-shrink:0;
+    border:1px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.08);
+    color:#fff;font-size:18px;line-height:1;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+
+  /* ---------- Main ---------- */
+  .main{flex:1;padding:28px 36px 80px 36px;max-width:1200px;}
+  .page-header{margin-bottom:10px;}
+  .page-header h1{font-size:24px;margin:0 0 4px 0;color:var(--navy);}
+  .page-header p{margin:0;color:var(--muted);font-size:13.5px;}
+  #globalUpdated{font-size:12px;color:var(--muted);margin:8px 0 22px 0;}
+
+  section.panel{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:22px 24px;
+    margin-bottom:24px;
+    box-shadow:0 1px 2px rgba(16,24,40,0.04);
+  }
+  section.panel h2{
+    font-size:16px;margin:0 0 4px 0;color:var(--navy);
+    display:flex;align-items:center;gap:8px;
+  }
+  section.panel .panel-sub{color:var(--muted);font-size:12.5px;margin:0 0 16px 0;}
+
+  .badge{
+    display:inline-block;font-size:10px;font-weight:700;letter-spacing:0.4px;
+    padding:2px 8px;border-radius:20px;text-transform:uppercase;
+  }
+  .badge.demo{background:#FFF3D6;color:#8A6100;}
+  .badge.live{background:#E4F7EC;color:#177A43;}
+  .badge.buy{background:#E4F7EC;color:#177A43;}
+  .badge.strongbuy{background:#DFF3E4;color:#0F6B32;}
+  .badge.tag{background:#EAF0F8;color:var(--navy-light);}
+
+  /* ---------- Tabs / Mode switch ---------- */
+  .mode-switch{display:flex;gap:8px;margin-bottom:18px;}
+  .mode-btn{
+    flex:1;padding:12px 16px;border-radius:10px;border:1.5px solid var(--border);
+    background:#fafbfc;cursor:pointer;text-align:left;font-size:13px;
+  }
+  .mode-btn strong{display:block;font-size:14px;color:var(--navy);margin-bottom:2px;}
+  .mode-btn span{color:var(--muted);font-size:12px;}
+  .mode-btn.active{border-color:var(--gold);background:#FFFBF0;box-shadow:0 0 0 1px var(--gold) inset;}
+
+  /* ---------- Risk profile cards ---------- */
+  .profile-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+  .profile-card.expert{border-color:var(--gold);}
+  .profile-card.expert .split{color:var(--gold);}
+  .profile-card{
+    border:1.5px solid var(--border);border-radius:10px;padding:16px;cursor:pointer;
+    display:flex;flex-direction:column;gap:8px;background:#fafbfc;
+  }
+  .profile-card:hover{border-color:var(--navy-lighter);}
+  .profile-card.selected{border-color:var(--gold);background:#FFFBF0;box-shadow:0 0 0 1px var(--gold) inset;}
+  .profile-card h3{margin:0;font-size:14.5px;color:var(--navy);}
+  .profile-card .split{font-size:22px;font-weight:800;color:var(--navy-light);}
+  .profile-card p{margin:0;font-size:11.5px;color:var(--muted);line-height:1.4;}
+  .mini-bar{height:8px;border-radius:5px;background:var(--border);overflow:hidden;display:flex;}
+  .mini-bar .eq{background:var(--navy-light);}
+  .mini-bar .def{background:var(--gold);}
+
+  /* ---------- Builder table ---------- */
+  .filter-row{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center;}
+  .filter-row input[type=text]{
+    flex:1;min-width:160px;padding:9px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;
+  }
+  .chip{
+    padding:6px 12px;border-radius:20px;border:1px solid var(--border);background:#fafbfc;
+    font-size:12px;cursor:pointer;color:var(--muted);
+  }
+  .chip.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+
+  table.asset-table{width:100%;border-collapse:collapse;font-size:13px;}
+  table.asset-table th{
+    text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:0.4px;
+    color:var(--muted);border-bottom:1px solid var(--border);padding:8px 6px;
+  }
+  table.asset-table td{padding:8px 6px;border-bottom:1px solid #F0F2F5;vertical-align:middle;}
+  table.asset-table tr:hover td{background:#FAFBFD;}
+  .ticker-pill{font-weight:700;color:var(--navy);}
+  .asset-name{color:var(--muted);font-size:12px;}
+  .weight-input{width:64px;padding:5px 6px;border:1px solid var(--border);border-radius:6px;font-size:13px;text-align:right;}
+  .weight-input:disabled{background:#F4F6F9;color:#B7C0CA;}
+  input[type=checkbox]{width:16px;height:16px;accent-color:var(--navy);}
+
+  .builder-actions{display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap;}
+  .btn{
+    padding:10px 18px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;
+  }
+  .btn-primary{background:var(--navy);color:#fff;}
+  .btn-primary:hover{background:var(--navy-light);}
+  .btn-ghost{background:#fff;color:var(--navy);border:1px solid var(--border);}
+  .btn-ghost:hover{border-color:var(--navy-lighter);}
+  .weight-total{font-size:13px;font-weight:700;margin-left:auto;}
+  .weight-total.ok{color:var(--green);}
+  .weight-total.bad{color:var(--red);}
+
+  /* ---------- Results ---------- */
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px;}
+  .stat-card{
+    border:1px solid var(--border);border-radius:10px;padding:14px 16px;background:#fafbfc;
+  }
+  .stat-card .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;}
+  .stat-card .value{font-size:22px;font-weight:800;color:var(--navy);}
+  .stat-card .value.green{color:var(--green);}
+  .stat-card .value.red{color:var(--red);}
+  .stat-card .sub{font-size:11.5px;color:var(--muted);margin-top:3px;}
+
+  .chart-row{display:grid;grid-template-columns:2fr 1fr;gap:18px;align-items:stretch;}
+  .chart-box{border:1px solid var(--border);border-radius:10px;padding:16px;background:#fff;}
+  .chart-box h4{margin:0 0 10px 0;font-size:13px;color:var(--navy);}
+  .legend{display:flex;gap:16px;font-size:12px;margin-top:10px;flex-wrap:wrap;}
+  .legend-item{display:flex;align-items:center;gap:6px;}
+  .legend-swatch{width:10px;height:10px;border-radius:3px;}
+
+  .holdings-table{margin-top:20px;}
+
+  /* ---------- Picks / Movers ---------- */
+  .picks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+  .pick-card{border:1px solid var(--border);border-radius:10px;padding:15px;background:#fafbfc;}
+  .pick-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;}
+  .pick-head .ticker{font-size:16px;font-weight:800;color:var(--navy);}
+  .pick-head .upside{font-size:13px;font-weight:700;color:var(--green);}
+  .pick-head .upside.down{color:var(--red);}
+  .pick-name{font-size:11.5px;color:var(--muted);margin-bottom:8px;}
+  .pick-thesis{font-size:12.5px;line-height:1.5;color:var(--text);margin-bottom:10px;}
+  .pick-meta{display:flex;gap:6px;flex-wrap:wrap;font-size:10.5px;}
+
+  /* ---------- News ---------- */
+  .news-list{display:flex;flex-direction:column;gap:12px;}
+  .news-item{display:flex;gap:14px;padding:14px;border:1px solid var(--border);border-radius:10px;background:#fafbfc;}
+  .news-icon{
+    width:38px;height:38px;border-radius:8px;background:var(--navy);color:#fff;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px;
+  }
+  .news-body h4{margin:0 0 4px 0;font-size:13.5px;color:var(--navy);}
+  .news-body h4 a{color:inherit;text-decoration:none;}
+  .news-body h4 a:hover{text-decoration:underline;}
+  .news-body p{margin:0;font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .news-time{font-size:10.5px;color:#9AA7B2;margin-top:6px;}
+
+  /* ---------- Market Snapshot ---------- */
+  .market-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px;}
+  .market-card{border:1px solid var(--border);border-radius:10px;padding:13px 14px;background:#fafbfc;}
+  .market-card .m-name{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;}
+  .market-card .m-close{font-size:19px;font-weight:800;color:var(--navy);}
+  .market-card .m-change{font-size:12px;font-weight:700;margin-top:2px;}
+  .market-card .m-change.up{color:var(--green);}
+  .market-card .m-change.down{color:var(--red);}
+  .market-card .m-oc{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:8px;border-top:1px dashed var(--border);padding-top:8px;}
+  .market-card .m-oc span b{color:var(--text);font-weight:700;}
+
+  .table-scroll{max-height:440px;overflow-y:auto;border:1px solid var(--border);border-radius:8px;}
+  .table-scroll table.asset-table{margin:0;}
+  .table-scroll thead th{position:sticky;top:0;background:#fff;z-index:1;}
+
+  .disclaimer{
+    font-size:11px;color:var(--muted);background:#F7F9FB;border:1px dashed var(--border);
+    border-radius:8px;padding:10px 12px;margin-top:14px;line-height:1.5;
+  }
+
+  /* ---------- Nav groups ---------- */
+  .navgroup{
+    padding:14px 22px 6px 22px;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;
+    color:rgba(255,255,255,0.38);font-weight:700;
+  }
+
+  /* ---------- Economic Calendar ---------- */
+  .calendar-list{display:flex;flex-direction:column;gap:9px;}
+  .calendar-item{
+    display:flex;gap:12px;align-items:flex-start;padding:11px 13px;border-radius:10px;
+    border:1px solid var(--border);background:#fafbfc;
+  }
+  .calendar-item .c-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px;}
+  .calendar-item .c-sub{font-size:12px;color:var(--muted);line-height:1.4;}
+  .calendar-item .c-date{
+    flex-shrink:0;width:64px;font-size:11.5px;font-weight:700;color:var(--navy-light);
+    background:#EAF0F8;border-radius:7px;padding:6px 4px;text-align:center;line-height:1.3;
+  }
+
+  /* ---------- Return Factors ---------- */
+  .factors-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .factor-col h3{font-size:13.5px;margin:0 0 12px 0;display:flex;align-items:center;gap:8px;}
+  .factor-col.drive h3{color:var(--green);}
+  .factor-col.derail h3{color:var(--red);}
+  .factor-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;}
+  .factor-list li{
+    padding:11px 13px;border-radius:10px;border:1px solid var(--border);background:#fafbfc;font-size:12.5px;line-height:1.5;
+  }
+  .factor-list li b{display:block;font-size:12.5px;color:var(--text);margin-bottom:2px;}
+  .factor-list li span{color:var(--muted);}
+
+  /* ---------- Auto-Build panel ---------- */
+  .auto-panel{border:1.5px dashed var(--gold);border-radius:12px;padding:18px 20px;margin-top:20px;background:#FFFCF3;}
+  .auto-panel .auto-head{display:flex;align-items:center;gap:8px;margin-bottom:4px;}
+  .auto-panel .auto-head strong{font-size:14.5px;color:var(--navy);}
+  .auto-controls{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-end;margin-top:14px;}
+  .auto-field label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.4px;color:var(--muted);margin-bottom:6px;}
+  .age-input{width:90px;padding:9px 10px;border:1px solid var(--border);border-radius:8px;font-size:14px;font-weight:700;color:var(--navy);text-align:center;}
+  .risk-chip-row{display:flex;gap:6px;flex-wrap:wrap;}
+  .risk-chip{
+    padding:8px 13px;border-radius:8px;border:1.5px solid var(--border);background:#fff;
+    font-size:12px;font-weight:600;cursor:pointer;color:var(--muted);
+  }
+  .risk-chip.active{border-color:var(--navy);background:var(--navy);color:#fff;}
+  .auto-summary{margin-top:14px;font-size:12.5px;color:var(--text);background:#fff;border:1px solid var(--border);border-radius:8px;padding:12px 14px;display:none;line-height:1.6;}
+  .auto-summary strong{color:var(--navy);}
+
+  /* ---------- Comparison ---------- */
+  .compare-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-bottom:20px;}
+  .compare-card{border:1px solid var(--border);border-radius:10px;padding:15px 16px;background:#fafbfc;}
+  .compare-card.hero{border-color:var(--gold);background:#FFFBF0;}
+  .compare-card .cc-name{font-size:11px;text-transform:uppercase;letter-spacing:0.4px;color:var(--muted);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;}
+  .compare-card .cc-return{font-size:24px;font-weight:800;color:var(--navy);}
+  .compare-card .cc-return.green{color:var(--green);}
+  .compare-card .cc-return.red{color:var(--red);}
+  .compare-card .cc-sub{font-size:11.5px;color:var(--muted);margin-top:4px;}
+  .swatch-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+
+  .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .horizon-row{display:flex;gap:8px;align-items:center;margin:4px 0 16px 0;flex-wrap:wrap;}
+  .horizon-row .lbl{font-size:12px;color:var(--muted);margin-right:4px;}
+  .outlook-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .outlook-table th{text-align:left;font-size:10.5px;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border);padding:7px 8px;}
+  .outlook-table td{padding:9px 8px;border-bottom:1px solid #F0F2F5;}
+  .outlook-table td.num{text-align:right;font-variant-numeric:tabular-nums;}
+
+  .talking-point{
+    margin-top:8px;padding-top:8px;border-top:1px dashed var(--border);
+    font-size:11.5px;color:var(--muted);
+  }
+  .talking-point b{color:var(--gold-light);background:var(--navy);padding:1px 6px;border-radius:4px;font-size:9.5px;text-transform:uppercase;letter-spacing:0.4px;margin-right:6px;}
+
+  @media (max-width:980px){
+    .profile-grid{grid-template-columns:repeat(2,1fr);}
+    .stat-grid{grid-template-columns:repeat(2,1fr);}
+    .chart-row{grid-template-columns:1fr;}
+    .factors-grid{grid-template-columns:1fr;}
+    .compare-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- Mobile layout (phones / narrow tablets) ---------- */
+  @media (max-width:900px){
+    body{display:block;}
+
+    .mobile-topbar{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      position:sticky;top:0;z-index:60;
+      background:linear-gradient(180deg,var(--navy) 0%, var(--navy-light) 100%);
+      padding:12px 16px;
+    }
+    .mobile-topbar .brand{padding:0;margin:0;border-bottom:none;}
+    .mobile-topbar .brand-mark{width:30px;height:30px;font-size:14px;}
+    .mobile-topbar .brand-name{font-size:14px;}
+    .mobile-topbar .brand-sub{display:none;}
+
+    .sidebar{
+      display:none;
+      width:100%;height:auto;max-height:70vh;overflow-y:auto;
+      position:sticky;top:60px;z-index:55;
+      padding:6px 0 12px 0;
+    }
+    .sidebar.open{display:flex;}
+    .sidebar .brand{display:none;}
+
+    .main{padding:20px 16px 60px 16px;max-width:100%;}
+    .page-header h1{font-size:20px;}
+
+    table.asset-table, table.outlook-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;}
+    table.asset-table thead, table.asset-table tbody, table.outlook-table thead, table.outlook-table tbody{display:table;width:100%;}
+  }
+
+  @media (max-width:560px){
+    .profile-grid, .stat-grid, .picks-grid, .compare-cards, .market-grid{grid-template-columns:1fr;}
+    .mode-switch{flex-direction:column;}
+    .auto-controls{flex-direction:column;align-items:stretch;}
+    .builder-actions{flex-direction:column;align-items:stretch;}
+    .weight-total{margin-left:0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="mobile-topbar">
+  <div class="brand">
+    <div class="brand-mark">M</div>
+    <div>
+      <div class="brand-name">Meridian</div>
+    </div>
+  </div>
+  <button class="hamburger" onclick="toggleMobileNav()" aria-label="Toggle navigation">&#9776;</button>
+</div>
+
+<nav class="sidebar" id="sidebarNav">
+  <div class="brand">
+    <div class="brand-mark">M</div>
+    <div>
+      <div class="brand-name">Meridian</div>
+      <div class="brand-sub">Portfolio Studio</div>
+    </div>
+  </div>
+  <ul class="navlist">
+    <li class="navgroup">For Advisors</li>
+    <li><a href="#market" class="active">&#9679; Market Snapshot</a></li>
+    <li><a href="#briefing">&#9679; Client Briefing &amp; News</a></li>
+    <li><a href="#calendar">&#9679; Economic Calendar</a></li>
+    <li class="navgroup">Portfolio Builder</li>
+    <li><a href="#builder">&#9679; Build a Portfolio</a></li>
+    <li><a href="#performance">&#9679; Compare vs S&amp;P 500</a></li>
+    <li><a href="#factors">&#9679; Return Factors</a></li>
+    <li><a href="#picks">&#9679; Today's Top Movers</a></li>
+    <li><a href="#sources">&#9679; Data Sources</a></li>
+  </ul>
+  <div class="sidebar-foot">
+    Market Snapshot, Top Movers &amp; Briefing refresh on trading days.<br>Educational use only &mdash; not investment advice.
+  </div>
+</nav>
+
+<main class="main">
+
+  <div class="page-header">
+    <h1>Wealth Management Console</h1>
+    <p>A market briefing and portfolio-analysis tool for advisors, plus a Portfolio Builder your clients, family, or friends can use on their own to learn what returns they could reasonably expect.</p>
+  </div>
+  <div id="globalUpdated">Loading latest data&hellip;</div>
+
+  <!-- ============ MARKET SNAPSHOT ============ -->
+  <section class="panel" id="market">
+    <h2>Market Snapshot <span class="badge demo" id="marketBadge">Sample Data</span></h2>
+    <p class="panel-sub">Open / prior-close levels for key benchmarks. Commodities are shown via liquid ETF proxies (USO, GLD, SLV) rather than futures spot prices.</p>
+    <div class="market-grid" id="marketGrid"></div>
+  </section>
+
+  <!-- ============ BUILDER ============ -->
+  <section class="panel" id="builder">
+    <h2>1&nbsp;&middot;&nbsp; Build a Portfolio <span class="badge demo">Reference Estimates</span></h2>
+    <p class="panel-sub">Pick your own mix &mdash; top&#8209;100 market&#8209;cap stocks, S&amp;P&nbsp;500 ETFs, growth stocks, water reserves, bonds, dividend funds, international funds and more &mdash; or start from a risk-based or expert-recommended model portfolio. Then use the Auto-Build tool below to see what a wealth manager would suggest for your age and risk comfort.</p>
+
+    <div class="mode-switch">
+      <div class="mode-btn active" id="modeCustomBtn" onclick="setMode('custom')">
+        <strong>Build Your Own</strong>
+        <span>Hand-pick holdings and set target weights</span>
+      </div>
+      <div class="mode-btn" id="modeProfileBtn" onclick="setMode('profile')">
+        <strong>Risk-Based Model Portfolio</strong>
+        <span>Start from a Conservative &rarr; Aggressive allocation</span>
+      </div>
+    </div>
+
+    <!-- profile mode -->
+    <div id="profileMode" style="display:none;">
+      <div class="profile-grid" id="profileGrid"></div>
+    </div>
+
+    <!-- custom mode -->
+    <div id="customMode">
+      <div class="filter-row">
+        <input type="text" id="assetSearch" placeholder="Search ticker or name (e.g. NVDA, gold, bonds)&hellip;" oninput="renderAssetTable()">
+        <div class="chip active" data-cat="All" onclick="filterCat(this,'All')">All</div>
+        <div class="chip" data-cat="Top 100" onclick="filterCat(this,'Top 100')">Top 100 Mkt Cap</div>
+        <div class="chip" data-cat="S&amp;P 500" onclick="filterCat(this,'S&amp;P 500')">S&amp;P 500 ETFs</div>
+        <div class="chip" data-cat="Growth" onclick="filterCat(this,'Growth')">Growth Stocks</div>
+        <div class="chip" data-cat="Water" onclick="filterCat(this,'Water')">Water Reserves</div>
+        <div class="chip" data-cat="Bonds" onclick="filterCat(this,'Bonds')">Bonds</div>
+        <div class="chip" data-cat="Dividend" onclick="filterCat(this,'Dividend')">Dividend Funds</div>
+        <div class="chip" data-cat="International" onclick="filterCat(this,'International')">International</div>
+        <div class="chip" data-cat="Small Cap" onclick="filterCat(this,'Small Cap')">Small Cap</div>
+        <div class="chip" data-cat="Alternatives" onclick="filterCat(this,'Alternatives')">Alternatives</div>
+        <div class="chip" data-cat="Crypto" onclick="filterCat(this,'Crypto')">Crypto</div>
+        <div class="chip" data-cat="Cash" onclick="filterCat(this,'Cash')">Cash</div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="asset-table">
+          <thead>
+            <tr><th></th><th>Ticker</th><th>Category</th><th>Sector</th><th>5&#8209;Yr Ann. Return</th><th>Volatility</th><th>Target Weight %</th></tr>
+          </thead>
+          <tbody id="assetTableBody"></tbody>
+        </table>
+      </div>
+      <p style="font-size:11px;color:var(--muted);margin:8px 0 0 0;">Tip: search by sector too &mdash; try &ldquo;healthcare&rdquo;, &ldquo;semiconductors&rdquo; or &ldquo;financials&rdquo;.</p>
+
+      <div class="builder-actions">
+        <button class="btn btn-ghost" onclick="equalWeightSelected()">Equal-Weight Selected</button>
+        <button class="btn btn-ghost" onclick="normalizeWeights()">Normalize to 100%</button>
+        <button class="btn btn-ghost" onclick="clearSelection()">Clear</button>
+        <div class="weight-total" id="weightTotal">Total: 0%</div>
+      </div>
+    </div>
+
+    <div class="auto-panel">
+      <div class="auto-head">
+        <strong>2&nbsp;&middot;&nbsp; Auto-Build a Portfolio For Me</strong>
+        <span class="badge tag">Age &amp; Risk Based</span>
+      </div>
+      <p class="panel-sub" style="margin-bottom:0;">Answer two questions and we'll generate the mix wealth managers commonly recommend for that age and risk comfort &mdash; using the classic &ldquo;110&nbsp;minus&nbsp;your&nbsp;age&rdquo; glide path, tilted by how much risk you're comfortable taking.</p>
+      <div class="auto-controls">
+        <div class="auto-field">
+          <label>Your Age</label>
+          <input type="number" id="autoAge" class="age-input" min="18" max="100" value="35">
+        </div>
+        <div class="auto-field">
+          <label>Risk Comfort</label>
+          <div class="risk-chip-row" id="autoRiskRow">
+            <div class="risk-chip" data-risk="conservative" onclick="setAutoRisk(this,'conservative')">Conservative</div>
+            <div class="risk-chip" data-risk="moderate" onclick="setAutoRisk(this,'moderate')">Moderate</div>
+            <div class="risk-chip active" data-risk="balanced" onclick="setAutoRisk(this,'balanced')">Balanced</div>
+            <div class="risk-chip" data-risk="growth" onclick="setAutoRisk(this,'growth')">Growth</div>
+            <div class="risk-chip" data-risk="aggressive" onclick="setAutoRisk(this,'aggressive')">Aggressive</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="generateAutoPortfolio()">Generate My Portfolio</button>
+      </div>
+      <div class="auto-summary" id="autoSummary"></div>
+    </div>
+
+    <div class="builder-actions" style="margin-top:18px;border-top:1px solid var(--border);padding-top:16px;">
+      <button class="btn btn-primary" onclick="analyzePortfolio()">3&nbsp;&middot;&nbsp; Compare Portfolios vs. S&amp;P 500 &rarr;</button>
+      <span id="analyzeHint" style="font-size:12px;color:var(--muted);"></span>
+    </div>
+  </section>
+
+  <!-- ============ PERFORMANCE ============ -->
+  <section class="panel" id="performance">
+    <h2>Compare Portfolios vs. S&amp;P 500</h2>
+    <p class="panel-sub">Based on trailing 5-year historical reference returns per asset class / security (reviewed periodically, not a live daily backtest).</p>
+
+    <div id="resultsEmpty" style="color:var(--muted);font-size:13px;padding:20px 0;">
+      Build a portfolio above, generate an Auto-Built one (or both), then click <strong>Compare Portfolios vs. S&amp;P 500</strong> to see projected performance.
+    </div>
+
+    <div id="resultsContent" style="display:none;">
+      <div class="compare-cards" id="compareCards"></div>
+
+      <div class="chart-row">
+        <div class="chart-box">
+          <h4>Growth of $10,000 &middot; Trailing 5 Years</h4>
+          <div id="growthChart"></div>
+          <div class="legend" id="growthLegend"></div>
+        </div>
+        <div class="chart-box">
+          <h4>Allocation by Asset Type</h4>
+          <div class="compare-grid" id="donutRow"></div>
+        </div>
+      </div>
+
+      <div class="compare-grid" id="holdingsRow" style="margin-top:20px;"></div>
+
+      <div class="chart-box" style="margin-top:20px;" id="outlookPanel">
+        <h4>Long-Term Outlook &mdash; What Returns Could You Reasonably Expect?</h4>
+        <div class="horizon-row">
+          <span class="lbl">Projection horizon:</span>
+          <div class="chip" data-h="10" onclick="setHorizon(this,10)">10 Years</div>
+          <div class="chip active" data-h="20" onclick="setHorizon(this,20)">20 Years</div>
+          <div class="chip" data-h="30" onclick="setHorizon(this,30)">30 Years</div>
+        </div>
+        <table class="outlook-table" id="outlookTable"></table>
+        <p style="font-size:11px;color:var(--muted);margin-top:10px;">Projections compound each portfolio's estimated annualized return (and a range based on its volatility) forward from a $10,000 starting balance, assuming dividends/interest are reinvested and no further contributions. This is a simplified illustration, not a Monte Carlo simulation or a guarantee &mdash; see Return Factors below for what could change the outcome.</p>
+      </div>
+
+      <div class="disclaimer">
+        Approximate historical/annualized reference figures, reviewed periodically &mdash; not a live daily backtest. Volatility uses a simplified weighted-diversification estimate, not a full covariance model. Past performance does not guarantee future results. Not investment advice.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RETURN FACTORS ============ -->
+  <section class="panel" id="factors">
+    <h2>What Drives Returns &mdash; and What Could Derail Them</h2>
+    <p class="panel-sub">The context wealth managers walk clients through alongside any projection above &mdash; useful whether you're reading the numbers as an advisor or a first-time investor.</p>
+    <div class="factors-grid">
+      <div class="factor-col drive">
+        <h3>&#9650; Driving Factors Behind Returns</h3>
+        <ul class="factor-list">
+          <li><b>Corporate earnings &amp; economic growth</b><span>The primary long-run engine of equity returns &mdash; prices ultimately follow profits.</span></li>
+          <li><b>Starting valuation</b><span>The P/E multiple you pay matters: buying cheap tends to lead to higher forward returns, and vice versa.</span></li>
+          <li><b>Dividends &amp; reinvestment</b><span>Reinvested dividends have historically made up a large share of total long-run stock market returns.</span></li>
+          <li><b>Diversification &amp; asset allocation</b><span>The mix across stocks, bonds, international and alternatives explains most of the variation in long-term outcomes &mdash; more than individual security picks.</span></li>
+          <li><b>Time horizon &amp; compounding</b><span>Longer holding periods smooth out short-term volatility and let compounding do the heavy lifting.</span></li>
+          <li><b>Interest rate environment</b><span>Rates set the discount rate used to value future cash flows and directly drive bond prices.</span></li>
+          <li><b>Rebalancing discipline</b><span>Periodically selling what's run up and buying what's lagged keeps risk in line with the target and can add modest return over time.</span></li>
+          <li><b>Low costs</b><span>Expense ratios and trading costs compound negatively &mdash; a 1% annual fee difference can cost tens of thousands over decades.</span></li>
+        </ul>
+      </div>
+      <div class="factor-col derail">
+        <h3>&#9660; What Could Derail Them</h3>
+        <ul class="factor-list">
+          <li><b>Inflation</b><span>Erodes real purchasing power of returns, and hits fixed-rate bonds especially hard.</span></li>
+          <li><b>Interest rate shocks</b><span>Sudden Fed moves reprice both equity valuations and existing bond prices at the same time.</span></li>
+          <li><b>Recession / earnings contraction</b><span>A drop in corporate profits flows directly into lower stock prices.</span></li>
+          <li><b>Concentration risk</b><span>Too much in one stock, sector, or theme (including a hot thematic fund) magnifies drawdowns.</span></li>
+          <li><b>Behavioral mistakes / panic-selling</b><span>Missing just the market's 10 best days over a decade can cut long-run returns substantially.</span></li>
+          <li><b>Sequence-of-returns risk</b><span>Poor returns early in a withdrawal phase (e.g., early retirement) do outsized damage versus the same poor returns later.</span></li>
+          <li><b>High fees &amp; taxes</b><span>Compound negatively over decades, similar in magnitude to a permanent return drag.</span></li>
+          <li><b>Geopolitical &amp; policy shocks</b><span>Wars, tariffs, and elections can move markets quickly and unpredictably.</span></li>
+          <li><b>Currency risk</b><span>International holdings add a currency-translation swing on top of local market performance.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOP MOVERS ============ -->
+  <section class="panel" id="picks">
+    <h2>3&nbsp;&middot;&nbsp; Today's Top 5 Movers <span class="badge demo" id="picksBadge">Sample Data</span></h2>
+    <p class="panel-sub">Ranked by today's biggest price moves across our ~55-stock tracked universe &mdash; computed directly from real quotes, not analyst opinions or paid research (which isn't available on a free data plan).</p>
+    <div class="picks-grid" id="picksGrid"></div>
+  </section>
+
+  <!-- ============ MACRO BRIEFING ============ -->
+  <section class="panel" id="briefing">
+    <h2>Client Briefing &amp; News <span class="badge demo" id="newsBadge">Sample Data</span></h2>
+    <p class="panel-sub">What wealth managers scan each morning and share with clients &mdash; headlines relevant to portfolio valuations and forward returns, pulled from public finance news feeds. Each item includes a suggested client talking point.</p>
+    <div class="news-list" id="newsList"></div>
+    <div class="disclaimer">
+      Headlines and summaries are pulled automatically from public RSS feeds and tagged by simple keyword matching &mdash; treat tagging as approximate. Client talking points are generic, tag-based prompts, not personalized advice. Links go to the original publisher.
+    </div>
+  </section>
+
+  <!-- ============ ECONOMIC CALENDAR ============ -->
+  <section class="panel" id="calendar">
+    <h2>Upcoming Economic Calendar <span class="badge demo">Sample Data</span></h2>
+    <p class="panel-sub">The releases and events that tend to move markets &mdash; and the portfolio conversations worth having with clients ahead of each one.</p>
+    <div class="calendar-list">
+      <div class="calendar-item"><div class="c-date">JUL 30</div><div><div class="c-title">FOMC Rate Decision</div><div class="c-sub">Guidance here moves duration positioning and bond total-return assumptions across every portfolio on this page.</div></div></div>
+      <div class="calendar-item"><div class="c-date">AUG 1</div><div><div class="c-title">July Jobs Report</div><div class="c-sub">Watch wage growth for inflation-persistence signal ahead of the September meeting.</div></div></div>
+      <div class="calendar-item"><div class="c-date">AUG 13</div><div><div class="c-title">July CPI Release</div><div class="c-sub">Core inflation trend remains the key input for the Fed's next move and real-yield levels.</div></div></div>
+      <div class="calendar-item"><div class="c-date">AUG 24</div><div><div class="c-title">Jackson Hole Symposium</div><div class="c-sub">Fed Chair remarks often set the tone for September policy expectations.</div></div></div>
+    </div>
+    <div class="disclaimer">Illustrative sample dates and framing for demonstration purposes &mdash; not a live economic calendar feed.</div>
+  </section>
+
+  <!-- ============ DATA SOURCES ============ -->
+  <section class="panel" id="sources">
+    <h2>Data Sources &amp; Methodology</h2>
+    <p class="panel-sub">What's real, what's illustrative, and where each number would come from.</p>
+
+    <div style="font-size:12.5px;line-height:1.6;color:var(--text);">
+      <p><strong>Real, sourced data (when the daily pipeline is connected):</strong></p>
+      <ul style="margin:0 0 14px 0;padding-left:18px;">
+        <li><strong>Market Snapshot</strong> (indices, oil/gold/silver ETF proxies, Bitcoin, EUR/USD) &mdash; quotes from <a href="https://finnhub.io" target="_blank" rel="noopener">Finnhub</a> (free tier).</li>
+        <li><strong>10-Yr Treasury Yield</strong> &mdash; <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noopener">FRED (Federal Reserve Bank of St. Louis), series DGS10</a>, no API key required.</li>
+        <li><strong>Today's Top 5 Movers</strong> &mdash; computed directly from real Finnhub quotes across the ~55-stock tracked universe (biggest % price moves), not a third-party "picks" service.</li>
+        <li><strong>Daily Macro Briefing</strong> &mdash; public RSS feeds from <a href="https://finance.yahoo.com/news/rssindex" target="_blank" rel="noopener">Yahoo Finance</a> and <a href="https://www.cnbc.com" target="_blank" rel="noopener">CNBC Markets</a>. Category tags (Rates, Inflation, Labor, etc.) are assigned by simple keyword matching, not editorial judgment.</li>
+      </ul>
+
+      <p><strong>Illustrative / approximate (not pulled from a verified dataset):</strong></p>
+      <ul style="margin:0 0 14px 0;padding-left:18px;">
+        <li>The 5-year annualized return, volatility, and beta figures used in the Portfolio Builder and Performance sections (e.g., SPY 13.5%, NVDA 55%, BND 0.5%) are approximations constructed to be broadly plausible given known market history &mdash; the 2022 bond/equity selloff, the 2023&ndash;2025 AI-driven rally, etc. &mdash; not values retrieved from a specific pricing database. Treat them as rough planning assumptions, not verified historical statistics.</li>
+        <li>Whenever the live data pipeline hasn't run yet (or a fetch fails), Market Snapshot and Top Movers fall back to placeholder numbers clearly marked <span class="badge demo" style="vertical-align:middle;">Sample Data</span> instead of a <span class="badge live" style="vertical-align:middle;">Live</span> badge &mdash; check the badge on each section to know which you're looking at.</li>
+        <li>Volatility shown in the Performance section is a simplified weighted-diversification estimate, not a full covariance-matrix calculation.</li>
+        <li>The <strong>Economic Calendar</strong> section is illustrative sample content demonstrating the format &mdash; it is not a live calendar feed.</li>
+        <li>The <strong>Auto-Build</strong> tool's age/risk glide path ("110 minus age," adjusted by risk comfort) and category-to-ticker splits are a simplified, commonly-cited heuristic used for education, not a personalized recommendation from a licensed advisor.</li>
+        <li>The <strong>Long-Term Outlook</strong> projection compounds each portfolio's 5-year annualized reference return forward at a flat rate (with a volatility-based range) &mdash; it does not model sequence-of-returns risk, contributions/withdrawals, taxes, or fees.</li>
+      </ul>
+
+      <p style="margin:0;color:var(--muted);">This tool is for educational and planning purposes only. It is not investment advice, and no figure on this page should be treated as a guarantee or verified historical record.</p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+/* =========================================================
+   DATA
+   ========================================================= */
+const BUCKET_SHAPES = {
+  Equity:      [0.287, -0.181, 0.263, 0.250, 0.120],
+  Bonds:       [-0.015, -0.130, 0.055, 0.013, 0.045],
+  Alternative: [-0.036, 0.004, 0.131, 0.270, 0.150],
+  Crypto:      [0.600, -0.640, 1.560, 1.200, 0.350],
+  Cash:        [0.0005, 0.015, 0.050, 0.052, 0.048]
+};
+
+// bucket used to source the "shape" of year-to-year swings; cagr/beta tune the individual asset
+const ASSETS = [
+  {ticker:'SPY',  name:'S&P 500 ETF Trust',            type:'ETF',   bucket:'Equity',      cat:'S&P 500',      cagr:0.135, vol:0.17, beta:1.00, sector:'US Large Cap'},
+  {ticker:'QQQ',  name:'Invesco Nasdaq-100 ETF',        type:'ETF',   bucket:'Equity',      cat:'Growth',       cagr:0.175, vol:0.23, beta:1.30, sector:'US Large Cap Growth'},
+  {ticker:'VTI',  name:'Vanguard Total US Market ETF',  type:'ETF',   bucket:'Equity',      cat:'S&P 500',      cagr:0.130, vol:0.17, beta:0.98, sector:'US Total Market'},
+  {ticker:'IWM',  name:'iShares Russell 2000 ETF',      type:'ETF',   bucket:'Equity',      cat:'Small Cap',    cagr:0.080, vol:0.22, beta:1.15, sector:'US Small Cap'},
+  {ticker:'EFA',  name:'iShares MSCI EAFE ETF',         type:'ETF',   bucket:'Equity',      cat:'International',cagr:0.070, vol:0.17, beta:0.70, sector:'International Developed'},
+  {ticker:'VWO',  name:'Vanguard Emerging Markets ETF', type:'ETF',   bucket:'Equity',      cat:'International',cagr:0.045, vol:0.20, beta:0.75, sector:'Emerging Markets'},
+  {ticker:'PHO',  name:'Invesco Water Resources ETF',   type:'ETF',   bucket:'Equity',      cat:'Water',        cagr:0.095, vol:0.17, beta:0.75, sector:'Water Infrastructure'},
+  {ticker:'CGW',  name:'Invesco S&P Global Water Index ETF', type:'ETF', bucket:'Equity',   cat:'Water',        cagr:0.085, vol:0.16, beta:0.70, sector:'Global Water'},
+  {ticker:'VYM',  name:'Vanguard High Dividend Yield ETF', type:'ETF', bucket:'Equity',     cat:'Dividend',     cagr:0.100, vol:0.14, beta:0.80, sector:'US Dividend'},
+  {ticker:'SCHD', name:'Schwab US Dividend Equity ETF', type:'ETF',   bucket:'Equity',      cat:'Dividend',     cagr:0.110, vol:0.14, beta:0.78, sector:'US Dividend Quality'},
+  {ticker:'AAPL', name:'Apple Inc.',                    type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.145, vol:0.26, beta:1.10, sector:'Technology'},
+  {ticker:'MSFT', name:'Microsoft Corp.',               type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.170, vol:0.25, beta:1.15, sector:'Technology'},
+  {ticker:'GOOGL',name:'Alphabet Inc.',                 type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.140, vol:0.28, beta:1.20, sector:'Communication Services'},
+  {ticker:'AMZN', name:'Amazon.com Inc.',                type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.130, vol:0.32, beta:1.35, sector:'Consumer Discretionary'},
+  {ticker:'NVDA', name:'NVIDIA Corp.',                  type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.550, vol:0.55, beta:2.00, sector:'Semiconductors'},
+  {ticker:'META', name:'Meta Platforms Inc.',           type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.200, vol:0.40, beta:1.50, sector:'Communication Services'},
+  {ticker:'AVGO', name:'Broadcom Inc.',                 type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.350, vol:0.34, beta:1.40, sector:'Semiconductors'},
+  {ticker:'TSM',  name:'Taiwan Semiconductor Mfg.',     type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.220, vol:0.30, beta:1.20, sector:'Semiconductors'},
+  {ticker:'LLY',  name:'Eli Lilly and Co.',             type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.280, vol:0.29, beta:1.10, sector:'Healthcare'},
+  {ticker:'JPM',  name:'JPMorgan Chase &amp; Co.',      type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.150, vol:0.22, beta:0.90, sector:'Financials'},
+  {ticker:'JNJ',  name:'Johnson &amp; Johnson',         type:'Stock', bucket:'Equity',      cat:'Dividend',     cagr:0.050, vol:0.14, beta:0.50, sector:'Healthcare'},
+  {ticker:'KO',   name:'Coca-Cola Co.',                 type:'Stock', bucket:'Equity',      cat:'Dividend',     cagr:0.065, vol:0.13, beta:0.45, sector:'Consumer Staples'},
+  {ticker:'XOM',  name:'Exxon Mobil Corp.',             type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.160, vol:0.27, beta:0.85, sector:'Energy'},
+  {ticker:'ORCL', name:'Oracle Corp.',                  type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.240, vol:0.29, beta:1.15, sector:'Technology'},
+  {ticker:'CRM',  name:'Salesforce Inc.',               type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.100, vol:0.30, beta:1.20, sector:'Technology'},
+  {ticker:'ADBE', name:'Adobe Inc.',                    type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.080, vol:0.28, beta:1.10, sector:'Technology'},
+  {ticker:'AMD',  name:'Advanced Micro Devices Inc.',   type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.280, vol:0.45, beta:1.70, sector:'Semiconductors'},
+  {ticker:'INTC', name:'Intel Corp.',                   type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:-0.050,vol:0.35, beta:1.10, sector:'Semiconductors'},
+  {ticker:'CSCO', name:'Cisco Systems Inc.',            type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.090, vol:0.20, beta:0.80, sector:'Technology'},
+  {ticker:'IBM',  name:'International Business Machines',type:'Stock', bucket:'Equity',     cat:'Top 100',      cagr:0.130, vol:0.19, beta:0.70, sector:'Technology'},
+  {ticker:'NOW',  name:'ServiceNow Inc.',               type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.190, vol:0.30, beta:1.25, sector:'Technology'},
+  {ticker:'PLTR', name:'Palantir Technologies Inc.',    type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.650, vol:0.60, beta:1.90, sector:'Technology'},
+  {ticker:'CRWD', name:'CrowdStrike Holdings Inc.',     type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.300, vol:0.42, beta:1.50, sector:'Technology'},
+  {ticker:'NFLX', name:'Netflix Inc.',                  type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.270, vol:0.34, beta:1.30, sector:'Communication Services'},
+  {ticker:'DIS',  name:'Walt Disney Co.',               type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.020, vol:0.26, beta:1.10, sector:'Communication Services'},
+  {ticker:'TMUS', name:'T-Mobile US Inc.',              type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.190, vol:0.20, beta:0.70, sector:'Communication Services'},
+  {ticker:'TSLA', name:'Tesla Inc.',                    type:'Stock', bucket:'Equity',      cat:'Growth',       cagr:0.200, vol:0.55, beta:1.80, sector:'Consumer Discretionary'},
+  {ticker:'HD',   name:'Home Depot Inc.',               type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.100, vol:0.20, beta:0.90, sector:'Consumer Discretionary'},
+  {ticker:'MCD',  name:'McDonald&rsquo;s Corp.',        type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.080, vol:0.15, beta:0.55, sector:'Consumer Discretionary'},
+  {ticker:'NKE',  name:'Nike Inc.',                     type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:-0.020,vol:0.24, beta:0.90, sector:'Consumer Discretionary'},
+  {ticker:'SBUX', name:'Starbucks Corp.',               type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.030, vol:0.22, beta:0.80, sector:'Consumer Discretionary'},
+  {ticker:'PG',   name:'Procter &amp; Gamble Co.',      type:'Stock', bucket:'Equity',      cat:'Dividend',     cagr:0.070, vol:0.13, beta:0.45, sector:'Consumer Staples'},
+  {ticker:'WMT',  name:'Walmart Inc.',                  type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.180, vol:0.16, beta:0.55, sector:'Consumer Staples'},
+  {ticker:'COST', name:'Costco Wholesale Corp.',        type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.200, vol:0.17, beta:0.70, sector:'Consumer Staples'},
+  {ticker:'PEP',  name:'PepsiCo Inc.',                  type:'Stock', bucket:'Equity',      cat:'Dividend',     cagr:0.040, vol:0.13, beta:0.45, sector:'Consumer Staples'},
+  {ticker:'BAC',  name:'Bank of America Corp.',         type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.120, vol:0.24, beta:1.00, sector:'Financials'},
+  {ticker:'WFC',  name:'Wells Fargo &amp; Co.',         type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.160, vol:0.24, beta:0.95, sector:'Financials'},
+  {ticker:'GS',   name:'Goldman Sachs Group Inc.',      type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.170, vol:0.25, beta:1.10, sector:'Financials'},
+  {ticker:'MS',   name:'Morgan Stanley',                type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.150, vol:0.24, beta:1.05, sector:'Financials'},
+  {ticker:'V',    name:'Visa Inc.',                     type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.130, vol:0.17, beta:0.85, sector:'Financials'},
+  {ticker:'MA',   name:'Mastercard Inc.',               type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.140, vol:0.17, beta:0.85, sector:'Financials'},
+  {ticker:'BRK.B',name:'Berkshire Hathaway Inc.',       type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.130, vol:0.15, beta:0.70, sector:'Financials'},
+  {ticker:'UNH',  name:'UnitedHealth Group Inc.',       type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.050, vol:0.22, beta:0.70, sector:'Healthcare'},
+  {ticker:'PFE',  name:'Pfizer Inc.',                   type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:-0.080,vol:0.20, beta:0.60, sector:'Healthcare'},
+  {ticker:'ABBV', name:'AbbVie Inc.',                   type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.120, vol:0.18, beta:0.60, sector:'Healthcare'},
+  {ticker:'MRK',  name:'Merck &amp; Co.',               type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.030, vol:0.18, beta:0.55, sector:'Healthcare'},
+  {ticker:'TMO',  name:'Thermo Fisher Scientific Inc.', type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.060, vol:0.20, beta:0.80, sector:'Healthcare'},
+  {ticker:'CVX',  name:'Chevron Corp.',                 type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.140, vol:0.24, beta:0.80, sector:'Energy'},
+  {ticker:'COP',  name:'ConocoPhillips',                type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.150, vol:0.28, beta:0.90, sector:'Energy'},
+  {ticker:'BA',   name:'Boeing Co.',                    type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:-0.030,vol:0.32, beta:1.10, sector:'Industrials'},
+  {ticker:'CAT',  name:'Caterpillar Inc.',              type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.190, vol:0.24, beta:1.00, sector:'Industrials'},
+  {ticker:'GE',   name:'General Electric Co.',          type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.280, vol:0.27, beta:1.10, sector:'Industrials'},
+  {ticker:'HON',  name:'Honeywell International Inc.',  type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.060, vol:0.17, beta:0.75, sector:'Industrials'},
+  {ticker:'NEE',  name:'NextEra Energy Inc.',           type:'Stock', bucket:'Equity',      cat:'Top 100',      cagr:0.020, vol:0.19, beta:0.60, sector:'Utilities'},
+  {ticker:'AWK',  name:'American Water Works Co.',      type:'Stock', bucket:'Equity',      cat:'Water',        cagr:0.090, vol:0.18, beta:0.55, sector:'Water Utilities'},
+  {ticker:'XLK',  name:'Technology Select Sector SPDR', type:'ETF',   bucket:'Equity',      cat:'Top 100',      cagr:0.200, vol:0.22, beta:1.15, sector:'Technology'},
+  {ticker:'XLF',  name:'Financial Select Sector SPDR',  type:'ETF',   bucket:'Equity',      cat:'Top 100',      cagr:0.130, vol:0.20, beta:0.95, sector:'Financials'},
+  {ticker:'XLE',  name:'Energy Select Sector SPDR',     type:'ETF',   bucket:'Equity',      cat:'Top 100',      cagr:0.150, vol:0.25, beta:0.85, sector:'Energy'},
+  {ticker:'BND',  name:'Vanguard Total Bond Market ETF',type:'Bond ETF', bucket:'Bonds',     cat:'Bonds',        cagr:0.005, vol:0.06, beta:0.90, sector:'US Aggregate Bonds'},
+  {ticker:'TLT',  name:'iShares 20+ Yr Treasury ETF',   type:'Bond ETF', bucket:'Bonds',     cat:'Bonds',        cagr:-0.020,vol:0.15, beta:1.70, sector:'Long-Term Treasuries'},
+  {ticker:'LQD',  name:'iShares Inv. Grade Corp. Bond ETF', type:'Bond ETF', bucket:'Bonds', cat:'Bonds',        cagr:0.015, vol:0.08, beta:1.00, sector:'Investment Grade Credit'},
+  {ticker:'HYG',  name:'iShares High Yield Corp. Bond ETF', type:'Bond ETF', bucket:'Bonds', cat:'Bonds',        cagr:0.040, vol:0.09, beta:0.60, sector:'High Yield Credit'},
+  {ticker:'GLD',  name:'SPDR Gold Shares',              type:'Alternative', bucket:'Alternative', cat:'Alternatives', cagr:0.130, vol:0.15, beta:1.00, sector:'Precious Metals'},
+  {ticker:'VNQ',  name:'Vanguard Real Estate ETF',      type:'Alternative', bucket:'Alternative', cat:'Alternatives', cagr:0.040, vol:0.20, beta:0.60, sector:'REITs'},
+  {ticker:'DBC',  name:'Invesco DB Commodity Index',    type:'Alternative', bucket:'Alternative', cat:'Alternatives', cagr:0.060, vol:0.18, beta:0.50, sector:'Broad Commodities'},
+  {ticker:'USO',  name:'United States Oil Fund',        type:'Alternative', bucket:'Alternative', cat:'Alternatives', cagr:0.055, vol:0.32, beta:0.45, sector:'Energy Commodities'},
+  {ticker:'SLV',  name:'iShares Silver Trust',          type:'Alternative', bucket:'Alternative', cat:'Alternatives', cagr:0.150, vol:0.30, beta:1.30, sector:'Precious Metals'},
+  {ticker:'BTC',  name:'Bitcoin (spot proxy)',          type:'Crypto', bucket:'Crypto',      cat:'Crypto',       cagr:0.450, vol:0.65, beta:1.00, sector:'Digital Assets'},
+  {ticker:'CASH', name:'Cash &amp; Money Market',       type:'Cash',  bucket:'Cash',         cat:'Cash',         cagr:0.032, vol:0.01, beta:1.00, sector:'Cash Equivalents'}
+];
+
+const RISK_PROFILES = [
+  {
+    key:'conservative', name:'Conservative', split:'20 / 80', eqPct:20,
+    desc:'Capital preservation focus with modest growth exposure. Designed to limit drawdowns.',
+    allocation:{SPY:10, EFA:4, GLD:4, VNQ:2, BND:40, TLT:15, HYG:10, CASH:15}
+  },
+  {
+    key:'moderate', name:'Moderate', split:'40 / 60', eqPct:40,
+    desc:'Balanced tilt toward income and stability, with a meaningful equity sleeve for growth.',
+    allocation:{SPY:18, QQQ:6, EFA:6, VWO:4, GLD:4, VNQ:2, BND:30, TLT:10, HYG:10, CASH:10}
+  },
+  {
+    key:'growth', name:'Growth', split:'60 / 40', eqPct:60,
+    desc:'Equity-led allocation aimed at long-term appreciation while retaining a fixed-income buffer.',
+    allocation:{SPY:22, QQQ:12, EFA:8, VWO:6, GLD:4, VNQ:4, DBC:4, BND:20, TLT:8, HYG:8, CASH:4}
+  },
+  {
+    key:'aggressive', name:'Aggressive', split:'90 / 10', eqPct:90,
+    desc:'Maximum growth orientation with concentrated equity and thematic exposure. Higher volatility.',
+    allocation:{SPY:20, QQQ:20, NVDA:8, MSFT:8, AAPL:6, META:6, EFA:8, VWO:6, GLD:4, BTC:4, HYG:6, CASH:4}
+  },
+  {
+    key:'expert', name:'Expert Recommended', split:'70 / 30', eqPct:70, expert:true,
+    desc:'A core-satellite mix reflecting current guidance from major wealth-management research desks: broad U.S. core, quality dividend growth, international diversification, a real-assets/water inflation hedge, and high-grade bonds.',
+    allocation:{SPY:25, QQQ:10, VYM:10, SCHD:10, EFA:10, VWO:5, PHO:5, BND:15, TLT:5, GLD:5}
+  }
+];
+
+/* Fallback content shown until data/*.json is available (before first Action run, or if a fetch fails) */
+const FALLBACK_MARKET = [
+  {symbol:'SPX', name:'S&amp;P 500', open:6180.25, close:6225.40, prevClose:6180.25, fmt:'index'},
+  {symbol:'DJI', name:'Dow Jones Industrial', open:43850.10, close:44012.65, prevClose:43850.10, fmt:'index'},
+  {symbol:'IXIC',name:'Nasdaq Composite', open:20150.30, close:20341.85, prevClose:20150.30, fmt:'index'},
+  {symbol:'RUT', name:'Russell 2000', open:2230.40, close:2214.90, prevClose:2230.40, fmt:'index'},
+  {symbol:'VIX', name:'CBOE Volatility Index', open:14.20, close:13.85, prevClose:14.20, fmt:'price'},
+  {symbol:'WTI', name:'Crude Oil (USO ETF proxy)', open:68.20, close:69.05, prevClose:68.20, fmt:'price'},
+  {symbol:'XAU', name:'Gold (GLD ETF proxy)', open:2410.50, close:2428.10, prevClose:2410.50, fmt:'price'},
+  {symbol:'XAG', name:'Silver (SLV ETF proxy)', open:29.85, close:30.42, prevClose:29.85, fmt:'price'},
+  {symbol:'US10Y',name:'10-Yr Treasury Yield', open:4.28, close:4.31, prevClose:4.28, fmt:'yield'},
+  {symbol:'BTC', name:'Bitcoin (BTC/USD)', open:118500, close:121200, prevClose:118500, fmt:'price'},
+  {symbol:'EURUSD',name:'Euro / US Dollar', open:1.0850, close:1.0875, prevClose:1.0850, fmt:'fx'}
+];
+
+const FALLBACK_MOVERS = [
+  {ticker:'NVDA', name:'NVIDIA Corp.', sector:'Semiconductors', price:168.42, changePct:4.8},
+  {ticker:'LLY',  name:'Eli Lilly and Co.', sector:'Healthcare', price:912.15, changePct:3.1},
+  {ticker:'AVGO', name:'Broadcom Inc.', sector:'Semiconductors', price:251.30, changePct:2.7},
+  {ticker:'TSM',  name:'Taiwan Semiconductor Mfg.', sector:'Semiconductors', price:198.60, changePct:2.4},
+  {ticker:'JPM',  name:'JPMorgan Chase &amp; Co.', sector:'Financials', price:289.75, changePct:1.9}
+];
+
+const FALLBACK_NEWS = [
+  {tag:'Rates', icon:'FED', title:'Fed Holds Rates Steady, Signals Data-Dependent Path Ahead',
+   body:'Policymakers left the benchmark rate unchanged and reiterated a meeting-by-meeting approach, keeping duration-sensitive assets and rate-cut-sensitive equity sectors in focus.',
+   source:'Sample Briefing', published:'2026-07-13T16:00:00Z'},
+  {tag:'Inflation', icon:'CPI', title:'Core Inflation Continues to Moderate Toward Target',
+   body:'The latest core price data extended a cooling trend, reinforcing the market\'s soft-landing narrative and supporting valuations on longer-duration growth assets.',
+   source:'Sample Briefing', published:'2026-07-13T15:30:00Z'},
+  {tag:'Labor', icon:'JOB', title:'Labor Market Shows Resilient Hiring, Wage Growth Cools',
+   body:'Payroll growth remained positive while wage gains moderated, a combination markets have historically read as supportive for both equities and fixed income.',
+   source:'Sample Briefing', published:'2026-07-13T14:15:00Z'},
+  {tag:'Geopolitics', icon:'GEO', title:'Trade Policy Shifts Add Volatility to Global Supply Chains',
+   body:'Ongoing tariff and trade-policy negotiations are adding cross-currents to multinational earnings guidance, particularly for semiconductor and industrial exporters.',
+   source:'Sample Briefing', published:'2026-07-13T13:45:00Z'},
+  {tag:'Earnings', icon:'EPS', title:'Q2 Earnings Season Opens With Bank Results in Focus',
+   body:'Large-cap financials kick off the reporting cycle; net interest income trends and credit-loss provisions will help set the tone for broader market earnings revisions.',
+   source:'Sample Briefing', published:'2026-07-13T12:30:00Z'},
+  {tag:'Rates', icon:'10Y', title:'10-Year Treasury Yield Holds Near Recent Range',
+   body:'Long-end yields remain range-bound as investors weigh the Fed\'s path against fiscal issuance, a key variable for both bond total returns and equity valuation multiples.',
+   source:'Sample Briefing', published:'2026-07-13T11:00:00Z'}
+];
+
+/* live data populated at runtime from data/*.json, when available */
+let liveMarket = null;
+let liveMovers = null;
+let liveNews = null;
+
+/* =========================================================
+   PATH GENERATION (bisection to match target CAGR)
+   ========================================================= */
+function annualPath(asset){
+  const shape = BUCKET_SHAPES[asset.bucket];
+  const scaled = shape.map(s => s * asset.beta);
+  const target = Math.pow(1 + asset.cagr, 5);
+  let lo = -0.98, hi = 5;
+  let alpha = 0;
+  for(let i=0;i<80;i++){
+    alpha = (lo+hi)/2;
+    let prod = 1;
+    scaled.forEach(s => prod *= (1 + s + alpha));
+    if(prod < target) lo = alpha; else hi = alpha;
+  }
+  return scaled.map(s => s + alpha);
+}
+ASSETS.forEach(a => { a.path = annualPath(a); });
+const ASSET_MAP = {};
+ASSETS.forEach(a => ASSET_MAP[a.ticker] = a);
+const SPY = ASSET_MAP['SPY'];
+
+/* =========================================================
+   STATE
+   ========================================================= */
+let mode = 'custom';
+let activeCat = 'All';
+let weights = {}; // ticker -> weight number (percent)
+let selected = {}; // ticker -> bool
+let autoRiskKey = 'balanced';
+let autoAllocation = null; // ticker -> weight number (percent), or null until generated
+
+/* =========================================================
+   AUTO-BUILD (AGE + RISK)
+   ========================================================= */
+// equity sleeve split by risk comfort (must sum to 1.0)
+const EQUITY_SPLIT = {
+  conservative: {'S&P 500':0.30, 'Top 100':0.10, 'Growth':0.05, 'Dividend':0.30, 'International':0.20, 'Water':0.05},
+  moderate:     {'S&P 500':0.32, 'Top 100':0.15, 'Growth':0.13, 'Dividend':0.20, 'International':0.15, 'Water':0.05},
+  balanced:     {'S&P 500':0.30, 'Top 100':0.18, 'Growth':0.20, 'Dividend':0.14, 'International':0.13, 'Water':0.05},
+  growth:       {'S&P 500':0.28, 'Top 100':0.20, 'Growth':0.28, 'Dividend':0.08, 'International':0.11, 'Water':0.05},
+  aggressive:   {'S&P 500':0.22, 'Top 100':0.20, 'Growth':0.38, 'Dividend':0.03, 'International':0.12, 'Water':0.05}
+};
+// bond/cash sleeve split by risk comfort (must sum to 1.0)
+const BOND_SPLIT = {
+  conservative: {BND:0.65, TLT:0.10, CASH:0.25},
+  moderate:     {BND:0.70, TLT:0.15, CASH:0.15},
+  balanced:     {BND:0.75, TLT:0.20, CASH:0.05},
+  growth:       {BND:0.75, TLT:0.25, CASH:0.00},
+  aggressive:   {BND:0.70, TLT:0.30, CASH:0.00}
+};
+// how each equity "sleeve" is expressed as real tickers
+const CATEGORY_TICKERS = {
+  'S&P 500':      {SPY:1.0},
+  'Top 100':      {AAPL:0.25, MSFT:0.25, JPM:0.25, UNH:0.25},
+  'Growth':       {QQQ:0.70, NVDA:0.30},
+  'Dividend':     {SCHD:0.60, VYM:0.40},
+  'International':{EFA:0.65, VWO:0.35},
+  'Water':        {PHO:1.0}
+};
+const RISK_LABEL = {conservative:'Conservative', moderate:'Moderate', balanced:'Balanced', growth:'Growth', aggressive:'Aggressive'};
+
+function setAutoRisk(el, key){
+  autoRiskKey = key;
+  document.querySelectorAll('#autoRiskRow .risk-chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function buildAutoPortfolio(age, riskKey){
+  const riskShift = {conservative:-15, moderate:-5, balanced:0, growth:10, aggressive:20}[riskKey];
+  const equityPct = Math.max(10, Math.min(95, (110 - age) + riskShift));
+  const bondPct = 100 - equityPct;
+
+  const alloc = {};
+  const eqSplit = EQUITY_SPLIT[riskKey];
+  Object.entries(eqSplit).forEach(([cat, sleeveShare]) => {
+    const sleevePct = equityPct * sleeveShare;
+    Object.entries(CATEGORY_TICKERS[cat]).forEach(([ticker, tickerShare]) => {
+      alloc[ticker] = (alloc[ticker] || 0) + sleevePct * tickerShare;
+    });
+  });
+  const bondSplit = BOND_SPLIT[riskKey];
+  Object.entries(bondSplit).forEach(([ticker, share]) => {
+    if(share <= 0) return;
+    const pct = bondPct * share;
+    alloc[ticker] = (alloc[ticker] || 0) + pct;
+  });
+
+  return {alloc, equityPct, bondPct};
+}
+
+function generateAutoPortfolio(){
+  const age = Math.max(18, Math.min(100, parseInt(document.getElementById('autoAge').value, 10) || 35));
+  document.getElementById('autoAge').value = age;
+  const result = buildAutoPortfolio(age, autoRiskKey);
+  autoAllocation = result.alloc;
+
+  const summary = document.getElementById('autoSummary');
+  summary.style.display = 'block';
+  summary.innerHTML = `At age <strong>${age}</strong> with <strong>${RISK_LABEL[autoRiskKey]}</strong> risk comfort, wealth managers commonly suggest roughly
+    <strong>${result.equityPct.toFixed(0)}% growth-oriented assets</strong> (stocks/equity funds) and
+    <strong>${result.bondPct.toFixed(0)}% capital-preservation assets</strong> (bonds/cash) &mdash; following the common &ldquo;110 minus age&rdquo; glide path,
+    tilted for your risk comfort. Click <strong>Compare Portfolios vs. S&amp;P 500</strong> below to see projected returns.`;
+}
+
+/* =========================================================
+   MODE / PROFILE UI
+   ========================================================= */
+function setMode(m){
+  mode = m;
+  document.getElementById('modeCustomBtn').classList.toggle('active', m==='custom');
+  document.getElementById('modeProfileBtn').classList.toggle('active', m==='profile');
+  document.getElementById('customMode').style.display = m==='custom' ? 'block' : 'none';
+  document.getElementById('profileMode').style.display = m==='profile' ? 'block' : 'none';
+}
+
+function renderProfiles(){
+  const grid = document.getElementById('profileGrid');
+  grid.innerHTML = '';
+  RISK_PROFILES.forEach(p => {
+    const div = document.createElement('div');
+    div.className = 'profile-card' + (p.expert ? ' expert' : '');
+    div.id = 'profile_' + p.key;
+    div.onclick = () => selectProfile(p.key);
+    div.innerHTML = `
+      <h3>${p.name}${p.expert ? ' <span class="badge tag" style="background:#FFF3D6;color:#8A6100;">Analyst Pick</span>' : ''}</h3>
+      <div class="split">${p.split}</div>
+      <div class="mini-bar"><div class="eq" style="width:${p.eqPct}%"></div><div class="def" style="width:${100-p.eqPct}%"></div></div>
+      <p>${p.desc}</p>
+    `;
+    grid.appendChild(div);
+  });
+}
+let selectedProfileKey = null;
+function selectProfile(key){
+  selectedProfileKey = key;
+  RISK_PROFILES.forEach(p => document.getElementById('profile_'+p.key).classList.toggle('selected', p.key===key));
+}
+
+/* =========================================================
+   CUSTOM BUILDER TABLE
+   ========================================================= */
+function filterCat(el, cat){
+  activeCat = cat;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  renderAssetTable();
+}
+
+function renderAssetTable(){
+  const q = document.getElementById('assetSearch').value.trim().toLowerCase();
+  const body = document.getElementById('assetTableBody');
+  body.innerHTML = '';
+  ASSETS.filter(a => {
+    if(activeCat !== 'All' && a.cat !== activeCat) return false;
+    if(q && !(a.ticker.toLowerCase().includes(q) || a.name.toLowerCase().includes(q) || a.sector.toLowerCase().includes(q) || a.cat.toLowerCase().includes(q))) return false;
+    return true;
+  }).forEach(a => {
+    const tr = document.createElement('tr');
+    const checked = selected[a.ticker] ? 'checked' : '';
+    const wt = weights[a.ticker] || '';
+    tr.innerHTML = `
+      <td><input type="checkbox" ${checked} onchange="toggleAsset('${a.ticker}', this.checked)"></td>
+      <td><span class="ticker-pill">${a.ticker}</span><br><span class="asset-name">${a.name}</span></td>
+      <td><span class="badge tag">${a.cat}</span></td>
+      <td class="asset-name">${a.sector}</td>
+      <td>${(a.cagr*100).toFixed(1)}%</td>
+      <td>${(a.vol*100).toFixed(1)}%</td>
+      <td><input type="number" class="weight-input" min="0" max="100" step="1" value="${wt}"
+            ${selected[a.ticker] ? '' : 'disabled'}
+            onchange="setWeight('${a.ticker}', this.value)"></td>
+    `;
+    body.appendChild(tr);
+  });
+  updateWeightTotal();
+}
+
+function toggleAsset(ticker, checked){
+  selected[ticker] = checked;
+  if(!checked){ delete weights[ticker]; }
+  renderAssetTable();
+}
+
+function setWeight(ticker, val){
+  weights[ticker] = parseFloat(val) || 0;
+  updateWeightTotal();
+}
+
+function updateWeightTotal(){
+  const total = Object.values(weights).reduce((a,b)=>a+b,0);
+  const el = document.getElementById('weightTotal');
+  el.textContent = 'Total: ' + total.toFixed(0) + '%';
+  el.className = 'weight-total ' + (Math.abs(total-100) < 0.6 ? 'ok' : 'bad');
+}
+
+function equalWeightSelected(){
+  const tickers = Object.keys(selected).filter(t => selected[t]);
+  if(tickers.length === 0) return;
+  const w = +(100 / tickers.length).toFixed(2);
+  tickers.forEach(t => weights[t] = w);
+  renderAssetTable();
+}
+
+function normalizeWeights(){
+  const tickers = Object.keys(selected).filter(t => selected[t]);
+  const total = tickers.reduce((s,t)=> s + (weights[t]||0), 0);
+  if(total <= 0) return;
+  tickers.forEach(t => weights[t] = +((weights[t]||0) / total * 100).toFixed(2));
+  renderAssetTable();
+}
+
+function clearSelection(){
+  selected = {}; weights = {};
+  renderAssetTable();
+}
+
+/* =========================================================
+   ANALYSIS
+   ========================================================= */
+function getPortfolioA(){
+  const hint = document.getElementById('analyzeHint');
+  if(mode === 'profile'){
+    if(!selectedProfileKey) return null;
+    const p = RISK_PROFILES.find(p => p.key === selectedProfileKey);
+    return {allocation: Object.assign({}, p.allocation), label: p.name + (p.expert ? '' : ' Model')};
+  }
+  const tickers = Object.keys(selected).filter(t => selected[t] && (weights[t]||0) > 0);
+  if(tickers.length === 0) return null;
+  const total = tickers.reduce((s,t)=> s + weights[t], 0);
+  if(Math.abs(total - 100) > 0.6){
+    hint.textContent = `Your custom weights total ${total.toFixed(0)}% — click "Normalize to 100%" or adjust before comparing.`;
+    hint.style.color = 'var(--red)';
+    return {error:true};
+  }
+  const allocation = {};
+  tickers.forEach(t => allocation[t] = weights[t]);
+  return {allocation, label:'Your Portfolio'};
+}
+
+function analyzePortfolio(){
+  const hint = document.getElementById('analyzeHint');
+  hint.textContent = '';
+  hint.style.color = '';
+
+  const a = getPortfolioA();
+  if(a && a.error) return; // hint already set
+  const b = autoAllocation ? {allocation: autoAllocation, label:'Auto-Built (Age & Risk)'} : null;
+
+  if(!a && !b){
+    hint.textContent = 'Build a portfolio above, or generate an Auto-Built one, before comparing.';
+    hint.style.color = 'var(--red)';
+    return;
+  }
+
+  computeAndRender(a, b);
+  document.getElementById('performance').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function computeSeries(allocationPct){
+  const entries = Object.entries(allocationPct).filter(([t,w]) => w > 0);
+  const wSum = entries.reduce((s,[,w])=>s+w,0);
+  const norm = entries.map(([t,w]) => [t, w / wSum]);
+
+  const portYears = [0,0,0,0,0];
+  norm.forEach(([t,w]) => {
+    const asset = ASSET_MAP[t];
+    asset.path.forEach((r,i) => portYears[i] += r * w);
+  });
+
+  const growth = [10000];
+  portYears.forEach(r => growth.push(growth[growth.length-1] * (1+r)));
+  const cagr = Math.pow(growth[5]/10000, 1/5) - 1;
+
+  // simplified volatility: weighted avg vol shrunk by a diversification factor based on holding count
+  const weightedVol = norm.reduce((s,[t,w]) => s + w * ASSET_MAP[t].vol, 0);
+  const n = norm.length;
+  const diversification = 0.55 + 0.45/n; // fewer holdings -> closer to 1 (no benefit); many -> shrinks
+  const vol = weightedVol * diversification;
+
+  return {norm, growth, cagr, vol};
+}
+
+let currentHorizon = 20;
+let lastSeries = null;
+
+function computeAndRender(a, b){
+  document.getElementById('resultsEmpty').style.display = 'none';
+  document.getElementById('resultsContent').style.display = 'block';
+
+  const spySeries = Object.assign({key:'spy', label:'S&P 500', color:'#C9A227'}, computeSeries({SPY:100}));
+  const portfolios = [];
+  if(a) portfolios.push(Object.assign({key:'a', label:a.label, color:'#0B2545'}, computeSeries(a.allocation)));
+  if(b) portfolios.push(Object.assign({key:'b', label:b.label, color:'#2E8B7C'}, computeSeries(b.allocation)));
+
+  const seriesList = [spySeries, ...portfolios];
+  lastSeries = seriesList;
+
+  renderCompareCards(seriesList);
+  drawGrowthChart(seriesList);
+  renderDonutRow(portfolios);
+  renderHoldingsRow(portfolios);
+  renderOutlookTable(seriesList, currentHorizon);
+}
+
+function renderCompareCards(seriesList){
+  const spyCagr = seriesList[0].cagr;
+  const container = document.getElementById('compareCards');
+  container.innerHTML = seriesList.map(s => {
+    const isSpy = s.key === 'spy';
+    const delta = s.cagr - spyCagr;
+    const riskLabel = s.vol < 0.06 ? 'Low risk' : s.vol < 0.11 ? 'Moderate risk' : s.vol < 0.18 ? 'Elevated risk' : 'High risk';
+    return `
+      <div class="compare-card ${s.key==='b' ? 'hero':''}">
+        <div class="cc-name"><span class="swatch-dot" style="background:${s.color};display:inline-block;margin-right:6px;"></span>${s.label}</div>
+        <div class="cc-return ${s.cagr>=0?'green':'red'}">${(s.cagr*100).toFixed(1)}%</div>
+        <div class="cc-sub">$10,000 &rarr; $${Math.round(s.growth[5]).toLocaleString()} &middot; 5-yr ann.</div>
+        <div class="cc-sub">${isSpy ? 'Benchmark' : (delta>=0?'+':'') + (delta*100).toFixed(1)+'% vs. S&P 500'}</div>
+        <div class="cc-sub">${riskLabel} &middot; ${(s.vol*100).toFixed(1)}% volatility (est.)</div>
+      </div>`;
+  }).join('');
+}
+
+function renderDonutRow(portfolios){
+  const row = document.getElementById('donutRow');
+  if(portfolios.length === 0){
+    row.innerHTML = '<p style="font-size:12px;color:var(--muted);grid-column:1/-1;">No custom or auto-built portfolio to break down &mdash; only the S&amp;P 500 benchmark was compared.</p>';
+    return;
+  }
+  row.innerHTML = portfolios.map(p => `
+    <div>
+      <div style="font-size:11.5px;color:var(--muted);text-align:center;margin-bottom:6px;font-weight:600;">${p.label}</div>
+      <div id="donut_${p.key}"></div>
+    </div>`).join('');
+  portfolios.forEach(p => drawDonutChart('donut_'+p.key, p.norm));
+}
+
+function renderHoldingsRow(portfolios){
+  const row = document.getElementById('holdingsRow');
+  if(portfolios.length === 0){ row.innerHTML = ''; return; }
+  row.innerHTML = portfolios.map(p => `
+    <div>
+      <h4 style="font-size:13px;color:var(--navy);margin:0 0 8px;">${p.label} &mdash; Holdings</h4>
+      <table class="asset-table holdings-table">
+        <thead><tr><th>Ticker</th><th>Name</th><th>Weight</th><th>5-Yr Ann. Return</th></tr></thead>
+        <tbody id="holdingsBody_${p.key}"></tbody>
+      </table>
+    </div>`).join('');
+  portfolios.forEach(p => {
+    const body = document.getElementById('holdingsBody_'+p.key);
+    const sorted = [...p.norm].sort((x,y) => y[1]-x[1]);
+    body.innerHTML = sorted.map(([t,w]) => {
+      const asset = ASSET_MAP[t];
+      return `<tr><td><span class="ticker-pill">${t}</span></td><td class="asset-name">${asset.name}</td><td>${(w*100).toFixed(1)}%</td><td>${(asset.cagr*100).toFixed(1)}%</td></tr>`;
+    }).join('');
+  });
+}
+
+function setHorizon(el, h){
+  currentHorizon = h;
+  document.querySelectorAll('#outlookPanel .chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  if(lastSeries) renderOutlookTable(lastSeries, currentHorizon);
+}
+
+function renderOutlookTable(seriesList, horizonYears){
+  const table = document.getElementById('outlookTable');
+  const rows = seriesList.map(s => {
+    const expected = 10000 * Math.pow(1+s.cagr, horizonYears);
+    const optimistic = 10000 * Math.pow(1+s.cagr+s.vol*0.4, horizonYears);
+    const pessimistic = 10000 * Math.pow(Math.max(1+s.cagr-s.vol*0.4, 0.02), horizonYears);
+    return `<tr>
+      <td><span class="swatch-dot" style="background:${s.color};display:inline-block;margin-right:6px;"></span>${s.label}</td>
+      <td class="num">$${Math.round(pessimistic).toLocaleString()}</td>
+      <td class="num" style="font-weight:700;color:var(--navy);">$${Math.round(expected).toLocaleString()}</td>
+      <td class="num">$${Math.round(optimistic).toLocaleString()}</td>
+    </tr>`;
+  }).join('');
+  table.innerHTML = `<thead><tr><th>Portfolio</th><th class="num">Pessimistic</th><th class="num">Expected</th><th class="num">Optimistic</th></tr></thead><tbody>${rows}</tbody>`;
+}
+
+/* =========================================================
+   CHARTS (inline SVG, no dependencies)
+   ========================================================= */
+function drawGrowthChart(seriesList){
+  const w = 480, h = 220, pad = 34;
+  const years = ['Start','Yr 1','Yr 2','Yr 3','Yr 4','Yr 5'];
+  const allVals = seriesList.flatMap(s => s.growth);
+  const minV = Math.min(...allVals) * 0.95;
+  const maxV = Math.max(...allVals) * 1.05;
+  const n = seriesList[0].growth.length;
+
+  const x = i => pad + (i/(n-1)) * (w - pad*2);
+  const y = v => h - pad - ((v-minV)/(maxV-minV)) * (h - pad*1.6);
+
+  function pathFor(arr){
+    return arr.map((v,i) => (i===0?'M':'L') + x(i).toFixed(1) + ',' + y(v).toFixed(1)).join(' ');
+  }
+
+  let gridLines = '';
+  for(let i=0;i<=4;i++){
+    const gy = pad*0.6 + i*((h-pad*1.6)/4);
+    gridLines += `<line x1="${pad}" y1="${gy.toFixed(1)}" x2="${w-pad}" y2="${gy.toFixed(1)}" stroke="#EDF0F4" stroke-width="1"/>`;
+  }
+
+  let xLabels = '';
+  years.forEach((yr,i) => {
+    xLabels += `<text x="${x(i).toFixed(1)}" y="${h-8}" font-size="10" fill="#9AA7B2" text-anchor="middle">${yr}</text>`;
+  });
+
+  const lines = seriesList.map(s => `
+    <path d="${pathFor(s.growth)}" fill="none" stroke="${s.color}" stroke-width="2.5"/>
+    ${s.growth.map((v,i)=>`<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="2.5" fill="${s.color}"/>`).join('')}
+  `).join('');
+
+  const svg = `
+  <svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}">
+    ${gridLines}
+    ${lines}
+    ${xLabels}
+  </svg>`;
+  document.getElementById('growthChart').innerHTML = svg;
+  document.getElementById('growthLegend').innerHTML = seriesList.map(s =>
+    `<div class="legend-item"><div class="legend-swatch" style="background:${s.color};"></div>${s.label}</div>`
+  ).join('');
+}
+
+const CAT_COLORS = {
+  Stock:'#0B2545', ETF:'#1E4272', 'Bond ETF':'#7C8CA6', Alternative:'#C9A227', Crypto:'#D64545', Cash:'#9AA7B2'
+};
+
+function drawDonutChart(containerId, norm){
+  const byCat = {};
+  norm.forEach(([t,w]) => {
+    const cat = ASSET_MAP[t].type;
+    byCat[cat] = (byCat[cat]||0) + w;
+  });
+  const entries = Object.entries(byCat).sort((a,b)=>b[1]-a[1]).map(([cat,w]) => [cat, w, CAT_COLORS[cat]||'#ccc']);
+  renderDonutSvg(containerId, entries);
+}
+
+function renderDonutSvg(containerId, entries){
+  const size = 180, r = 70, cx = size/2, cy = size/2, strokeW = 26;
+  const circ = 2 * Math.PI * r;
+  let offset = 0;
+  let circles = '';
+  entries.forEach(([label,w,color]) => {
+    const len = w * circ;
+    circles += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}"
+                 stroke-width="${strokeW}" stroke-dasharray="${len.toFixed(1)} ${(circ-len).toFixed(1)}"
+                 stroke-dashoffset="${(-offset).toFixed(1)}" transform="rotate(-90 ${cx} ${cy})"/>`;
+    offset += len;
+  });
+
+  const legend = entries.map(([label,w,color]) => `
+    <div class="legend-item"><div class="legend-swatch" style="background:${color}"></div>${label} &middot; ${(w*100).toFixed(0)}%</div>
+  `).join('');
+
+  const el = document.getElementById(containerId);
+  if(!el) return;
+  el.innerHTML = `
+    <svg viewBox="0 0 ${size} ${size}" width="100%" height="180" style="max-width:200px;display:block;margin:0 auto;">
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#F0F2F5" stroke-width="${strokeW}"/>
+      ${circles}
+    </svg>
+    <div class="legend" style="justify-content:center;">${legend}</div>
+  `;
+}
+
+/* =========================================================
+   MARKET SNAPSHOT / TOP MOVERS / NEWS  (live data + fallback)
+   ========================================================= */
+function fmtVal(v, fmt){
+  if(v === null || v === undefined) return '&mdash;';
+  if(fmt === 'yield') return v.toFixed(2) + '%';
+  if(fmt === 'fx') return v.toFixed(4);
+  return v >= 1000 ? v.toLocaleString(undefined,{maximumFractionDigits:2}) : v.toFixed(2);
+}
+
+function fmtUpdated(iso){
+  if(!iso) return '';
+  try{
+    const d = new Date(iso);
+    if(isNaN(d.getTime())) return '';
+    return d.toLocaleString(undefined,{month:'short', day:'numeric', hour:'numeric', minute:'2-digit'});
+  }catch(e){ return ''; }
+}
+
+function markLive(badgeId){
+  const badge = document.getElementById(badgeId);
+  if(!badge) return;
+  badge.textContent = 'Live';
+  badge.classList.remove('demo');
+  badge.classList.add('live');
+}
+
+function renderMarketSnapshot(){
+  const items = (liveMarket && liveMarket.items) || FALLBACK_MARKET;
+  if(liveMarket) markLive('marketBadge');
+  const grid = document.getElementById('marketGrid');
+  grid.innerHTML = items.map(m => {
+    const ref = (m.prevClose !== null && m.prevClose !== undefined) ? m.prevClose : m.open;
+    const chg = m.close - ref;
+    const pct = ref ? (chg / ref) * 100 : 0;
+    const up = chg >= 0;
+    const sign = up ? '+' : '';
+    const leftLabel = m.fmt === 'yield' ? 'Prior' : 'Open';
+    const rightLabel = m.fmt === 'yield' ? 'Latest' : 'Close';
+    const chgFmt = m.fmt === 'yield' ? 'yield' : (m.fmt === 'fx' ? 'fx' : 'price');
+    return `
+      <div class="market-card">
+        <div class="m-name">${m.symbol} &middot; ${m.name}</div>
+        <div class="m-close">${fmtVal(m.close, m.fmt)}</div>
+        <div class="m-change ${up?'up':'down'}">${up?'&#9650;':'&#9660;'} ${sign}${fmtVal(Math.abs(chg), chgFmt)} (${sign}${pct.toFixed(2)}%)</div>
+        <div class="m-oc">
+          <span>${leftLabel} <b>${fmtVal(m.open, m.fmt)}</b></span>
+          <span>${rightLabel} <b>${fmtVal(m.close, m.fmt)}</b></span>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderPicks(){
+  const items = (liveMovers && liveMovers.items) || FALLBACK_MOVERS;
+  if(liveMovers) markLive('picksBadge');
+  const grid = document.getElementById('picksGrid');
+  grid.innerHTML = items.map((p,i) => {
+    const up = p.changePct >= 0;
+    const sign = up ? '+' : '';
+    const price = (typeof p.price === 'number') ? p.price.toFixed(2) : p.price;
+    return `
+    <div class="pick-card">
+      <div class="pick-head">
+        <span class="ticker">${p.ticker}</span>
+        <span class="upside ${up?'':'down'}">${sign}${p.changePct.toFixed(2)}%</span>
+      </div>
+      <div class="pick-name">${p.name} &middot; ${p.sector}</div>
+      <div class="pick-thesis">Last price $${price} &middot; today's #${i+1} biggest mover in our tracked universe.</div>
+      <div class="pick-meta"><span class="badge tag">${p.sector}</span></div>
+    </div>`;
+  }).join('');
+}
+
+const TALKING_POINTS = {
+  Rates:        'Revisit clients’ bond-ladder yields and cash/money-market rates against where policy is headed.',
+  Inflation:    'Check that withdrawal/spending plans still use a realistic real (after-inflation) return assumption.',
+  Labor:        'A resilient labor market supports the soft-landing case underlying most return assumptions on this page.',
+  Geopolitics:  'Flag currency and supply-chain exposure in international and multinational holdings.',
+  Earnings:     'Tie sector-level beats/misses back to any concentrated single-stock positions in client accounts.',
+  Markets:      'Use as a natural opening for a portfolio check-in — is the current allocation still on target?',
+  Trade:        'Review multinational and international-fund exposure for tariff-related earnings risk.',
+  Fed:          'Rate-path changes are the single biggest lever on both bond total returns and equity valuations.',
+  Crypto:       'Confirm any crypto exposure stays within the small, high-volatility sleeve clients agreed to.',
+  Tech:         'Watch for concentration risk if growth/tech names have drifted above target weight after a rally.'
+};
+const DEFAULT_TALKING_POINT = 'Consider how this headline interacts with each client’s time horizon and risk comfort before acting on it.';
+
+function renderNews(){
+  const items = (liveNews && liveNews.items) || FALLBACK_NEWS;
+  if(liveNews) markLive('newsBadge');
+  const list = document.getElementById('newsList');
+  list.innerHTML = items.map(n => {
+    const icon = (n.icon || n.tag || 'NEWS').toString().slice(0,3).toUpperCase();
+    const titleHtml = n.link ? `<a href="${n.link}" target="_blank" rel="noopener">${n.title}</a>` : n.title;
+    const meta = [n.source, fmtUpdated(n.published)].filter(Boolean).join(' &middot; ');
+    const talkingPoint = TALKING_POINTS[n.tag] || DEFAULT_TALKING_POINT;
+    return `
+    <div class="news-item">
+      <div class="news-icon">${icon}</div>
+      <div class="news-body">
+        <span class="badge tag" style="margin-bottom:6px;">${n.tag}</span>
+        <h4>${titleHtml}</h4>
+        <p>${n.body||''}</p>
+        <div class="news-time">${meta}</div>
+        <div class="talking-point"><b>Client talking point</b>${talkingPoint}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function updateGlobalTimestamp(){
+  const stamps = [liveMarket&&liveMarket.updated, liveMovers&&liveMovers.updated, liveNews&&liveNews.updated].filter(Boolean);
+  const el = document.getElementById('globalUpdated');
+  if(stamps.length){
+    stamps.sort();
+    el.textContent = 'Live data last refreshed ' + fmtUpdated(stamps[stamps.length-1]) + '.';
+  } else {
+    el.textContent = 'Showing sample data — live daily updates begin once the data pipeline (see README) is connected.';
+  }
+}
+
+async function loadLiveData(){
+  const [market, movers, news] = await Promise.all([
+    fetch('data/market-data.json', {cache:'no-store'}).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch('data/movers.json', {cache:'no-store'}).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch('data/news.json', {cache:'no-store'}).then(r => r.ok ? r.json() : null).catch(() => null)
+  ]);
+  if(market && market.items) liveMarket = market;
+  if(movers && movers.items) liveMovers = movers;
+  if(news && news.items) liveNews = news;
+  renderMarketSnapshot();
+  renderPicks();
+  renderNews();
+  updateGlobalTimestamp();
+}
+
+/* =========================================================
+   NAV ACTIVE STATE
+   ========================================================= */
+function initNav(){
+  const links = document.querySelectorAll('.navlist a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      document.getElementById('sidebarNav').classList.remove('open');
+    });
+  });
+}
+
+function toggleMobileNav(){
+  document.getElementById('sidebarNav').classList.toggle('open');
+}
+
+/* =========================================================
+   INIT
+   ========================================================= */
+renderMarketSnapshot();
+renderProfiles();
+renderAssetTable();
+renderPicks();
+renderNews();
+initNav();
+updateGlobalTimestamp();
+loadLiveData();
+</script>
+</body>
+</html>
