@@ -12,24 +12,39 @@ A two-audience dashboard in one static page:
   a 10/20/30-year long-term outlook range, and a Return Factors section explaining what drives
   results and what could derail them.
 
-The site is a single static page (`index.html`). Market snapshot, top movers, and news refresh
-automatically once a day via a GitHub Actions workflow that fetches real data and commits it —
-no server to run, no manual uploading.
+The site is a single static page — the actual dashboard file is `Finance Information Index.html`;
+`index.html` is a one-line redirect to it so it still loads automatically at the site's root URL
+(required for GitHub Pages, and generally simplest for phones/browsers). Market snapshot, top
+movers, and news refresh automatically once a day via a GitHub Actions workflow that fetches real
+data and commits it — no server to run, no manual uploading.
 
-## One-time setup (~10 minutes)
+## Why you need to deploy this to see it on your phone
+
+This folder lives locally on your PC (inside OneDrive). OneDrive syncing the *file* to your phone
+is not the same as your phone's browser being able to *load and run* it — the OneDrive mobile app
+generally can't execute the page's JavaScript, so it won't work no matter how the page itself is
+built. The fix is to publish it to a real URL (GitHub Pages, below) that Safari/Chrome on your
+phone can open directly, from anywhere, without your PC needing to be on.
+
+## One-time setup (~3 minutes — the repo is already prepped)
+
+The local git repo is already initialized with everything committed (`git log` shows an
+"Initial commit"). All that's left is creating the GitHub repo and pushing to it.
 
 ### 1. Create a GitHub repository
-Create a new **public** repository on [github.com](https://github.com) (public is required for
-free GitHub Pages on a personal account) and push these files to it:
+Create a new **public** repository on [github.com](https://github.com/new) (public is required
+for free GitHub Pages on a personal account). **Do not** initialize it with a README, .gitignore,
+or license — leave it empty, since this folder already has its own commit history. Then, from
+this folder:
 
 ```
-git init
-git add .
-git commit -m "Initial commit"
 git branch -M main
 git remote add origin https://github.com/<your-username>/<repo-name>.git
 git push -u origin main
 ```
+
+> **In a hurry?** Steps 2–3 (live data) are optional — the page works fine on sample data without
+> them. Do step 1, then skip to step 4 to get your phone-friendly link.
 
 ### 2. Get a free Finnhub API key
 Sign up at [finnhub.io/register](https://finnhub.io/register) (free tier). Copy your API key
