@@ -1,6 +1,51 @@
 {
-  "updated": "2026-07-13T21:23:15+00:00",
+  "updated": "2026-07-16T06:07:38+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "World Cup gave bars and restaurants a needed boost as consumers flash warning signs, Fed says",
+      "body": "The latest edition of the Fed's Beige Book indicated that the soccer tournament wasn't necessarily translating to broader economic growth.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html",
+      "published": "2026-07-15T21:53:10+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline",
+      "body": "As with consumer prices, the index benefited from easing energy costs, particularly as oil fell due to the brief pause in tensions between the U.S. and Iran.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html",
+      "published": "2026-07-15T14:22:48+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Renewed Hormuz hostilities drive ECB rates rethink amid \u2018extremely volatile\u2019 outlook",
+      "body": "Several consecutive days of strikes exchanged between the U.S. and Iran have cast uncertainty on the European Central Bank's interest rate decision next week.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html",
+      "published": "2026-07-15T11:33:19+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China posts slowest quarterly growth since 2022 as investment slumps, fanning stimulus calls",
+      "body": "That second-quarter growth came below Beijing's full-year growth target range of 4.5% to 5%, the least ambitious goal in decades.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html",
+      "published": "2026-07-15T05:14:11+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Consumer prices rose 3.5% annually in June, less than expected as energy prices eased",
+      "body": "The consumer price index in June was expected to increase 3.8% from a year ago.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html",
+      "published": "2026-07-14T21:05:13+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -27,51 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html",
       "published": "2026-07-09T14:23:29+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "China consumer price growth weakens in June while producer inflation rises to near 4-year high",
-      "body": "Investors increasingly view China's two-speed growth with robust export and tepid domestic demand as a defining long-term feature of the Chinese economy.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/09/china-cpi-ppi-june-inflation-iran-war-.html",
-      "published": "2026-07-09T02:31:37+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Christine Lagarde leaves door open to early ECB exit, as she mulls French politics",
-      "body": "The European Central Bank's Christine Lagarde has declined to rule out an early end to her term as president, as she mulls a foray into French politics.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html",
-      "published": "2026-07-03T10:34:32+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
-      "body": "Nonfarm payrolls were expected to rise by 115,000 in June and the unemployment rate to hold steady at 4.3%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
-      "published": "2026-07-02T16:50:27+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Europe wants to rebalance trade with Beijing, but can't quit Chinese air conditioners",
-      "body": "A historic heat wave has driven unprecedented demand for Chinese-made air conditioners in Europe, underscoring the tough task Brussels faces in rebalancing trade with Beijing.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html",
-      "published": "2026-07-02T12:52:09+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "World Cup could boost the June jobs report by 40,000, Goldman estimates",
-      "body": "Nonfarm payrolls are projected to post a gain of 115,000, according to the Dow Jones consensus.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html",
-      "published": "2026-07-02T10:18:05+00:00"
     }
   ]
 }
