@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-17T06:06:50+00:00",
+  "updated": "2026-07-18T05:51:32+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "Import prices post surprise gain as costs of goods from China hit highest since 2008",
+      "body": "Import prices were up 0.3% for the month, as a drop in energy was more than offset by increases elsewhere.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html",
+      "published": "2026-07-17T14:13:49+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/13/india-june-inflation-oil-food-iran-war.html",
       "published": "2026-07-13T10:56:52+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
-      "body": "A drop in the unemployment rate helped provide some upside to what was an otherwise downbeat jobs report \u2014 but it was for all the wrong reasons.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html",
-      "published": "2026-07-09T14:23:29+00:00"
     }
   ]
 }
