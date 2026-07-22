@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-21T06:44:29+00:00",
+  "updated": "2026-07-22T06:46:11+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
+      "body": "The latest tariff salvo underscored Trump's goal of reshoring low-cost drug production, but displacing established suppliers like India won't be easy.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html",
+      "published": "2026-07-22T06:28:08+00:00"
+    },
     {
       "tag": "Geopolitics",
       "icon": "GEO",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/11/funflation-streaming-video-games-xbox-apple-disney-netflix.html",
       "published": "2026-07-13T15:20:06+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "India's inflation accelerates to 4.38% in June, exceeding forecasts",
-      "body": "Inflation has risen for the eighth straight month in India, as food and energy prices rise due to the Iran war and deficient rainfall.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/13/india-june-inflation-oil-food-iran-war.html",
-      "published": "2026-07-13T10:56:52+00:00"
     }
   ]
 }
