@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-22T06:46:11+00:00",
+  "updated": "2026-07-23T06:42:39+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
+      "body": "In five public appearances, Warsh has used the phrase \"family fight\" 13 times, returning to \"first principles\" 11 times and \"inflation is a choice\" for the Fed six times.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html",
+      "published": "2026-07-22T16:57:55+00:00"
+    },
     {
       "tag": "Geopolitics",
       "icon": "GEO",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html",
       "published": "2026-07-14T21:05:13+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "'Funflation' hits home: Why staying in isn't the cost-saver it used to be",
-      "body": "Following a wave of price hikes, at-home pastimes like streaming movies or playing video games are pinching pocketbooks.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/11/funflation-streaming-video-games-xbox-apple-disney-netflix.html",
-      "published": "2026-07-13T15:20:06+00:00"
     }
   ]
 }
