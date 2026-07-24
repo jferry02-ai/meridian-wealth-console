@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-23T06:42:39+00:00",
+  "updated": "2026-07-24T06:42:18+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "Trump's new global tariff draws rebukes from trade partners over forced-labor justification",
+      "body": "U.S. trading partners have rejected the forced-labor rationale behind Trump's new global tariffs, while most signaled plans to keep negotiating.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html",
+      "published": "2026-07-24T05:47:21+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html",
       "published": "2026-07-15T05:14:11+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Consumer prices rose 3.5% annually in June, less than expected as energy prices eased",
-      "body": "The consumer price index in June was expected to increase 3.8% from a year ago.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html",
-      "published": "2026-07-14T21:05:13+00:00"
     }
   ]
 }
