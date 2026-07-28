@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-25T06:07:17+00:00",
+  "updated": "2026-07-28T06:46:02+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
+      "body": "Unlike most central banks, the MAS manages medium-term price stability by managing the Singapore dollar exchange rate against a trade-weighted basket of currencies.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
+      "published": "2026-07-27T14:22:15+00:00"
+    },
     {
       "tag": "Geopolitics",
       "icon": "GEO",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html",
       "published": "2026-07-15T11:33:19+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China posts slowest quarterly growth since 2022 as investment slumps, fanning stimulus calls",
-      "body": "That second-quarter growth came below Beijing's full-year growth target range of 4.5% to 5%, the least ambitious goal in decades.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html",
-      "published": "2026-07-15T05:14:11+00:00"
     }
   ]
 }
