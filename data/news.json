@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-29T07:51:55+00:00",
+  "updated": "2026-07-30T07:22:40+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "What a divided Fed means for investors",
+      "body": "Wall Street has a clear takeaway from this week's Federal Reserve decision: A hike is likely on the horizon.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html",
+      "published": "2026-07-29T23:36:34+00:00"
+    },
     {
       "tag": "Inflation",
       "icon": "INF",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html",
       "published": "2026-07-15T14:22:48+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Renewed Hormuz hostilities drive ECB rates rethink amid \u2018extremely volatile\u2019 outlook",
-      "body": "Several consecutive days of strikes exchanged between the U.S. and Iran have cast uncertainty on the European Central Bank's interest rate decision next week.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html",
-      "published": "2026-07-15T11:33:19+00:00"
     }
   ]
 }
