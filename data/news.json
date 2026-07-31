@@ -1,6 +1,24 @@
 {
-  "updated": "2026-07-30T07:22:40+00:00",
+  "updated": "2026-07-31T08:17:09+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+      "body": "China's factory activity unexpectedly contracted in July, as the export rush that powered a second-quarter rebound began to unwind.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
+      "published": "2026-07-31T03:49:55+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
+      "body": "While the GDP number was below expectations, the miss appeared to come from a decline in federal government spending and inventories.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/30/us-economy-slowed-to-1point5percent-growth-rate-in-q2-june-core-inflation-at-3point3percent.html",
+      "published": "2026-07-30T15:04:43+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html",
       "published": "2026-07-17T14:13:49+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "World Cup gave bars and restaurants a needed boost as consumers flash warning signs, Fed says",
-      "body": "The latest edition of the Fed's Beige Book indicated that the soccer tournament wasn't necessarily translating to broader economic growth.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html",
-      "published": "2026-07-15T21:53:10+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline",
-      "body": "As with consumer prices, the index benefited from easing energy costs, particularly as oil fell due to the brief pause in tensions between the U.S. and Iran.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html",
-      "published": "2026-07-15T14:22:48+00:00"
     }
   ]
 }
