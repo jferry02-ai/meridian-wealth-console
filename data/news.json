@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-31T08:17:09+00:00",
+  "updated": "2026-08-01T06:48:01+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "As Warsh\u2019s Fed faces pressure to act on inflation, these indicators show it\u2019s at its lowest in years",
+      "body": "Trimmed mean measures are painting a different picture than the headline numbers.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html",
+      "published": "2026-07-31T16:51:30+00:00"
+    },
     {
       "tag": "Geopolitics",
       "icon": "GEO",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html",
       "published": "2026-07-22T06:28:08+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "Import prices post surprise gain as costs of goods from China hit highest since 2008",
-      "body": "Import prices were up 0.3% for the month, as a drop in energy was more than offset by increases elsewhere.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html",
-      "published": "2026-07-17T14:13:49+00:00"
     }
   ]
 }
