@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-01T06:48:01+00:00",
+  "updated": "2026-08-04T06:46:08+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
+      "body": "The commentary pointed to a highly volatile environment in which purchasing managers were struggling to stay ahead",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
+      "published": "2026-08-03T16:54:19+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html",
       "published": "2026-07-22T16:57:55+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
-      "body": "The latest tariff salvo underscored Trump's goal of reshoring low-cost drug production, but displacing established suppliers like India won't be easy.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html",
-      "published": "2026-07-22T06:28:08+00:00"
     }
   ]
 }
