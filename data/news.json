@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-04T06:46:08+00:00",
+  "updated": "2026-08-05T07:28:19+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Europe is blowing up riverbeds as an extreme drought wreaks havoc on its economy",
+      "body": "Severe drought is disrupting energy and freight across Europe as low Rhine and Danube levels raise risks for supply chains and economic growth.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html",
+      "published": "2026-08-05T07:15:17+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -8,7 +17,7 @@
       "body": "The commentary pointed to a highly volatile environment in which purchasing managers were struggling to stay ahead",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
-      "published": "2026-08-03T16:54:19+00:00"
+      "published": "2026-08-04T14:42:39+00:00"
     },
     {
       "tag": "Rates",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html",
       "published": "2026-07-24T12:09:09+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
-      "body": "In five public appearances, Warsh has used the phrase \"family fight\" 13 times, returning to \"first principles\" 11 times and \"inflation is a choice\" for the Fed six times.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html",
-      "published": "2026-07-22T16:57:55+00:00"
     }
   ]
 }
