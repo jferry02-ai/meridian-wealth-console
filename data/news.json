@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-05T07:28:19+00:00",
+  "updated": "2026-08-06T07:47:47+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Private companies added just 44,000 workers in July, below expectations, ADP reports",
+      "body": "Hiring at private companies slowed considerably in July, with most of the job growth coming health care.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html",
+      "published": "2026-08-05T15:08:46+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
       "published": "2026-07-27T14:22:15+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "Trump's new global tariff draws rebukes from trade partners over forced labor justification",
-      "body": "U.S. trading partners have rejected the forced labor rationale behind Trump's new global tariffs, while most signaled plans to keep negotiating.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html",
-      "published": "2026-07-24T12:09:09+00:00"
     }
   ]
 }
