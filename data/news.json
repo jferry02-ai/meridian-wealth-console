@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-06T07:47:47+00:00",
+  "updated": "2026-08-07T04:44:06+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "The July jobs numbers are due out Friday. Here's what to expect",
+      "body": "Nonfarm payrolls are expected to post a gain of just 83,000 with an unchanged unemployment rate at 4.2%.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html",
+      "published": "2026-08-06T20:15:22+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html",
       "published": "2026-07-29T23:36:34+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
-      "body": "Unlike most central banks, the MAS manages medium-term price stability by managing the Singapore dollar exchange rate against a trade-weighted basket of currencies.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
-      "published": "2026-07-27T14:22:15+00:00"
     }
   ]
 }
