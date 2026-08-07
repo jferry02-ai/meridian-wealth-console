@@ -1,6 +1,24 @@
 {
-  "updated": "2026-08-07T04:44:06+00:00",
+  "updated": "2026-08-07T23:19:15+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
+      "body": "Nonfarm payrolls were projected to increase by 83,000 in July while the unemployment rate would hold steady at 4.2%, according to the Dow Jones consensus.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html",
+      "published": "2026-08-07T19:14:22+00:00"
+    },
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "Here are three key takeaways from the disappointing July jobs report",
+      "body": "Nonfarm payrolls in the U.S. unexpectedly declined in July, but so did the unemployment rate, leaving investors with mixed signals.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html",
+      "published": "2026-08-07T18:09:18+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -8,7 +26,7 @@
       "body": "Nonfarm payrolls are expected to post a gain of just 83,000 with an unchanged unemployment rate at 4.2%.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html",
-      "published": "2026-08-06T20:15:22+00:00"
+      "published": "2026-08-07T11:23:07+00:00"
     },
     {
       "tag": "Markets",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
       "published": "2026-07-31T03:49:55+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
-      "body": "While the GDP number was below expectations, the miss appeared to come from a decline in federal government spending and inventories.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/30/us-economy-slowed-to-1point5percent-growth-rate-in-q2-june-core-inflation-at-3point3percent.html",
-      "published": "2026-07-30T15:04:43+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "What a divided Fed means for investors",
-      "body": "Wall Street has a clear takeaway from this week's Federal Reserve decision: A hike is likely on the horizon.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html",
-      "published": "2026-07-29T23:36:34+00:00"
     }
   ]
 }
