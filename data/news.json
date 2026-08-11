@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-10T23:19:57+00:00",
+  "updated": "2026-08-11T23:25:16+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "An inflation report Wednesday should be a big deal for the Fed. Here's what to expect",
+      "body": "The consumer price index is expected to show only a modest increase for July.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/11/an-inflation-report-wednesday-should-be-a-big-deal-for-the-fed-heres-what-to-expect.html",
+      "published": "2026-08-11T18:34:41+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html",
       "published": "2026-07-31T16:51:30+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
-      "body": "China's factory activity unexpectedly contracted in July, as the export rush that powered a second-quarter rebound began to unwind.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
-      "published": "2026-07-31T03:49:55+00:00"
     }
   ]
 }
