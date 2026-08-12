@@ -1,6 +1,51 @@
 {
-  "updated": "2026-08-11T23:25:16+00:00",
+  "updated": "2026-08-12T23:25:47+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "'Nobody wants it': Lettuce prices see record-setting plunge as cyclospora spooks consumers",
+      "body": "Lettuce prices posted their sharpest month-over-month decline on record as diners reconsider the vegetable amid the cyclospora outbreak.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html",
+      "published": "2026-08-12T19:50:29+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "U.S. budget deficit surged in July to highest level since March 2021",
+      "body": "Beyond the big single-month jump, the collective red ink over the 10 months of the fiscal year rose to nearly $1.8 trillion, surpassing the same period in 2025.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/12/us-budget-deficit-surged-in-july-to-highest-level-since-march-2021.html",
+      "published": "2026-08-12T18:56:15+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Here are five key takeaways from the July CPI inflation report",
+      "body": "Readings for July on the prices consumers pay for goods and services came in pretty much on target.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html",
+      "published": "2026-08-12T17:14:09+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "AI\u2019s costly build-out complicates the Fed\u2019s inflation fight",
+      "body": "Tech leaders say AI will drive down costs. But slow corporate adoption and the data center build-out create inflation pressures that complicate the Fed\u2019s job.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html",
+      "published": "2026-08-12T15:23:12+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
+      "body": "The consumer price index was expected to increase 0.1% in July, with an annual rate of 3.4%.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
+      "published": "2026-08-12T14:27:35+00:00"
+    },
     {
       "tag": "Inflation",
       "icon": "INF",
@@ -8,7 +53,7 @@
       "body": "The consumer price index is expected to show only a modest increase for July.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/11/an-inflation-report-wednesday-should-be-a-big-deal-for-the-fed-heres-what-to-expect.html",
-      "published": "2026-08-11T18:34:41+00:00"
+      "published": "2026-08-12T14:04:06+00:00"
     },
     {
       "tag": "Markets",
@@ -27,51 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html",
       "published": "2026-08-07T18:09:18+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "The July jobs numbers are due out Friday. Here's what to expect",
-      "body": "Nonfarm payrolls are expected to post a gain of just 83,000 with an unchanged unemployment rate at 4.2%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html",
-      "published": "2026-08-07T11:23:07+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Private companies added just 44,000 workers in July, below expectations, ADP reports",
-      "body": "Hiring at private companies slowed considerably in July, with most of the job growth coming health care.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html",
-      "published": "2026-08-05T15:08:46+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Europe is blowing up riverbeds as an extreme drought wreaks havoc on its economy",
-      "body": "Severe drought is disrupting energy and freight across Europe as low Rhine and Danube levels raise risks for supply chains and economic growth.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html",
-      "published": "2026-08-05T07:15:17+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
-      "body": "The commentary pointed to a highly volatile environment in which purchasing managers were struggling to stay ahead",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
-      "published": "2026-08-04T14:42:39+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "As Warsh\u2019s Fed faces pressure to act on inflation, these indicators show it\u2019s at its lowest in years",
-      "body": "Trimmed mean measures are painting a different picture than the headline numbers.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html",
-      "published": "2026-07-31T16:51:30+00:00"
     }
   ]
 }
