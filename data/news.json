@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-13T22:20:22+00:00",
+  "updated": "2026-08-14T21:51:51+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
+      "body": "The consumer price index was expected to increase 0.1% in July, with an annual rate of 3.4%.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
+      "published": "2026-08-14T14:53:13+00:00"
+    },
     {
       "tag": "Inflation",
       "icon": "INF",
@@ -54,15 +63,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html",
       "published": "2026-08-12T17:14:09+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
-      "body": "The consumer price index was expected to increase 0.1% in July, with an annual rate of 3.4%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
-      "published": "2026-08-12T14:27:35+00:00"
     },
     {
       "tag": "Inflation",
