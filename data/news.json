@@ -1,14 +1,32 @@
 {
-  "updated": "2026-08-19T21:52:46+00:00",
+  "updated": "2026-08-20T21:55:27+00:00",
   "items": [
     {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Trump bemoans Fed interest rate policy, says U.S. should be paying much less",
-      "body": "As he has done in the past, Trump accused Fed officials of having political motives.",
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Bessent's efforts in the Treasury market so far haven't worked. Here's what else he can try",
+      "body": "Market experts showed skepticism at whether the push would succeed against a bevy of factors working against Treasurys.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html",
-      "published": "2026-08-19T21:29:38+00:00"
+      "link": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html",
+      "published": "2026-08-20T21:13:14+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Bessent says there's a 'very good chance' U.S. budget deficit under Trump has peaked",
+      "body": "Treasury Secretary Scott Bessent said Thursday that there's a \"very good chance\" of the U.S. has seen its budget deficit peak under President Donald Trump.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/20/bessent-budget-deficit-trump.html",
+      "published": "2026-08-20T16:23:57+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Bessent says Treasury buyback operation could be more than $4 billion",
+      "body": "Bessent said his department is going \"make a market\" in the longer-dated securities where yields have been surging lately.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/20/bessent-says-treasury-buyback-operation-could-be-more-than-4-billion.html",
+      "published": "2026-08-20T15:35:33+00:00"
     },
     {
       "tag": "Markets",
@@ -17,7 +35,16 @@
       "body": "",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html",
-      "published": "2026-08-19T21:01:13+00:00"
+      "published": "2026-08-19T22:34:33+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Trump bemoans Fed interest rate policy, says U.S. should be paying much less",
+      "body": "As he has done in the past, Trump accused Fed officials of having political motives.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html",
+      "published": "2026-08-19T21:29:38+00:00"
     },
     {
       "tag": "Markets",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html",
       "published": "2026-08-13T15:59:16+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Wholesale prices were flat in July, below expectations for 0.2% increase",
-      "body": "The producer price index was expected to increase by 0.2% in July, according to the Dow Jones consensus.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/13/wholesale-prices-were-flat-in-july-below-expectations-for-0point2percent-increase.html",
-      "published": "2026-08-13T13:18:36+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "The Iran war risks bringing the G7's fastest-growing economy to a halt",
-      "body": "The U.K. economy is showing further signs of a long-awaited rebound, but the picture is complicated by the fallout from the Iran war and high energy prices.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/13/iran-war-g7s-fastest-growing-economy.html",
-      "published": "2026-08-13T12:42:10+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "'Nobody wants it': Lettuce prices see record-setting plunge as cyclospora spooks consumers",
-      "body": "Lettuce prices posted their sharpest month-over-month decline on record as diners reconsider the vegetable amid the cyclospora outbreak.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html",
-      "published": "2026-08-12T19:50:29+00:00"
     }
   ]
 }
