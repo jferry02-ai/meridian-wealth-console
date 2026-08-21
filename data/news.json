@@ -1,14 +1,14 @@
 {
-  "updated": "2026-08-20T21:55:27+00:00",
+  "updated": "2026-08-21T21:51:29+00:00",
   "items": [
     {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Bessent's efforts in the Treasury market so far haven't worked. Here's what else he can try",
-      "body": "Market experts showed skepticism at whether the push would succeed against a bevy of factors working against Treasurys.",
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Bessent's bond gambit aimed at calming markets is instead stirring inflation worries",
+      "body": "The so-called breakeven rate hit its highest levels in more than two months.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html",
-      "published": "2026-08-20T21:13:14+00:00"
+      "link": "https://www.cnbc.com/2026/08/21/bessents-bond-gambit-aimed-at-calming-markets-is-instead-stirring-inflation-worries-.html",
+      "published": "2026-08-21T17:51:10+00:00"
     },
     {
       "tag": "Markets",
@@ -17,7 +17,25 @@
       "body": "Treasury Secretary Scott Bessent said Thursday that there's a \"very good chance\" of the U.S. has seen its budget deficit peak under President Donald Trump.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/20/bessent-budget-deficit-trump.html",
-      "published": "2026-08-20T16:23:57+00:00"
+      "published": "2026-08-21T13:11:41+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Bessent's efforts in the Treasury market so far haven't worked. Here's what else he can try",
+      "body": "Market experts showed skepticism at whether the push would succeed against a bevy of factors working against Treasurys.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html",
+      "published": "2026-08-21T12:43:04+00:00"
+    },
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "Here are three key takeaways from the disappointing July jobs report",
+      "body": "Nonfarm payrolls in the U.S. unexpectedly declined in July, but so did the unemployment rate, leaving investors with mixed signals.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html",
+      "published": "2026-08-21T08:36:07+00:00"
     },
     {
       "tag": "Markets",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/18/ukraine-war-russia-economy-klepach.html",
       "published": "2026-08-18T11:51:15+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
-      "body": "The consumer price index was expected to increase 0.1% in July, with an annual rate of 3.4%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
-      "published": "2026-08-14T14:53:13+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "AI\u2019s costly build-out complicates the Fed\u2019s inflation fight",
-      "body": "Tech leaders say AI will drive down costs. But slow corporate adoption and the data center build-out create inflation pressures that complicate the Fed\u2019s job.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html",
-      "published": "2026-08-13T15:59:16+00:00"
     }
   ]
 }
