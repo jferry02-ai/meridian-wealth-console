@@ -1,6 +1,24 @@
 {
-  "updated": "2026-08-24T21:55:31+00:00",
+  "updated": "2026-08-25T21:54:40+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail",
+      "body": "The bond market interventions have generated a modest decline in yields along with a growing chorus of derision.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/25/stanley-druckenmiller-leads-doubters-who-think-bessents-bond-ploys-will-fail.html",
+      "published": "2026-08-25T17:15:50+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China needs U.S. dollars but is building a hedge against Washington\u2019s sanctions",
+      "body": "The U.S. can pressure Chinese banks over Iran through access to its financial system, while Beijing is building alternatives such as CIPS.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
+      "published": "2026-08-25T16:00:40+00:00"
+    },
     {
       "tag": "Geopolitics",
       "icon": "GEO",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html",
       "published": "2026-08-21T12:43:04+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "Here are three key takeaways from the disappointing July jobs report",
-      "body": "Nonfarm payrolls in the U.S. unexpectedly declined in July, but so did the unemployment rate, leaving investors with mixed signals.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html",
-      "published": "2026-08-21T08:36:07+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Bessent says Treasury buyback operation could be more than $4 billion",
-      "body": "Bessent said his department is going \"make a market\" in the longer-dated securities where yields have been surging lately.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/20/bessent-says-treasury-buyback-operation-could-be-more-than-4-billion.html",
-      "published": "2026-08-20T15:35:33+00:00"
     }
   ]
 }
