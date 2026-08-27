@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-25T21:54:40+00:00",
+  "updated": "2026-08-27T01:00:05+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Fed\u2019s preferred inflation gauge shows core prices rose 3.3% annually in July",
+      "body": "The personal consumption expenditures price index was expected to rise 0.1% monthly and 3.6% on a 12-month basis, according to economists surveyed by Dow Jones.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html",
+      "published": "2026-08-26T13:35:50+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/20/bessent-budget-deficit-trump.html",
       "published": "2026-08-21T13:11:41+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Bessent's efforts in the Treasury market so far haven't worked. Here's what else he can try",
-      "body": "Market experts showed skepticism at whether the push would succeed against a bevy of factors working against Treasurys.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html",
-      "published": "2026-08-21T12:43:04+00:00"
     }
   ]
 }
