@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-27T01:00:05+00:00",
+  "updated": "2026-08-28T05:35:21+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Fed's Hammack says 'now is the time to act' on raising interest rates",
+      "body": "She still thinks the Fed needs to take action against inflation that is straining household budgets.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/27/feds-hammack-says-now-is-the-time-to-act-on-raising-interest-rates.html",
+      "published": "2026-08-27T17:31:09+00:00"
+    },
     {
       "tag": "Inflation",
       "icon": "INF",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/21/bessents-bond-gambit-aimed-at-calming-markets-is-instead-stirring-inflation-worries-.html",
       "published": "2026-08-21T17:51:10+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Bessent says there's a 'very good chance' U.S. budget deficit under Trump has peaked",
-      "body": "Treasury Secretary Scott Bessent said Thursday that there's a \"very good chance\" of the U.S. has seen its budget deficit peak under President Donald Trump.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/20/bessent-budget-deficit-trump.html",
-      "published": "2026-08-21T13:11:41+00:00"
     }
   ]
 }
