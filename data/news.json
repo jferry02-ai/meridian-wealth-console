@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-28T05:35:21+00:00",
+  "updated": "2026-08-29T03:17:31+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
+      "body": "He used the speech to outline his philosophy on policymaking while carefully sidestepping any signals",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
+      "published": "2026-08-28T16:11:51+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html",
       "published": "2026-08-24T05:24:43+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Bessent's bond gambit aimed at calming markets is instead stirring inflation worries",
-      "body": "The so-called breakeven rate hit its highest levels in more than two months.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/21/bessents-bond-gambit-aimed-at-calming-markets-is-instead-stirring-inflation-worries-.html",
-      "published": "2026-08-21T17:51:10+00:00"
     }
   ]
 }
