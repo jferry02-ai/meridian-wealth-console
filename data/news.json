@@ -1,6 +1,51 @@
 {
-  "updated": "2026-08-29T03:17:31+00:00",
+  "updated": "2026-09-01T00:45:32+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Bank of England chief warns new AI models threaten global financial stability",
+      "body": "Bank of England Governor Andrew Bailey has warned that frontier AI could materially increase cyber risks to the global financial system.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html",
+      "published": "2026-08-31T13:35:11+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "India\u2019s economy expands 7.8% in fiscal first quarter, beating estimates",
+      "body": "The economy was driven by a strong performance in the financial, real estate, information technology and professional services sectors.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/31/india-economy-gdp-energy-el-nino.html",
+      "published": "2026-08-31T11:23:42+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China's factory activity shrinks for second straight month, contracting less than expected",
+      "body": "China's manufacturing activity shrank for a second straight month, keeping pressure on Beijing to support the economy as growth loses momentum.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/31/china-pmi-august-economy-slowdown.html",
+      "published": "2026-08-31T03:15:01+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Singapore tackles finances and culture to avert a demographic crisis",
+      "body": "One challenge for policy makers is that success on many measures won't show up immediately.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html",
+      "published": "2026-08-30T23:31:15+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "K, C or E? Why economists can\u2019t agree on the shape of today\u2019s economy",
+      "body": "Economists have long viewed the post-pandemic economy as \"K\"-shaped. That consensus has now evaporated.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
+      "published": "2026-08-29T20:22:12+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -27,51 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html",
       "published": "2026-08-26T13:35:50+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail",
-      "body": "The bond market interventions have generated a modest decline in yields along with a growing chorus of derision.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/25/stanley-druckenmiller-leads-doubters-who-think-bessents-bond-ploys-will-fail.html",
-      "published": "2026-08-25T17:15:50+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China needs U.S. dollars but is building a hedge against Washington\u2019s sanctions",
-      "body": "The U.S. can pressure Chinese banks over Iran through access to its financial system, while Beijing is building alternatives such as CIPS.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
-      "published": "2026-08-25T16:00:40+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "'They asked too much': Canadian dollar slides as Ottawa and Washington head for all-out trade war",
-      "body": "\"As a smaller, more open economy, Canada has more to lose from this,\" ING strategists said Monday.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/24/canada-us-trade-war-deal.html",
-      "published": "2026-08-24T13:35:08+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
-      "body": "Using the TGA would provide the Treasury with considerable firepower to influence long-term bond yields.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
-      "published": "2026-08-24T13:17:35+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Singapore inflation hits highest in nearly two years, but undershoots expectations",
-      "body": "Consumer prices rose 2.2% last month, compared with the 2.3% expected by economists polled by Reuters",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html",
-      "published": "2026-08-24T05:24:43+00:00"
     }
   ]
 }
