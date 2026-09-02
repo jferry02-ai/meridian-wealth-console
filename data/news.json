@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-01T23:31:14+00:00",
+  "updated": "2026-09-02T23:31:12+00:00",
   "items": [
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "Private payrolls rose by 38,000 in August, less than expected, ADP reports",
+      "body": "Though job creation held positive, August was the smallest gain since January and reflective of a broader slowdown in the labor market.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/02/private-payrolls-rose-by-38000-in-august-fewer-than-expected-adp-reports.html",
+      "published": "2026-09-02T14:30:10+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
       "published": "2026-08-28T16:11:51+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Fed's Hammack says 'now is the time to act' on raising interest rates",
-      "body": "She still thinks the Fed needs to take action against inflation that is straining household budgets.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/27/feds-hammack-says-now-is-the-time-to-act-on-raising-interest-rates.html",
-      "published": "2026-08-27T17:31:09+00:00"
     }
   ]
 }
