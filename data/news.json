@@ -1,6 +1,42 @@
 {
-  "updated": "2026-09-02T23:31:12+00:00",
+  "updated": "2026-09-03T23:28:49+00:00",
   "items": [
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "The big August jobs report is due out Friday. Here's what to expect for what has been a jobless summer",
+      "body": "August nonfarm payrolls are expected to rise by 53,000 as a subdued labor market keeps Fed attention focused on inflation.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/03/august-2026-jobs-report-payrolls.html",
+      "published": "2026-09-03T19:38:09+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Fed Governor Waller indicates he will support holding rates steady at September meeting",
+      "body": "In remarks that seem to contrast with statements last week from Chairman Kevin Warsh, Waller expressed confidence in the current inflation trends.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html",
+      "published": "2026-09-03T14:06:52+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "'Danger zone of extreme weather': UN warns of supersized El Ni\u00f1o set to hit global economy and markets",
+      "body": "Latest modeling shows high risks of floods, drought and extreme heat persisting until February 2027.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/03/supersized-el-nino-un-economy.html",
+      "published": "2026-09-03T12:25:53+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing?",
+      "body": "If growth were to slow in the semiconductor sector, would the slowdown take the Korean economy with it?",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/03/south-korea-semiconductor-exports-surging-concerns.html",
+      "published": "2026-09-03T01:11:41+00:00"
+    },
     {
       "tag": "Labor",
       "icon": "LAB",
@@ -36,42 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/08/31/india-economy-gdp-energy-el-nino.html",
       "published": "2026-08-31T11:23:42+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China's factory activity shrinks for second straight month, contracting less than expected",
-      "body": "China's manufacturing activity shrank for a second straight month, keeping pressure on Beijing to support the economy as growth loses momentum.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/31/china-pmi-august-economy-slowdown.html",
-      "published": "2026-08-31T03:15:01+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Singapore tackles finances and culture to avert a demographic crisis",
-      "body": "One challenge for policy makers is that success on many measures won't show up immediately.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html",
-      "published": "2026-08-30T23:31:15+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "K, C or E? Why economists can\u2019t agree on the shape of today\u2019s economy",
-      "body": "Economists have long viewed the post-pandemic economy as \"K\"-shaped. That consensus has now evaporated.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
-      "published": "2026-08-29T20:22:12+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
-      "body": "He used the speech to outline his philosophy on policymaking while carefully sidestepping any signals",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
-      "published": "2026-08-28T16:11:51+00:00"
     }
   ]
 }
