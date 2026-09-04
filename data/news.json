@@ -1,6 +1,33 @@
 {
-  "updated": "2026-09-03T23:28:49+00:00",
+  "updated": "2026-09-04T23:13:08+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Women accounted for almost all of job gains in August. Here's why",
+      "body": "Women accounted for virtually all of August's payroll gains, the latest sign of their growing power in the labor market.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/04/jobs-report-women-payrolls.html",
+      "published": "2026-09-04T18:27:39+00:00"
+    },
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+      "body": "Nonfarm payrolls were expected to increase by 53,000 in August while the unemployment rate held at 4.1%, according to the Dow Jones consensus.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
+      "published": "2026-09-04T17:16:37+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "The big business of personal protection: How private security became a $50 billion industry",
+      "body": "Private security spending and guard employment have climbed as companies and communities respond to high-profile attacks, even as violent crime falls.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html",
+      "published": "2026-09-04T14:15:04+00:00"
+    },
     {
       "tag": "Labor",
       "icon": "LAB",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/02/private-payrolls-rose-by-38000-in-august-fewer-than-expected-adp-reports.html",
       "published": "2026-09-02T14:30:10+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
-      "body": "The European Central Bank is seen hiking rates in September as the Iran war raises energy costs in the region.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html",
-      "published": "2026-09-01T10:50:27+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Bank of England chief warns new AI models threaten global financial stability",
-      "body": "Bank of England Governor Andrew Bailey has warned that frontier AI could materially increase cyber risks to the global financial system.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html",
-      "published": "2026-08-31T13:35:11+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "India\u2019s economy expands 7.8% in fiscal first quarter, beating estimates",
-      "body": "The economy was driven by a strong performance in the financial, real estate, information technology and professional services sectors.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/08/31/india-economy-gdp-energy-el-nino.html",
-      "published": "2026-08-31T11:23:42+00:00"
     }
   ]
 }
