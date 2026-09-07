@@ -1,6 +1,33 @@
 {
-  "updated": "2026-09-04T23:13:08+00:00",
+  "updated": "2026-09-07T23:42:17+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Japan's foreign reserves drop by a record $80 billion in August following yen intervention",
+      "body": "Finance ministry data showed that Japan's official foreign reserves stand at $1.207 trillion, down from July's figure of $1.287 trillion.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html",
+      "published": "2026-09-07T07:38:42+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "From \u2018mystery vacations\u2019 to hostels, budget travelers get thrifty as prices rise",
+      "body": "Despite rising prices and the travel industry focusing on the luxury segment, budget-minded vacationers are still finding ways to get away.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
+      "published": "2026-09-05T23:55:52+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
+      "body": "Ten days ahead of the next Federal Reserve meeting, the Trump administration looks to be in a full-court press to halt a rate hike in its tracks.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
+      "published": "2026-09-05T19:12:53+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html",
       "published": "2026-09-03T14:06:52+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "'Danger zone of extreme weather': UN warns of supersized El Ni\u00f1o set to hit global economy and markets",
-      "body": "Latest modeling shows high risks of floods, drought and extreme heat persisting until February 2027.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/03/supersized-el-nino-un-economy.html",
-      "published": "2026-09-03T12:25:53+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing?",
-      "body": "If growth were to slow in the semiconductor sector, would the slowdown take the Korean economy with it?",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/03/south-korea-semiconductor-exports-surging-concerns.html",
-      "published": "2026-09-03T01:11:41+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "Private payrolls rose by 38,000 in August, less than expected, ADP reports",
-      "body": "Though job creation held positive, August was the smallest gain since January and reflective of a broader slowdown in the labor market.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/02/private-payrolls-rose-by-38000-in-august-fewer-than-expected-adp-reports.html",
-      "published": "2026-09-02T14:30:10+00:00"
     }
   ]
 }
