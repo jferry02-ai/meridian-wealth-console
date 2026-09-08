@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-07T23:42:17+00:00",
+  "updated": "2026-09-08T23:35:46+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "Canada's retaliatory tariffs worth CA$27.6 billion take effect as trade rift with U.S. deepens",
+      "body": "Duties on Canadian imports of U.S. steel and aluminum products have doubled to 50% as a trade war between Washington and Ottawa intensifies.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/08/canada-retaliatory-tariffs.html",
+      "published": "2026-09-08T17:11:11+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -8,7 +17,16 @@
       "body": "Finance ministry data showed that Japan's official foreign reserves stand at $1.207 trillion, down from July's figure of $1.287 trillion.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html",
-      "published": "2026-09-07T07:38:42+00:00"
+      "published": "2026-09-08T14:15:38+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China's imports in August miss estimates as calls for rebalancing trade grow",
+      "body": "China's exports and imports gathered momentum in August, as the world's second-largest economy faces mounting pressure to rebalance trade.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/08/china-exports-imports-august-trade-rebalance-demand-surplus-.html",
+      "published": "2026-09-08T04:45:07+00:00"
     },
     {
       "tag": "Markets",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html",
       "published": "2026-09-04T14:15:04+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "The big August jobs report is due out Friday. Here's what to expect for what has been a jobless summer",
-      "body": "August nonfarm payrolls are expected to rise by 53,000 as a subdued labor market keeps Fed attention focused on inflation.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/03/august-2026-jobs-report-payrolls.html",
-      "published": "2026-09-03T19:38:09+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Fed Governor Waller indicates he will support holding rates steady at September meeting",
-      "body": "In remarks that seem to contrast with statements last week from Chairman Kevin Warsh, Waller expressed confidence in the current inflation trends.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html",
-      "published": "2026-09-03T14:06:52+00:00"
     }
   ]
 }
