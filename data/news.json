@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-08T23:35:46+00:00",
+  "updated": "2026-09-09T23:28:04+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates",
+      "body": "Import bans on motorbikes, alcohol and dairy products are due to come into effect on Sept. 29 as the rift between the countries deepens.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/09/us-canada-trade-war-import-ban.html",
+      "published": "2026-09-09T16:17:46+00:00"
+    },
     {
       "tag": "Geopolitics",
       "icon": "GEO",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
       "published": "2026-09-04T17:16:37+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "The big business of personal protection: How private security became a $50 billion industry",
-      "body": "Private security spending and guard employment have climbed as companies and communities respond to high-profile attacks, even as violent crime falls.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html",
-      "published": "2026-09-04T14:15:04+00:00"
     }
   ]
 }
