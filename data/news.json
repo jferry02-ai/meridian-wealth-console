@@ -1,6 +1,33 @@
 {
-  "updated": "2026-09-09T23:28:04+00:00",
+  "updated": "2026-09-10T23:21:16+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Friday's CPI inflation report is even more important than usual. Here's what to expect",
+      "body": "The Bureau of Labor Statistics will release the August consumer price index report at 8:30 a.m.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html",
+      "published": "2026-09-10T19:18:05+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "The likelihood of a Fed interest rate hike next week just got a lot higher",
+      "body": "Traders pushed chances for a rate increase to 70% in morning action.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
+      "published": "2026-09-10T16:55:17+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Wholesale prices rose 0.4% in August, as expected",
+      "body": "The producer price index was expected to rise 0.4% in August, according to the Dow Jones consensus forecast.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/10/ppi-inflation-report-august-2026.html",
+      "published": "2026-09-10T13:23:45+00:00"
+    },
     {
       "tag": "Geopolitics",
       "icon": "GEO",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
       "published": "2026-09-05T23:55:52+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
-      "body": "Ten days ahead of the next Federal Reserve meeting, the Trump administration looks to be in a full-court press to halt a rate hike in its tracks.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
-      "published": "2026-09-05T19:12:53+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Women accounted for almost all of job gains in August. Here's why",
-      "body": "Women accounted for virtually all of August's payroll gains, the latest sign of their growing power in the labor market.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/04/jobs-report-women-payrolls.html",
-      "published": "2026-09-04T18:27:39+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
-      "body": "Nonfarm payrolls were expected to increase by 53,000 in August while the unemployment rate held at 4.1%, according to the Dow Jones consensus.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
-      "published": "2026-09-04T17:16:37+00:00"
     }
   ]
 }
