@@ -1,6 +1,33 @@
 {
-  "updated": "2026-09-10T23:21:16+00:00",
+  "updated": "2026-09-11T23:30:02+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Consumer outlook plunges in September as inflation outlook worsens",
+      "body": "The survey's headline index hit a level of 47.8, down 7.5% from the August reading and off 13.2% from a year ago.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/11/consumer-outlook-plunges-in-september-as-inflation-outlook-worsens.html",
+      "published": "2026-09-11T16:53:23+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Record U.S. cyclosporiasis outbreak is over, CDC says",
+      "body": "The largest outbreak, linked to shredded iceberg lettuce from Taylor Farms, sickened more than 12,000 people.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/11/cdc-record-cyclosporiasis-outbreak-over.html",
+      "published": "2026-09-11T15:36:45+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Inflation persisted in August, potentially locking in a Fed interest rate hike",
+      "body": "The all-items consumer price index was expected to rise 0.4% in August, with core, excluding food and energy, showing a 0.2% gain, according to the Dow Jones consensus.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html",
+      "published": "2026-09-11T13:46:36+00:00"
+    },
     {
       "tag": "Inflation",
       "icon": "INF",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/08/canada-retaliatory-tariffs.html",
       "published": "2026-09-08T17:11:11+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Japan's foreign reserves drop by a record $80 billion in August following yen intervention",
-      "body": "Finance ministry data showed that Japan's official foreign reserves stand at $1.207 trillion, down from July's figure of $1.287 trillion.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html",
-      "published": "2026-09-08T14:15:38+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China's imports in August miss estimates as calls for rebalancing trade grow",
-      "body": "China's exports and imports gathered momentum in August, as the world's second-largest economy faces mounting pressure to rebalance trade.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/08/china-exports-imports-august-trade-rebalance-demand-surplus-.html",
-      "published": "2026-09-08T04:45:07+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "From \u2018mystery vacations\u2019 to hostels, budget travelers get thrifty as prices rise",
-      "body": "Despite rising prices and the travel industry focusing on the luxury segment, budget-minded vacationers are still finding ways to get away.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
-      "published": "2026-09-05T23:55:52+00:00"
     }
   ]
 }
