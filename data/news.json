@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-11T23:30:02+00:00",
+  "updated": "2026-09-14T23:57:30+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
+      "body": "Traders were pricing in a better than 92% probability of a rate increase, as well as a more than 75% chance for another one in December.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html",
+      "published": "2026-09-14T19:47:42+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Inflation is outpacing wage growth again, squeezing Americans\u2019 paychecks",
+      "body": "In August, consumer prices rose 3.4% over the past year while wages increased just 3.1%.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/12/inflation-is-outpacing-wage-growth-again-squeezing-americans-paychecks.html",
+      "published": "2026-09-12T12:49:15+00:00"
+    },
     {
       "tag": "Inflation",
       "icon": "INF",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/10/ppi-inflation-report-august-2026.html",
       "published": "2026-09-10T13:23:45+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates",
-      "body": "Import bans on motorbikes, alcohol and dairy products are due to come into effect on Sept. 29 as the rift between the countries deepens.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/09/us-canada-trade-war-import-ban.html",
-      "published": "2026-09-09T16:17:46+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "Canada's retaliatory tariffs worth CA$27.6 billion take effect as trade rift with U.S. deepens",
-      "body": "Duties on Canadian imports of U.S. steel and aluminum products have doubled to 50% as a trade war between Washington and Ottawa intensifies.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/08/canada-retaliatory-tariffs.html",
-      "published": "2026-09-08T17:11:11+00:00"
     }
   ]
 }
