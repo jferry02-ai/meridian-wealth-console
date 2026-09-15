@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-14T23:57:30+00:00",
+  "updated": "2026-09-15T23:38:31+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Why de-dollarization discussions are more talk, less action",
+      "body": "BRICS leaders have asserted the need to use local currencies in intra-BRICS trade to cut dependency on dollar.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/16/de-dollarization-brics-china-russia-trump.html",
+      "published": "2026-09-15T23:28:01+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
       "published": "2026-09-10T16:55:17+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Wholesale prices rose 0.4% in August, as expected",
-      "body": "The producer price index was expected to rise 0.4% in August, according to the Dow Jones consensus forecast.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/10/ppi-inflation-report-august-2026.html",
-      "published": "2026-09-10T13:23:45+00:00"
     }
   ]
 }
