@@ -1,6 +1,42 @@
 {
-  "updated": "2026-09-15T23:38:31+00:00",
+  "updated": "2026-09-16T23:46:00+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "'Science fiction': Transport companies \u2014 the backbone of economy \u2014 are sounding alarm on fuel prices",
+      "body": "Prices for diesel, the fuel type used to power trucks and trains, came in at an all-time high of $6.31 per gallon on Wednesday.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
+      "published": "2026-09-16T20:22:24+00:00"
+    },
+    {
+      "tag": "Energy",
+      "icon": "ENE",
+      "title": "Consumers hit by one-two punch of oil and rates from Iran war. The estimated bill is $1,700 per household",
+      "body": "Rising oil prices and Treasury yields are lifting energy and borrowing costs for U.S. households, pushing consumers to draw more heavily on savings.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
+      "published": "2026-09-16T17:32:22+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "UK inflation jumps to 3.1% as energy costs soar",
+      "body": "The reading comes a day before the Bank of England updates its monetary policy.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
+      "published": "2026-09-16T07:18:23+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Indonesia's new finance minister faces an uphill battle on fiscal credibility",
+      "body": "Nazara, sworn in hours after Purbaya's dismissal, spent seven years as deputy finance minister and led the ministry's fiscal policy agency from 2015 to 2019.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/16/indonesia-finance-minister-msci-prabowo-.html",
+      "published": "2026-09-16T01:53:52+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -36,42 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/11/consumer-outlook-plunges-in-september-as-inflation-outlook-worsens.html",
       "published": "2026-09-11T16:53:23+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Record U.S. cyclosporiasis outbreak is over, CDC says",
-      "body": "The largest outbreak, linked to shredded iceberg lettuce from Taylor Farms, sickened more than 12,000 people.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/11/cdc-record-cyclosporiasis-outbreak-over.html",
-      "published": "2026-09-11T15:36:45+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Inflation persisted in August, potentially locking in a Fed interest rate hike",
-      "body": "The all-items consumer price index was expected to rise 0.4% in August, with core, excluding food and energy, showing a 0.2% gain, according to the Dow Jones consensus.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html",
-      "published": "2026-09-11T13:46:36+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Friday's CPI inflation report is even more important than usual. Here's what to expect",
-      "body": "The Bureau of Labor Statistics will release the August consumer price index report at 8:30 a.m.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html",
-      "published": "2026-09-10T19:18:05+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "The likelihood of a Fed interest rate hike next week just got a lot higher",
-      "body": "Traders pushed chances for a rate increase to 70% in morning action.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
-      "published": "2026-09-10T16:55:17+00:00"
     }
   ]
 }
