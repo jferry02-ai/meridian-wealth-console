@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T23:46:00+00:00",
+  "updated": "2026-09-17T23:38:23+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Bank of England defies Fed\u2019s rate-hike lead, leaving rates unchanged",
+      "body": "The Bank of England kept rates steady Thursday, even after U.K. inflation rose to 3.1% and energy costs put pressure on prices.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html",
+      "published": "2026-09-17T12:27:10+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "UK inflation jumps to 3.1% as energy costs soar",
+      "body": "The reading comes a day before the Bank of England updates its monetary policy.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
+      "published": "2026-09-17T07:36:04+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -18,15 +36,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
       "published": "2026-09-16T17:32:22+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "UK inflation jumps to 3.1% as energy costs soar",
-      "body": "The reading comes a day before the Bank of England updates its monetary policy.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
-      "published": "2026-09-16T07:18:23+00:00"
     },
     {
       "tag": "Markets",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/12/inflation-is-outpacing-wage-growth-again-squeezing-americans-paychecks.html",
       "published": "2026-09-12T12:49:15+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Consumer outlook plunges in September as inflation outlook worsens",
-      "body": "The survey's headline index hit a level of 47.8, down 7.5% from the August reading and off 13.2% from a year ago.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/11/consumer-outlook-plunges-in-september-as-inflation-outlook-worsens.html",
-      "published": "2026-09-11T16:53:23+00:00"
     }
   ]
 }
