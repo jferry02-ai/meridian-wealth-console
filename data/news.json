@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T23:32:11+00:00",
+  "updated": "2026-09-22T00:14:38+00:00",
   "items": [
     {
       "tag": "Rates",
@@ -8,7 +8,25 @@
       "body": "The yen weakened past 157 against the dollar, the yield on the 10-year Japanese Government Bond slipped, while the Nikkei 225 gained 1.5%.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
-      "published": "2026-09-18T07:40:29+00:00"
+      "published": "2026-09-21T01:02:25+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "France\u2019s wine production nears a 70-year low, leaving winemakers with tough choices",
+      "body": "As the French wine industry reaches a crisis point, key players are considering new markets, products and generations.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/20/france-wine-production-70-year-low-heatwaves-drought.html",
+      "published": "2026-09-20T05:00:01+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
+      "body": "Goldman economist Joseph Briggs said broader pessimism in society may be contributing to struggling consumer sentiment even as the economy chugs along.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/19/goldman-sachs-happiness-struggling-consumer-sentiment.html",
+      "published": "2026-09-19T12:50:49+00:00"
     },
     {
       "tag": "Markets",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/16/indonesia-finance-minister-msci-prabowo-.html",
       "published": "2026-09-16T01:53:52+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Why de-dollarization discussions are more talk, less action",
-      "body": "BRICS leaders have asserted the need to use local currencies in intra-BRICS trade to cut dependency on dollar.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/16/de-dollarization-brics-china-russia-trump.html",
-      "published": "2026-09-15T23:28:01+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
-      "body": "Traders were pricing in a better than 92% probability of a rate increase, as well as a more than 75% chance for another one in December.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html",
-      "published": "2026-09-14T19:47:42+00:00"
     }
   ]
 }
