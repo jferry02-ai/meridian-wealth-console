@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-22T23:45:56+00:00",
+  "updated": "2026-09-23T23:54:34+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Here's what happens to the economy when Treasury yields soar like they are now",
+      "body": "Government debt costs leaped higher Wednesday, the product of multiple factors.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/23/what-happens-to-the-economy-when-treasury-yields-soar.html",
+      "published": "2026-09-23T21:11:28+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
       "published": "2026-09-16T17:32:22+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Indonesia's new finance minister faces an uphill battle on fiscal credibility",
-      "body": "Nazara, sworn in hours after Purbaya's dismissal, spent seven years as deputy finance minister and led the ministry's fiscal policy agency from 2015 to 2019.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/16/indonesia-finance-minister-msci-prabowo-.html",
-      "published": "2026-09-16T01:53:52+00:00"
     }
   ]
 }
