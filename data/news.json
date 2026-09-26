@@ -1,15 +1,6 @@
 {
-  "updated": "2026-09-24T23:58:23+00:00",
+  "updated": "2026-09-26T00:05:39+00:00",
   "items": [
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
-      "body": "Markets expect the central bank will take a firmer hand on inflation. It's not that easy.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html",
-      "published": "2026-09-24T21:40:19+00:00"
-    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -17,7 +8,25 @@
       "body": "Government debt costs leaped higher Wednesday, the product of multiple factors.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/23/what-happens-to-the-economy-when-treasury-yields-soar.html",
-      "published": "2026-09-24T14:37:14+00:00"
+      "published": "2026-09-25T13:48:19+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
+      "body": "Markets expect the central bank will take a firmer hand on inflation. It's not that easy.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html",
+      "published": "2026-09-25T11:08:05+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows",
+      "body": "A private survey shows a rebound in China's exports to the U.S. as companies position for continued stability between the world's two largest economies.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/25/china-exports-surplus-trade-tariffs-.html",
+      "published": "2026-09-25T10:25:01+00:00"
     },
     {
       "tag": "Markets",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
       "published": "2026-09-21T01:02:25+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "France\u2019s wine production nears a 70-year low, leaving winemakers with tough choices",
-      "body": "As the French wine industry reaches a crisis point, key players are considering new markets, products and generations.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/20/france-wine-production-70-year-low-heatwaves-drought.html",
-      "published": "2026-09-20T05:00:01+00:00"
     }
   ]
 }
