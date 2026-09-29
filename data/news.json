@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-26T00:05:39+00:00",
+  "updated": "2026-09-29T01:12:05+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China posts weakest industrial profit growth this year, expanding 4.2% in August",
+      "body": "Economists expect Beijing to lean harder on stimulus to stabilize corporate profitability, as consolidation accelerates in sectors facing sluggish demand and fierce competition.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/28/china-posts-weakest-industrial-profit-growth-this-year-expanding-4point2percent-in-august-.html",
+      "published": "2026-09-28T04:04:16+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/24/hormuz-blacksea-ukraine-iran-food-security-united-nations-.html",
       "published": "2026-09-24T04:02:26+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Why Japan\u2019s markets flipped the usual script after central bank rate hike",
-      "body": "The yen weakened past 157 against the dollar, the yield on the 10-year Japanese Government Bond slipped, while the Nikkei 225 gained 1.5%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
-      "published": "2026-09-21T01:02:25+00:00"
     }
   ]
 }
