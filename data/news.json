@@ -1,77 +1,77 @@
 {
-  "updated": "2026-10-02T01:02:52+00:00",
+  "updated": "2026-10-03T00:40:35+00:00",
   "items": [
     {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China posts weakest industrial profit growth this year, expanding 4.2% in August",
-      "body": "Economists expect Beijing to lean harder on stimulus to stabilize corporate profitability, as consolidation accelerates in sectors facing sluggish demand and fierce competition.",
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "Men are losing ground in the labor market. Here's why",
+      "body": "Women outnumbered men in the workforce for eight straight months as of September, according to one analysis.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/28/china-posts-weakest-industrial-profit-growth-this-year-expanding-4point2percent-in-august-.html",
-      "published": "2026-09-28T04:04:16+00:00"
+      "link": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
+      "published": "2026-10-02T17:38:59+00:00"
+    },
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2%",
+      "body": "Nonfarm payrolls rose by just 29,000 in September, well below the 84,000 forecast, and the unemployment rate rose to 4.2%, the Bureau of Labor Statistics said.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html",
+      "published": "2026-10-02T13:45:58+00:00"
+    },
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "The September jobs report will be released Friday. Here's what to expect",
+      "body": "Wall Street is looking for job growth of 84,000 to close out the summer.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/01/the-september-jobs-report-will-be-released-friday-heres-what-to-expect.html",
+      "published": "2026-10-01T18:55:02+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected",
+      "body": "The personal consumption expenditures price index was projected to show an annual gain of 3.7% on headline and 3.3% for core, according to the Dow Jones consensus.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/30/feds-preferred-gauge-showed-core-inflation-at-3point0percent-in-august-much-lighter-than-expected.html",
+      "published": "2026-09-30T15:14:57+00:00"
     },
     {
       "tag": "Markets",
       "icon": "MAR",
-      "title": "Here's what happens to the economy when Treasury yields soar like they are now",
-      "body": "Government debt costs leaped higher Wednesday, the product of multiple factors.",
+      "title": "Private sector jobs rose by 90,000 in September, better than expected, ADP reports",
+      "body": "Private job creation picked up in September after a brief slowdown.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/23/what-happens-to-the-economy-when-treasury-yields-soar.html",
-      "published": "2026-09-25T13:48:19+00:00"
+      "link": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html",
+      "published": "2026-09-30T14:42:04+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "The Fed's main inflation measure will be released Wednesday. Here's what to expect",
+      "body": "Data is expected to show ongoing price pressures and consumers who nevertheless continue to spend.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/09/29/the-feds-main-inflation-measure-will-be-released-wednesday-heres-what-to-expect.html",
+      "published": "2026-09-29T20:51:43+00:00"
     },
     {
       "tag": "Markets",
       "icon": "MAR",
-      "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
-      "body": "Markets expect the central bank will take a firmer hand on inflation. It's not that easy.",
+      "title": "Consumer optimism slides to lowest since 2014 as fears escalate over rising prices and jobs",
+      "body": "The Conference Board's Consumer Confidence Index tumbled to 81.9, a decline of 6.7 points and a reading well below the forecast for 89.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html",
-      "published": "2026-09-25T11:08:05+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows",
-      "body": "A private survey shows a rebound in China's exports to the U.S. as companies position for continued stability between the world's two largest economies.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/25/china-exports-surplus-trade-tariffs-.html",
-      "published": "2026-09-25T10:25:01+00:00"
+      "link": "https://www.cnbc.com/2026/09/29/consumer-optimism-slides-sharply-as-fears-escalate-over-rising-prices-and-jobs.html",
+      "published": "2026-09-29T16:52:00+00:00"
     },
     {
       "tag": "Markets",
       "icon": "MAR",
-      "title": "Switzerland is keeping rates at 0% \u2014 for now",
-      "body": "The Swiss National Bank held rates at 0% as low inflation and a strong franc enable it to diverge from other central banks, though markets expect hikes ahead.",
+      "title": "America's Canadian import restrictions come into force. Here are the products barred from entry",
+      "body": "President Donald Trump says he expects Ottawa to concede to its demands on trade in the coming weeks, but Canadian officials insist they won't sign a bad deal.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/24/swiss-national-bank-interest-rates-inflation.html",
-      "published": "2026-09-24T11:34:56+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Global debt tops $365 trillion as economists sound alarm over 'vicious cycle'",
-      "body": "More is being paid out by advanced economies in debt interest than the whole world spends on AI, defense or clean technology.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/24/global-debt-bond-yields-inflation.html",
-      "published": "2026-09-24T08:13:01+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "France's fresh budget battle threatens to topple another government",
-      "body": "Time is not on the side of French government bonds, strategists have warned, as the nation's deficit balloons.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html",
-      "published": "2026-09-24T06:21:00+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "World heads into food crises 'blind' as U.S. aid cuts squeeze UN food agency, experts warn",
-      "body": "Climate shocks, conflict and a global fuel crisis, on top of surging interest rates and donor cuts, leave agencies less able to help those facing higher food prices.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/24/hormuz-blacksea-ukraine-iran-food-security-united-nations-.html",
-      "published": "2026-09-24T04:02:26+00:00"
+      "link": "https://www.cnbc.com/2026/09/29/canada-import-ban-trade-war.html",
+      "published": "2026-09-29T15:57:43+00:00"
     }
   ]
 }
