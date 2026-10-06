@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-03T00:40:35+00:00",
+  "updated": "2026-10-06T01:50:53+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "The 2029 tipping point: Western populations are about to start shrinking, piling pressure on public finances",
+      "body": "Moody's predicts that the world's aging populations will have fundamental impacts on the global economy and lead to difficult policy decisions.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/05/aging-population-moodys-public-finances.html",
+      "published": "2026-10-05T05:00:01+00:00"
+    },
     {
       "tag": "Labor",
       "icon": "LAB",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/29/consumer-optimism-slides-sharply-as-fears-escalate-over-rising-prices-and-jobs.html",
       "published": "2026-09-29T16:52:00+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "America's Canadian import restrictions come into force. Here are the products barred from entry",
-      "body": "President Donald Trump says he expects Ottawa to concede to its demands on trade in the coming weeks, but Canadian officials insist they won't sign a bad deal.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/29/canada-import-ban-trade-war.html",
-      "published": "2026-09-29T15:57:43+00:00"
     }
   ]
 }
