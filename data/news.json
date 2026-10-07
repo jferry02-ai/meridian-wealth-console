@@ -1,6 +1,24 @@
 {
-  "updated": "2026-10-06T01:50:53+00:00",
+  "updated": "2026-10-07T00:58:16+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
+      "body": "That marked a 13.7% jump from July and was ahead of the Dow Jones consensus estimate for $102 billion.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html",
+      "published": "2026-10-06T15:52:22+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "World Bank warns of AI concentration risks as it lifts East Asia and Pacific growth outlook to 4.5%",
+      "body": "The World Bank now expects the region to grow 4.5% this year, but flagged that trade growth outside AI-related goods has been \"weak or negative.\"",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html",
+      "published": "2026-10-06T04:07:24+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html",
       "published": "2026-09-30T14:42:04+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "The Fed's main inflation measure will be released Wednesday. Here's what to expect",
-      "body": "Data is expected to show ongoing price pressures and consumers who nevertheless continue to spend.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/29/the-feds-main-inflation-measure-will-be-released-wednesday-heres-what-to-expect.html",
-      "published": "2026-09-29T20:51:43+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Consumer optimism slides to lowest since 2014 as fears escalate over rising prices and jobs",
-      "body": "The Conference Board's Consumer Confidence Index tumbled to 81.9, a decline of 6.7 points and a reading well below the forecast for 89.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/29/consumer-optimism-slides-sharply-as-fears-escalate-over-rising-prices-and-jobs.html",
-      "published": "2026-09-29T16:52:00+00:00"
     }
   ]
 }
