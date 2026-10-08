@@ -1,14 +1,41 @@
 {
-  "updated": "2026-10-07T00:58:16+00:00",
+  "updated": "2026-10-08T01:13:32+00:00",
   "items": [
     {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
-      "body": "That marked a 13.7% jump from July and was ahead of the Dow Jones consensus estimate for $102 billion.",
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+      "body": "The Survey of Consumer Expectations indicated that the median outlook for inflation over the next 12 months rose to 3.9%.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html",
-      "published": "2026-10-06T15:52:22+00:00"
+      "link": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
+      "published": "2026-10-07T18:44:36+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "ICE came to town and left behind weakened economies",
+      "body": "Research links ICE enforcement surges to lasting declines in local spending, foot traffic and jobs. In Minneapolis, businesses are still recovering.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/07/ice-raids-local-economies.html",
+      "published": "2026-10-07T12:24:32+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "India\u2019s central bank hikes rates for the first time since 2023 as inflation risks build",
+      "body": "HSBC and Goldman Sachs expect the RBI to raise interest rates in December as well.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html",
+      "published": "2026-10-07T11:55:36+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Why AI is both the hope and the hazard for world leaders, according to IMF chief Georgieva",
+      "body": "Kristalina Georgieva warns that the technology lifting growth hopes is also pushing up inflation and yields, just as public debt levels rose.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/07/economy-inflation-ai-trade-imf-iran-hormuz-trump-.html",
+      "published": "2026-10-07T06:16:39+00:00"
     },
     {
       "tag": "Markets",
@@ -17,7 +44,16 @@
       "body": "The World Bank now expects the region to grow 4.5% this year, but flagged that trade growth outside AI-related goods has been \"weak or negative.\"",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html",
-      "published": "2026-10-06T04:07:24+00:00"
+      "published": "2026-10-07T03:00:22+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
+      "body": "That marked a 13.7% jump from July and was ahead of the Dow Jones consensus estimate for $102 billion.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html",
+      "published": "2026-10-06T15:52:22+00:00"
     },
     {
       "tag": "Markets",
@@ -36,42 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
       "published": "2026-10-02T17:38:59+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2%",
-      "body": "Nonfarm payrolls rose by just 29,000 in September, well below the 84,000 forecast, and the unemployment rate rose to 4.2%, the Bureau of Labor Statistics said.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html",
-      "published": "2026-10-02T13:45:58+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "The September jobs report will be released Friday. Here's what to expect",
-      "body": "Wall Street is looking for job growth of 84,000 to close out the summer.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/01/the-september-jobs-report-will-be-released-friday-heres-what-to-expect.html",
-      "published": "2026-10-01T18:55:02+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected",
-      "body": "The personal consumption expenditures price index was projected to show an annual gain of 3.7% on headline and 3.3% for core, according to the Dow Jones consensus.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/30/feds-preferred-gauge-showed-core-inflation-at-3point0percent-in-august-much-lighter-than-expected.html",
-      "published": "2026-09-30T15:14:57+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Private sector jobs rose by 90,000 in September, better than expected, ADP reports",
-      "body": "Private job creation picked up in September after a brief slowdown.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html",
-      "published": "2026-09-30T14:42:04+00:00"
     }
   ]
 }
