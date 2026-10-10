@@ -1,6 +1,24 @@
 {
-  "updated": "2026-10-09T01:21:08+00:00",
+  "updated": "2026-10-10T01:09:01+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
+      "body": "Researchers found that while wealth disparities narrowed somewhat, the ability to meet debt payments deteriorated significantly.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
+      "published": "2026-10-09T19:18:24+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
+      "body": "Shelton's controversial economic ideas led the Senate to block her nomination to the Fed. Now she's going to be a counselor to the Treasury secretary.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
+      "published": "2026-10-09T13:09:19+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html",
       "published": "2026-10-07T03:00:22+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
-      "body": "That marked a 13.7% jump from July and was ahead of the Dow Jones consensus estimate for $102 billion.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html",
-      "published": "2026-10-06T15:52:22+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "The 2029 tipping point: Western populations are about to start shrinking, piling pressure on public finances",
-      "body": "Moody's predicts that the world's aging populations will have fundamental impacts on the global economy and lead to difficult policy decisions.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/05/aging-population-moodys-public-finances.html",
-      "published": "2026-10-05T05:00:01+00:00"
     }
   ]
 }
