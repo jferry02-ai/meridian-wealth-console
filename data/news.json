@@ -1,6 +1,42 @@
 {
-  "updated": "2026-10-10T01:09:01+00:00",
+  "updated": "2026-10-13T02:41:23+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Global economy to slow less than expected in 2026 as AI boom offsets war hit: IMF",
+      "body": "The IMF raised its 2026 global growth forecast to 3.1%, as AI investment helped offset the war\u2019s energy shock.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+      "published": "2026-10-13T02:09:34+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
+      "body": "The U.S. economists were awarded for work that underpins the models used by central banks and governments to stabilize the economy.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html",
+      "published": "2026-10-12T14:09:02+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "India\u2019s retail inflation jumps to 5.54% in September, above estimates",
+      "body": "India inflations jumps for the 11-straight month, raising prospects of a further interest rate hike",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
+      "published": "2026-10-12T10:49:24+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI \u2018tsunami\u2019",
+      "body": "IMF Chief Kristalina Georgieva warned AI is hitting the global labor market like a \u201cslow-moving tsunami,\u201d with young workers entering the job market the most exposed.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
+      "published": "2026-10-12T08:58:54+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -36,42 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
       "published": "2026-10-07T18:44:36+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "ICE came to town and left behind weakened economies",
-      "body": "Research links ICE enforcement surges to lasting declines in local spending, foot traffic and jobs. In Minneapolis, businesses are still recovering.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/07/ice-raids-local-economies.html",
-      "published": "2026-10-07T12:24:32+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "India\u2019s central bank hikes rates for the first time since 2023 as inflation risks build",
-      "body": "HSBC and Goldman Sachs expect the RBI to raise interest rates in December as well.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html",
-      "published": "2026-10-07T11:55:36+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Why AI is both the hope and the hazard for world leaders, according to IMF chief Georgieva",
-      "body": "Kristalina Georgieva warns that the technology lifting growth hopes is also pushing up inflation and yields, just as public debt levels rose.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/07/economy-inflation-ai-trade-imf-iran-hormuz-trump-.html",
-      "published": "2026-10-07T06:16:39+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "World Bank warns of AI concentration risks as it lifts East Asia and Pacific growth outlook to 4.5%",
-      "body": "The World Bank now expects the region to grow 4.5% this year, but flagged that trade growth outside AI-related goods has been \"weak or negative.\"",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html",
-      "published": "2026-10-07T03:00:22+00:00"
     }
   ]
 }
