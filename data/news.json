@@ -1,14 +1,50 @@
 {
-  "updated": "2026-10-13T02:41:23+00:00",
+  "updated": "2026-10-14T00:32:01+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "The latest inflation data is expected to show price increases are accelerating",
+      "body": "Economists expect the consumer price index for September to rise 0.6% on the month and 3.6% year over year.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
+      "published": "2026-10-13T18:05:57+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
-      "title": "Global economy to slow less than expected in 2026 as AI boom offsets war hit: IMF",
-      "body": "The IMF raised its 2026 global growth forecast to 3.1%, as AI investment helped offset the war\u2019s energy shock.",
+      "title": "In charts: How one of the world's biggest economies got trapped by debt",
+      "body": "France opens debate on its 2027 budget as high deficits, rising debt and student protests intensify pressure on lawmakers.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/13/france-2027-budget-debt.html",
+      "published": "2026-10-13T15:52:24+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI \u2018tsunami\u2019",
+      "body": "IMF Chief Kristalina Georgieva warned AI is hitting the global labor market like a \u201cslow-moving tsunami,\u201d with young workers entering the job market the most exposed.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
+      "published": "2026-10-13T13:09:55+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
+      "body": "The IMF says risks in the government bond market have worsened and that yields could jump sharply and disorderly.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
+      "published": "2026-10-13T04:54:07+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "IMF sees milder global slowdown as AI boom offsets war hit \u2014 warns resilience is nearing limits",
+      "body": "The IMF raised its 2026 global growth forecast to 3.1%, warning that resilience is tested by energy constraints and looming fiscal risks.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-      "published": "2026-10-13T02:09:34+00:00"
+      "published": "2026-10-13T04:10:49+00:00"
     },
     {
       "tag": "Markets",
@@ -31,47 +67,11 @@
     {
       "tag": "Markets",
       "icon": "MAR",
-      "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI \u2018tsunami\u2019",
-      "body": "IMF Chief Kristalina Georgieva warned AI is hitting the global labor market like a \u201cslow-moving tsunami,\u201d with young workers entering the job market the most exposed.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
-      "published": "2026-10-12T08:58:54+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
       "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
       "body": "Researchers found that while wealth disparities narrowed somewhat, the ability to meet debt payments deteriorated significantly.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
       "published": "2026-10-09T19:18:24+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
-      "body": "Shelton's controversial economic ideas led the Senate to block her nomination to the Fed. Now she's going to be a counselor to the Treasury secretary.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
-      "published": "2026-10-09T13:09:19+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
-      "body": "Tariffs added 2.9 percentage points to inflation in 67 categories of goods by February 2026, researchers at the New York Federal Reserve found.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html",
-      "published": "2026-10-08T17:31:03+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
-      "body": "The Survey of Consumer Expectations indicated that the median outlook for inflation over the next 12 months rose to 3.9%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
-      "published": "2026-10-07T18:44:36+00:00"
     }
   ]
 }
