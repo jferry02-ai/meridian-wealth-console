@@ -1,41 +1,41 @@
 {
-  "updated": "2026-10-15T00:02:25+00:00",
+  "updated": "2026-10-15T23:46:22+00:00",
   "items": [
     {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "How high inflation became a 'fact of life' in the U.S.",
-      "body": "U.S. inflation has stayed elevated for years, raising concern at the Federal Reserve that consumers may come to expect stubbornly high prices.",
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
+      "body": "September producer prices were expected to increase 0.6% month over month and 5.5% annually, according to the consensus estimate by Dow Jones.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
-      "published": "2026-10-14T17:20:23+00:00"
+      "link": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html",
+      "published": "2026-10-15T16:15:44+00:00"
     },
     {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Consumer prices rose 3.7% annually in September as gas prices skyrocket",
-      "body": "The consumer price index was expected to increase 0.6% in September on a monthly basis and 3.6% from a year ago, according to the Dow Jones consensus forecast.",
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Economists: Hot PPI shows Fed's work is not done",
+      "body": "'We see real risks the Fed will deliver another rate hike in two weeks' time,' one Fedwatcher warns",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html",
-      "published": "2026-10-14T13:53:28+00:00"
+      "link": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+      "published": "2026-10-15T15:37:59+00:00"
     },
     {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "'Godzilla El Ni\u00f1o' is wreaking havoc with Philippine central bank's inflation forecasts",
-      "body": "The Philippine central bank is running policy scenarios for a severe El Ni\u00f1o on top of the oil shock, with inflation at a three-year high.",
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
+      "body": "The exchange comes as U.S. debt exceeds $40 trillion and 10-year Treasury yields remain above 5%, intensifying scrutiny of the fiscal outlook.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
-      "published": "2026-10-14T04:24:28+00:00"
+      "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html",
+      "published": "2026-10-15T13:42:32+00:00"
     },
     {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "The latest inflation data is expected to show price increases are accelerating",
-      "body": "Economists expect the consumer price index for September to rise 0.6% on the month and 3.6% year over year.",
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+      "body": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
-      "published": "2026-10-13T18:05:57+00:00"
+      "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
+      "published": "2026-10-15T12:11:15+00:00"
     },
     {
       "tag": "Markets",
@@ -44,25 +44,25 @@
       "body": "France opens debate on its 2027 budget as high deficits, rising debt and student protests intensify pressure on lawmakers.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/13/france-2027-budget-debt.html",
-      "published": "2026-10-13T15:52:24+00:00"
+      "published": "2026-10-15T09:54:54+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
+      "body": "European trade commissioner Maro\u0161 Sef\u010dovi\u010d met with Chinese Commerce Minister Wang Wentao in Beijing last week.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/15/china-rare-earth-exports-europe.html",
+      "published": "2026-10-15T09:02:31+00:00"
     },
     {
       "tag": "Markets",
       "icon": "MAR",
-      "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI \u2018tsunami\u2019",
-      "body": "IMF Chief Kristalina Georgieva warned AI is hitting the global labor market like a \u201cslow-moving tsunami,\u201d with young workers entering the job market the most exposed.",
+      "title": "UK economy grew 0.1% in August, beating expectations",
+      "body": "The U.K. is grappling with a cost-of-living crisis sparked by sticky inflation and surging energy costs.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
-      "published": "2026-10-13T13:09:55+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
-      "body": "The IMF says risks in the government bond market have worsened and that yields could jump sharply and disorderly.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
-      "published": "2026-10-13T04:54:07+00:00"
+      "link": "https://www.cnbc.com/2026/10/15/uk-gdp-august-2026-economy.html",
+      "published": "2026-10-15T08:44:17+00:00"
     },
     {
       "tag": "Markets",
@@ -71,7 +71,7 @@
       "body": "The IMF raised its 2026 global growth forecast to 3.1%, warning that resilience is tested by energy constraints and looming fiscal risks.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-      "published": "2026-10-13T04:10:49+00:00"
+      "published": "2026-10-15T06:35:31+00:00"
     }
   ]
 }
