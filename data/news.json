@@ -1,6 +1,33 @@
 {
-  "updated": "2026-10-15T23:46:22+00:00",
+  "updated": "2026-10-16T23:48:32+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "body": "The Treasury Department published the U.S. budget deficit for the 2026 fiscal year.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "published": "2026-10-16T22:34:29+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+      "body": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
+      "published": "2026-10-16T22:33:05+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+      "body": "Investors expect the Fed to pause rate hikes in October, but Kevin Warsh's rejection of traditional communications practices and continued concern about inflation leave the decision uncertain.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+      "published": "2026-10-16T16:27:31+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -31,15 +58,6 @@
     {
       "tag": "Markets",
       "icon": "MAR",
-      "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
-      "body": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
-      "published": "2026-10-15T12:11:15+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
       "title": "In charts: How one of the world's biggest economies got trapped by debt",
       "body": "France opens debate on its 2027 budget as high deficits, rising debt and student protests intensify pressure on lawmakers.",
       "source": "CNBC Markets",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/15/china-rare-earth-exports-europe.html",
       "published": "2026-10-15T09:02:31+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "UK economy grew 0.1% in August, beating expectations",
-      "body": "The U.K. is grappling with a cost-of-living crisis sparked by sticky inflation and surging energy costs.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/15/uk-gdp-august-2026-economy.html",
-      "published": "2026-10-15T08:44:17+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "IMF sees milder global slowdown as AI boom offsets war hit \u2014 warns resilience is nearing limits",
-      "body": "The IMF raised its 2026 global growth forecast to 3.1%, warning that resilience is tested by energy constraints and looming fiscal risks.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-      "published": "2026-10-15T06:35:31+00:00"
     }
   ]
 }
