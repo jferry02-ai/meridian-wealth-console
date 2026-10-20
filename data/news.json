@@ -1,6 +1,24 @@
 {
-  "updated": "2026-10-16T23:48:32+00:00",
+  "updated": "2026-10-20T00:33:36+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why",
+      "body": "The history of technological progress suggests that as AI spreads, the employment impact will hit women more than men.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
+      "published": "2026-10-19T18:36:21+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "India\u2019s finance minister says market liquidity makes it easier for investors to exit",
+      "body": "Sitharaman identified fuel, fertilizer and access to capital as risks for India\u2019s economy in 2027.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+      "published": "2026-10-19T08:23:33+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html",
       "published": "2026-10-15T13:42:32+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "In charts: How one of the world's biggest economies got trapped by debt",
-      "body": "France opens debate on its 2027 budget as high deficits, rising debt and student protests intensify pressure on lawmakers.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/13/france-2027-budget-debt.html",
-      "published": "2026-10-15T09:54:54+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
-      "body": "European trade commissioner Maro\u0161 Sef\u010dovi\u010d met with Chinese Commerce Minister Wang Wentao in Beijing last week.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/15/china-rare-earth-exports-europe.html",
-      "published": "2026-10-15T09:02:31+00:00"
     }
   ]
 }
