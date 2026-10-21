@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-20T00:33:36+00:00",
+  "updated": "2026-10-21T00:03:54+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+      "body": "Housing data deteriorated further in September, according to separate reports Tuesday.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+      "published": "2026-10-20T19:28:43+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
       "published": "2026-10-15T15:37:59+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
-      "body": "The exchange comes as U.S. debt exceeds $40 trillion and 10-year Treasury yields remain above 5%, intensifying scrutiny of the fiscal outlook.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html",
-      "published": "2026-10-15T13:42:32+00:00"
     }
   ]
 }
