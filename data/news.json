@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T00:03:54+00:00",
+  "updated": "2026-10-22T00:08:38+00:00",
   "items": [
     {
       "tag": "Rates",
@@ -8,7 +8,25 @@
       "body": "Housing data deteriorated further in September, according to separate reports Tuesday.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-      "published": "2026-10-20T19:28:43+00:00"
+      "published": "2026-10-21T11:20:58+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "UK inflation jumps to 3.5% \u2014 cementing rate hike expectations",
+      "body": "U.K. inflation rose by a hotter-than-expected 3.5% in the 12 months to September, driven by the surging cost of motor fuels.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
+      "published": "2026-10-21T07:50:10+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Car buyers are demanding lower prices and better tech. Automakers must deliver both",
+      "body": "Bain says tech leads purchase considerations in China while price remains No. 1 in the U.S. and Europe, as pressure mounts on Western carmakers.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/20/car-buyers-china-tech-price-europe.html",
+      "published": "2026-10-21T01:01:01+00:00"
     },
     {
       "tag": "Markets",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
       "published": "2026-10-16T16:27:31+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
-      "body": "September producer prices were expected to increase 0.6% month over month and 5.5% annually, according to the consensus estimate by Dow Jones.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html",
-      "published": "2026-10-15T16:15:44+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Economists: Hot PPI shows Fed's work is not done",
-      "body": "'We see real risks the Fed will deliver another rate hike in two weeks' time,' one Fedwatcher warns",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-      "published": "2026-10-15T15:37:59+00:00"
     }
   ]
 }
