@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-23T00:06:01+00:00",
+  "updated": "2026-10-23T23:57:06+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+      "body": "Eight out of 10 Americans now rate the economy as fair or poor, one of several findings in a CNBC poll that show why Republican candidates face uphill battles.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
+      "published": "2026-10-23T20:49:42+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -9,15 +18,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
       "published": "2026-10-22T16:40:09+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
-      "body": "Eight out of 10 Americans now rate the economy as fair or poor, one of several findings in a CNBC poll that show why Republican candidates face uphill battles.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
-      "published": "2026-10-22T13:18:36+00:00"
     },
     {
       "tag": "Rates",
