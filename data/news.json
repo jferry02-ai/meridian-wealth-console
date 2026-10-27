@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-23T23:57:06+00:00",
+  "updated": "2026-10-27T00:42:44+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+      "body": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
+      "published": "2026-10-26T18:33:51+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
       "published": "2026-10-19T08:23:33+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
-      "body": "The Treasury Department published the U.S. budget deficit for the 2026 fiscal year.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
-      "published": "2026-10-16T22:34:29+00:00"
     }
   ]
 }
