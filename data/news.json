@@ -1,6 +1,24 @@
 {
-  "updated": "2026-10-27T00:42:44+00:00",
+  "updated": "2026-10-28T00:40:37+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "World Bank's Banga: Availability of capital 'not really an issue' as AI demand drives up borrowing costs",
+      "body": "World Bank President Ajay Banga came on CNBC's \"Squawk Box\" on Oct. 27, 2026.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/27/world-bank-president-ajay-banga.html",
+      "published": "2026-10-27T16:15:35+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Fed rate hikes are coming, but not this week: CNBC survey",
+      "body": "The CNBC Fed Survey shows that 93% of respondent expect a pause at the Federal Reserve meeting taking place this week.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html",
+      "published": "2026-10-27T15:51:00+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/20/car-buyers-china-tech-price-europe.html",
       "published": "2026-10-21T01:01:01+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why",
-      "body": "The history of technological progress suggests that as AI spreads, the employment impact will hit women more than men.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
-      "published": "2026-10-19T18:36:21+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "India\u2019s finance minister says market liquidity makes it easier for investors to exit",
-      "body": "Sitharaman identified fuel, fertilizer and access to capital as risks for India\u2019s economy in 2027.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
-      "published": "2026-10-19T08:23:33+00:00"
     }
   ]
 }
