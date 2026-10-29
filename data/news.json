@@ -1,6 +1,33 @@
 {
-  "updated": "2026-10-28T00:40:37+00:00",
+  "updated": "2026-10-29T01:10:03+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+      "body": "Even though the interest-rate vote went as expected, there were a few surprises out of this week's Federal Open Market Committee meeting.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
+      "published": "2026-10-28T21:31:46+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
+      "body": "Treasury Secretary Scott Bessent joined CNBC for an interview on Oct. 28, 2026.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
+      "published": "2026-10-28T21:06:37+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
+      "body": "The U.K. budget cuts household energy costs, raises taxes on banks and directs billions toward defense, Ukraine and artificial intelligence",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html",
+      "published": "2026-10-28T15:39:14+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
       "published": "2026-10-22T16:40:09+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-      "body": "Housing data deteriorated further in September, according to separate reports Tuesday.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-      "published": "2026-10-21T11:20:58+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "UK inflation jumps to 3.5% \u2014 cementing rate hike expectations",
-      "body": "U.K. inflation rose by a hotter-than-expected 3.5% in the 12 months to September, driven by the surging cost of motor fuels.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
-      "published": "2026-10-21T07:50:10+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Car buyers are demanding lower prices and better tech. Automakers must deliver both",
-      "body": "Bain says tech leads purchase considerations in China while price remains No. 1 in the U.S. and Europe, as pressure mounts on Western carmakers.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/20/car-buyers-china-tech-price-europe.html",
-      "published": "2026-10-21T01:01:01+00:00"
     }
   ]
 }
