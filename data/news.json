@@ -1,6 +1,42 @@
 {
-  "updated": "2026-10-29T01:10:03+00:00",
+  "updated": "2026-10-30T01:17:45+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+      "body": "The personal consumption expenditures price index was projected to increase 0.5% in September for an annual rate of 3.7%, according to the Dow Jones consensus.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+      "published": "2026-10-29T18:06:31+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Analysis: Kevin Warsh is keeping Wall Street guessing. It may be his most powerful tool",
+      "body": "The new chairman made clear he leans toward higher interest rates, but left himself options depending on how the data comes in.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html",
+      "published": "2026-10-29T17:32:34+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "The politics of President Lagarde's European Central Bank early exit  \u2014 and who could replace her",
+      "body": "European Central Bank President Christine Lagarde will step down on Feb. 7 next year, she announced Thursday.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html",
+      "published": "2026-10-29T14:53:06+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "European Central Bank keeps key interest rate on hold at 2.5%",
+      "body": "Markets saw the decision as a hawkish pause and were last pricing in a 67% chance of a December rate hike.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
+      "published": "2026-10-29T14:48:01+00:00"
+    },
     {
       "tag": "Rates",
       "icon": "RAT",
@@ -36,42 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/27/world-bank-president-ajay-banga.html",
       "published": "2026-10-27T16:15:35+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Fed rate hikes are coming, but not this week: CNBC survey",
-      "body": "The CNBC Fed Survey shows that 93% of respondent expect a pause at the Federal Reserve meeting taking place this week.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html",
-      "published": "2026-10-27T15:51:00+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
-      "body": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
-      "published": "2026-10-26T18:33:51+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
-      "body": "Eight out of 10 Americans now rate the economy as fair or poor, one of several findings in a CNBC poll that show why Republican candidates face uphill battles.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
-      "published": "2026-10-23T20:49:42+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
-      "body": "Initial filings for unemployment insurance slipped to a seasonally adjusted 194,000.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
-      "published": "2026-10-22T16:40:09+00:00"
     }
   ]
 }
