@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-31T00:58:57+00:00",
+  "updated": "2026-11-03T03:01:15+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
+      "body": "The 2027 budget will rise 12.8% to 820.9 trillion won, and will include a 21.3 trillion won investment into semiconductors, physical AI and AI data centers.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html",
+      "published": "2026-11-02T06:02:03+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
       "published": "2026-10-28T21:06:37+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
-      "body": "The U.K. budget cuts household energy costs, raises taxes on banks and directs billions toward defense, Ukraine and artificial intelligence",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html",
-      "published": "2026-10-28T15:39:14+00:00"
     }
   ]
 }
