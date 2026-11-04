@@ -1,6 +1,24 @@
 {
-  "updated": "2026-11-03T03:01:15+00:00",
+  "updated": "2026-11-04T01:35:59+00:00",
   "items": [
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
+      "body": "The BLS reported job openings at 7.52 million, up 333,000 from August and well above the Dow Jones consensus outlook for 7.15 million",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html",
+      "published": "2026-11-03T19:15:21+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Australia hikes rates to 18-year high to fight inflation",
+      "body": "The Reserve Bank of Australia's decision was in line with expectations from economists polled by Reuters, and marked its fifth rate increase this year.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html",
+      "published": "2026-11-03T03:46:20+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
       "published": "2026-10-29T14:48:01+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
-      "body": "Even though the interest-rate vote went as expected, there were a few surprises out of this week's Federal Open Market Committee meeting.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
-      "published": "2026-10-28T21:31:46+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
-      "body": "Treasury Secretary Scott Bessent joined CNBC for an interview on Oct. 28, 2026.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
-      "published": "2026-10-28T21:06:37+00:00"
     }
   ]
 }
