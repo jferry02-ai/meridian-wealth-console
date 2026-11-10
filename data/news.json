@@ -1,6 +1,42 @@
 {
-  "updated": "2026-11-07T01:05:29+00:00",
+  "updated": "2026-11-10T03:45:22+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China exports, imports soar past expectations in October \u2014 surplus narrows sharply",
+      "body": "Goods exports soared by 35.2% last month from a year earlier, exceeding expectations for a 33.5% jump in a Reuters poll and slowing from a 36.3% jump in September.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html",
+      "published": "2026-11-10T03:43:42+00:00"
+    },
+    {
+      "tag": "Labor",
+      "icon": "LAB",
+      "title": "3 unexpected reasons the October jobs report was so strong",
+      "body": "October's jobs report blew past economist forecasts. Here are three reasons.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
+      "published": "2026-11-09T22:23:56+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
+      "body": "The CPI headline reading is expected to show an increase of 0.3% while the core is forecast to increase 0.2%.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
+      "published": "2026-11-09T21:03:55+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "China wholesale inflation hits highest in more than four years as consumer measure slows",
+      "body": "The PPI for October came in at 5.7%, compared to the 5.3% expected by economists polled by Reuters.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
+      "published": "2026-11-09T02:50:22+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -36,42 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html",
       "published": "2026-11-05T16:07:59+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
-      "body": "One policymaker voted to raise the bank's key interest rate to 4.25%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
-      "published": "2026-11-05T16:01:47+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Here's what the Democratic election rout could mean for the U.S. economy",
-      "body": "The biggest forces shaping the economy aren't going to change just because the party in power did.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
-      "published": "2026-11-05T14:33:32+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
-      "body": "The next debt-ceiling confrontation could reverse Washington's traditional political roles, raising the possibility of spending concessions, market volatility and a damaging default.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
-      "published": "2026-11-04T22:46:43+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Private companies added 86,000 jobs in October, slightly higher than expected, ADP says",
-      "body": "Private-sector job growth held steady in October, with gains spread across sectors",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/04/private-companies-added-86000-jobs-in-october-slightly-higher-than-expected-adp-says.html",
-      "published": "2026-11-04T13:49:48+00:00"
     }
   ]
 }
