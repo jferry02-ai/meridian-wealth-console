@@ -1,6 +1,24 @@
 {
-  "updated": "2026-11-11T01:25:25+00:00",
+  "updated": "2026-11-12T02:27:08+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Analysis: Is Nvidia too big to fail?\u00a0Its AI financing web raises the stakes",
+      "body": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+      "published": "2026-11-11T22:59:33+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Consumers are showing signs of strain even as they keep spending, CNBC/NRF Retail Monitor shows",
+      "body": "Retail sales rose at their slowest pace in nearly a year in October as American consumers showed signs of strain from high prices.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/11/october-retail-sales-cnbc-nrf-2026.html",
+      "published": "2026-11-11T12:27:47+00:00"
+    },
     {
       "tag": "Inflation",
       "icon": "INF",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
       "published": "2026-11-06T20:11:17+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
-      "body": "Nonfarm payrolls were expected to increase by 59,000 in October as the unemployment rate was expected to hold steady at 4.2%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
-      "published": "2026-11-06T16:06:59+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "The October jobs report is out Friday. Here's everything to expect",
-      "body": "The Bureau of Labor Statistics releases the October nonfarm payrolls report Friday at 8:30 a.m. ET.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
-      "published": "2026-11-05T21:32:52+00:00"
     }
   ]
 }
