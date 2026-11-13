@@ -1,14 +1,23 @@
 {
-  "updated": "2026-11-12T02:27:08+00:00",
+  "updated": "2026-11-13T02:03:35+00:00",
   "items": [
     {
       "tag": "Markets",
       "icon": "MAR",
-      "title": "Analysis: Is Nvidia too big to fail?\u00a0Its AI financing web raises the stakes",
+      "title": "Analysis: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
       "body": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-      "published": "2026-11-11T22:59:33+00:00"
+      "published": "2026-11-12T23:08:50+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "UK economy expands 0.7% in third quarter as AI provides 'extra engine of growth'",
+      "body": "The U.K. economy grew 0.7% in the third quarter of the year, in line with estimates.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html",
+      "published": "2026-11-12T08:02:15+00:00"
     },
     {
       "tag": "Markets",
@@ -63,15 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
       "published": "2026-11-09T02:50:22+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
-      "body": "The average jobless worker's bout of unemployment surpassed 27 weeks in October, the highest outside of the pandemic period in a decade.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
-      "published": "2026-11-06T20:11:17+00:00"
     }
   ]
 }
