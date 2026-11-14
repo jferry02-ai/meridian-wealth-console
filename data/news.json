@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-13T02:03:35+00:00",
+  "updated": "2026-11-14T01:39:40+00:00",
   "items": [
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+      "body": "The report comes with Wall Street on edge over high-flying AI hyperscalers, while communities are on alert for the rapid spread of data centers.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+      "published": "2026-11-13T21:18:30+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "Bessent blames Lutnick\u2019s Commerce as he slams Nvidia chip \u2018leakage\u2019 to China",
+      "body": "Jensen Huang resigned as Nvidia CEO days after admitting to an affair following scrutiny of his relationship with a woman reportedly deemed a Chinese spy.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+      "published": "2026-11-13T17:06:57+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
+      "body": "The producer price index was expected to increase 0.4% in October, according to the Dow Jones consensus.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
+      "published": "2026-11-13T15:44:16+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html",
       "published": "2026-11-10T10:24:13+00:00"
-    },
-    {
-      "tag": "Labor",
-      "icon": "LAB",
-      "title": "3 unexpected reasons the October jobs report was so strong",
-      "body": "October's jobs report blew past economist forecasts. Here are three reasons.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
-      "published": "2026-11-09T22:23:56+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
-      "body": "The CPI headline reading is expected to show an increase of 0.3% while the core is forecast to increase 0.2%.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
-      "published": "2026-11-09T21:03:55+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "China wholesale inflation hits highest in more than four years as consumer measure slows",
-      "body": "The PPI for October came in at 5.7%, compared to the 5.3% expected by economists polled by Reuters.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
-      "published": "2026-11-09T02:50:22+00:00"
     }
   ]
 }
