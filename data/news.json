@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-17T04:07:35+00:00",
+  "updated": "2026-11-18T03:05:27+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
+      "body": "Semiconductor shipments spiked almost 50% year on year.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html",
+      "published": "2026-11-18T00:35:31+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -8,7 +17,16 @@
       "body": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
-      "published": "2026-11-17T00:42:33+00:00"
+      "published": "2026-11-17T15:35:13+00:00"
+    },
+    {
+      "tag": "Rates",
+      "icon": "RAT",
+      "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+      "body": "The forecast represents one of the most hawkish views among policymakers.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+      "published": "2026-11-17T13:40:54+00:00"
     },
     {
       "tag": "Markets",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
       "published": "2026-11-12T23:08:50+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "UK economy expands 0.7% in third quarter as AI provides 'extra engine of growth'",
-      "body": "The U.K. economy grew 0.7% in the third quarter of the year, in line with estimates.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html",
-      "published": "2026-11-12T08:02:15+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Consumers are showing signs of strain even as they keep spending, CNBC/NRF Retail Monitor shows",
-      "body": "Retail sales rose at their slowest pace in nearly a year in October as American consumers showed signs of strain from high prices.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/11/october-retail-sales-cnbc-nrf-2026.html",
-      "published": "2026-11-11T12:27:47+00:00"
     }
   ]
 }
