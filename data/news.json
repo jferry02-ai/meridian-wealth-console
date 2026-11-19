@@ -1,6 +1,24 @@
 {
-  "updated": "2026-11-18T03:05:27+00:00",
+  "updated": "2026-11-19T02:44:41+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Southeast Asia\u2019s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
+      "body": "The rules require data centers in Southeast Asia to seek U.S. approval to buy advanced AI chips, threatening to slow a build-out fueled heavily on Chinese demand.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
+      "published": "2026-11-18T14:09:26+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
+      "body": "It put the U.K.'s annual inflation rate at a 1-year high.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html",
+      "published": "2026-11-18T07:57:37+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
       "published": "2026-11-13T17:06:57+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
-      "body": "The producer price index was expected to increase 0.4% in October, according to the Dow Jones consensus.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-      "published": "2026-11-13T15:44:16+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Analysis: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
-      "body": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-      "published": "2026-11-12T23:08:50+00:00"
     }
   ]
 }
