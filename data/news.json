@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-19T02:44:41+00:00",
+  "updated": "2026-11-20T02:31:30+00:00",
   "items": [
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
+      "body": "The core inflation figure \u2014 which strips out prices of food \u2014 was lower than the 2.3% expected by Reuters-polled economists.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
+      "published": "2026-11-20T01:49:03+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Peterson: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
+      "body": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+      "published": "2026-11-19T20:21:10+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+      "body": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+      "published": "2026-11-19T20:18:47+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -29,15 +56,6 @@
       "published": "2026-11-18T00:35:31+00:00"
     },
     {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
-      "body": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
-      "published": "2026-11-17T15:35:13+00:00"
-    },
-    {
       "tag": "Rates",
       "icon": "RAT",
       "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
       "published": "2026-11-16T02:56:24+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
-      "body": "The report comes with Wall Street on edge over high-flying AI hyperscalers, while communities are on alert for the rapid spread of data centers.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
-      "published": "2026-11-13T21:18:30+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "Bessent blames Lutnick\u2019s Commerce as he slams Nvidia chip \u2018leakage\u2019 to China",
-      "body": "Jensen Huang resigned as Nvidia CEO days after admitting to an affair following scrutiny of his relationship with a woman reportedly deemed a Chinese spy.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-      "published": "2026-11-13T17:06:57+00:00"
     }
   ]
 }
