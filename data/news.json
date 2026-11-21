@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-20T02:31:30+00:00",
+  "updated": "2026-11-21T02:43:50+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+      "body": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+      "published": "2026-11-20T21:07:08+00:00"
+    },
     {
       "tag": "Inflation",
       "icon": "INF",
@@ -18,15 +27,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
       "published": "2026-11-19T20:21:10+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
-      "body": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
-      "published": "2026-11-19T20:18:47+00:00"
     },
     {
       "tag": "Markets",
