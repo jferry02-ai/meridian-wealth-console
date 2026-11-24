@@ -1,6 +1,24 @@
 {
-  "updated": "2026-11-21T02:43:50+00:00",
+  "updated": "2026-11-24T05:28:20+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "Peterson: Here\u2019s what Bessent\u2019s about-face on Jensen Huang reveals about Trump and China",
+      "body": "Treasury Secretary Scott Bessent was becoming the face of an emerging harder line on Nvidia\u2014 until he reversed course",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
+      "published": "2026-11-23T21:00:59+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Tech outages are fueling a new doomsday economy",
+      "body": "Recent technology outages have left some worried about AI cyberattacks and the U.S. electricity grid. The doomsday economy is heating up as a result.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
+      "published": "2026-11-21T15:04:56+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -54,24 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html",
       "published": "2026-11-18T00:35:31+00:00"
-    },
-    {
-      "tag": "Rates",
-      "icon": "RAT",
-      "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
-      "body": "The forecast represents one of the most hawkish views among policymakers.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
-      "published": "2026-11-17T13:40:54+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
-      "body": "Energy subsidies for households had reportedly expired in September, exposing the economy to the higher energy prices brought about by the Iran war.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
-      "published": "2026-11-16T02:56:24+00:00"
     }
   ]
 }
