@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-24T05:28:20+00:00",
+  "updated": "2026-11-25T04:31:12+00:00",
   "items": [
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "\u2018Ready for any storm\u2019: UAE minister optimistic on economy as IMF lifts forecast",
+      "body": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
+      "published": "2026-11-25T04:06:01+00:00"
+    },
+    {
+      "tag": "Inflation",
+      "icon": "INF",
+      "title": "Consumer confidence shoots up after Democrats' midterm victories \u2014 though inflation worries persist",
+      "body": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+      "published": "2026-11-24T18:34:43+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Why France is at risk of recession \u2014 and what could keep it out of one",
+      "body": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
+      "published": "2026-11-24T11:15:30+00:00"
+    },
     {
       "tag": "Geopolitics",
       "icon": "GEO",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
       "published": "2026-11-19T20:21:10+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Southeast Asia\u2019s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
-      "body": "The rules require data centers in Southeast Asia to seek U.S. approval to buy advanced AI chips, threatening to slow a build-out fueled heavily on Chinese demand.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
-      "published": "2026-11-18T14:09:26+00:00"
-    },
-    {
-      "tag": "Inflation",
-      "icon": "INF",
-      "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
-      "body": "It put the U.K.'s annual inflation rate at a 1-year high.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html",
-      "published": "2026-11-18T07:57:37+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
-      "body": "Semiconductor shipments spiked almost 50% year on year.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html",
-      "published": "2026-11-18T00:35:31+00:00"
     }
   ]
 }
