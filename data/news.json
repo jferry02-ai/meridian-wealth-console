@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-26T03:43:24+00:00",
+  "updated": "2026-11-27T03:44:18+00:00",
   "items": [
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
+      "body": "China's economy has been running at two speeds, with AI-related manufacturing and exports powering growth while household consumption has been lagging.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
+      "published": "2026-11-27T02:04:09+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Spain\u2019s Pablo Hern\u00e1ndez de Cos set to lead European Central Bank",
+      "body": "De Cos will lead the ECB into a period of political uncertainty and choppy growth, after winning the backing needed to succeed Christine Lagarde next year.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+      "published": "2026-11-26T15:28:26+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "body": "The U.S. planned a fresh tariff salvo on 14 trading partners, while offering some countries lower rates if they secure trade deals with Washington.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+      "published": "2026-11-26T12:46:55+00:00"
+    },
     {
       "tag": "Markets",
       "icon": "MAR",
@@ -45,33 +72,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
       "published": "2026-11-24T18:34:43+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Why France is at risk of recession \u2014 and what could keep it out of one",
-      "body": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
-      "published": "2026-11-24T11:15:30+00:00"
-    },
-    {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "Peterson: Here\u2019s what Bessent\u2019s about-face on Jensen Huang reveals about Trump and China",
-      "body": "Treasury Secretary Scott Bessent was becoming the face of an emerging harder line on Nvidia\u2014 until he reversed course",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
-      "published": "2026-11-23T21:00:59+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Tech outages are fueling a new doomsday economy",
-      "body": "Recent technology outages have left some worried about AI cyberattacks and the U.S. electricity grid. The doomsday economy is heating up as a result.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
-      "published": "2026-11-21T15:04:56+00:00"
     }
   ]
 }
