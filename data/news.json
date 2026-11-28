@@ -1,14 +1,23 @@
 {
-  "updated": "2026-11-27T03:44:18+00:00",
+  "updated": "2026-11-28T03:27:55+00:00",
   "items": [
     {
-      "tag": "Geopolitics",
-      "icon": "GEO",
-      "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
-      "body": "China's economy has been running at two speeds, with AI-related manufacturing and exports powering growth while household consumption has been lagging.",
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+      "body": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
       "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
-      "published": "2026-11-27T02:04:09+00:00"
+      "link": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+      "published": "2026-11-27T21:45:41+00:00"
+    },
+    {
+      "tag": "Markets",
+      "icon": "MAR",
+      "title": "\u2018Ready for any storm\u2019: UAE minister optimistic on economy as IMF lifts forecast",
+      "body": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
+      "published": "2026-11-27T08:47:36+00:00"
     },
     {
       "tag": "Markets",
@@ -17,7 +26,16 @@
       "body": "De Cos will lead the ECB into a period of political uncertainty and choppy growth, after winning the backing needed to succeed Christine Lagarde next year.",
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
-      "published": "2026-11-26T15:28:26+00:00"
+      "published": "2026-11-27T06:50:38+00:00"
+    },
+    {
+      "tag": "Geopolitics",
+      "icon": "GEO",
+      "title": "China\u2019s factories are growing profits again, but the AI boom is picking the winners",
+      "body": "China's economy has been running at two speeds, with AI-related manufacturing and exports powering growth while consumption, real estate investment lag.",
+      "source": "CNBC Markets",
+      "link": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
+      "published": "2026-11-27T06:09:51+00:00"
     },
     {
       "tag": "Geopolitics",
@@ -38,15 +56,6 @@
       "published": "2026-11-25T21:56:43+00:00"
     },
     {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-      "body": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
-      "published": "2026-11-25T16:17:13+00:00"
-    },
-    {
       "tag": "Inflation",
       "icon": "INF",
       "title": "Fed\u2019s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
@@ -54,15 +63,6 @@
       "source": "CNBC Markets",
       "link": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
       "published": "2026-11-25T14:18:45+00:00"
-    },
-    {
-      "tag": "Markets",
-      "icon": "MAR",
-      "title": "\u2018Ready for any storm\u2019: UAE minister optimistic on economy as IMF lifts forecast",
-      "body": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
-      "source": "CNBC Markets",
-      "link": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
-      "published": "2026-11-25T04:06:01+00:00"
     },
     {
       "tag": "Inflation",
